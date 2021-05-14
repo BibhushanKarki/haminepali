@@ -9,11 +9,13 @@ import Events from './pages/Events/Events'
 import Transparency from './pages/Transparency/Transparency'
 import AboutUs from './pages/AboutUs/AboutUs'
 import ContactUs from './pages/ContactUs/ContactUs'
+import SecondaryNavbar from './components/Navbar/SecondaryNavbar'
 
 const App = () => {
   return (
     <div className="container-fluid m-0">
       <Navbar/>
+      <SecondaryNavbar/>
         <Switch>
         <Route path='/' component={Home} exact/>
         <Route path="/donate" component={Donate} />
