@@ -12,7 +12,7 @@ const SecondaryNavbar = () => {
   return (
     <div className="row justify-content-center" style={secNavContainer}>
       <div className="col-md-8 ">
-        <ul className="nav-links d-flex justify-content-around align-items-center list-unstyled">
+        <ul className="nav-links my-2 d-flex justify-content-around align-items-center list-unstyled">
           <Link style={navStyle} to="/"><li>Home</li></Link>
           <Link style={navStyle} to="/donate"><li>Donate</li></Link>
           <Link style={navStyle} to="/volunteer"><li>Be Volunteer</li></Link>

@@ -9,7 +9,9 @@ import Events from './pages/Events/Events'
 import Transparency from './pages/Transparency/Transparency'
 import AboutUs from './pages/AboutUs/AboutUs'
 import ContactUs from './pages/ContactUs/ContactUs'
+import PageNotFound from './pages/404/PageNotFound'
 import SecondaryNavbar from './components/Navbar/SecondaryNavbar'
+import Footer from './parts/Footer/Footer'
 
 const App = () => {
   return (
@@ -25,8 +27,9 @@ const App = () => {
         <Route path="/transparency" component={Transparency} />
         <Route path="/aboutus" component={AboutUs} />
         <Route path="/contactus" component={ContactUs} />
-        <Route component={404} />
+        <Route component={PageNotFound} />
         </Switch>
+      <Footer/>
     </div>
   );
 }

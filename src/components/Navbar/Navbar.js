@@ -52,7 +52,7 @@ return (
                 <button type="button" class="btn">Search</button>
                 <span className="mx-2">|</span>
                 <button type="button" class="btn ">Sign In</button>
-                <span className="mx-2">|</span>
+                <span className="mx-2"></span>
                 <button className="btn btn-primary px-3" type="submit">Join Now</button>
             </form>
         </div>

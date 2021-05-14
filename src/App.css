@@ -6,3 +6,7 @@ body{
 .nav-link{
   color:black !important;
 }
+.btn-primary{
+  background-color:#9F1718 !important;
+  border:none !important;
+}
