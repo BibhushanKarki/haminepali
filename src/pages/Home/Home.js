@@ -1,5 +1,4 @@
 import React from 'react'
-import SecondaryNavbar from '../../components/Navbar/SecondaryNavbar'
 
 const Home = () => {
   return (
