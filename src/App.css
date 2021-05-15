@@ -6,7 +6,14 @@ body{
 .nav-link{
   color:black !important;
 }
-.btn-primary{
+.btn-primary,.btn-custom{
   background-color:#9F1718 !important;
   border:none !important;
+  color:white;
+  border:2px solid transparent !important;
+}
+.btn:hover{
+  background-color:white !important;
+  color:#9F1718 !important;
+  border:2px solid #9F1718 !important;
 }
