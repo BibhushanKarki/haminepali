@@ -9,7 +9,6 @@ body{
 }
 .btn-primary,.btn-custom{
   background-color:#9F1718 !important;
-  border:none !important;
   color:white;
   border:2px solid transparent !important;
 }
@@ -17,4 +16,23 @@ body{
   background-color:white !important;
   color:#9F1718 !important;
   border:2px solid #9F1718 !important;
+}
+
+.btn-donation{
+  background-color:#fff !important;
+  padding:0.5rem;
+  pointer-events: none !important;
+}
+.btn-donation-red{
+  background-color:#9F1718 !important;
+  color:#fff !important;
+  padding:0.5rem;
+  pointer-events: none !important;
+}
+.playbtn{
+  transition: all .4s ease-in-out;
+}
+.playbtn:hover{
+  cursor: pointer;
+  transform: scale(1.3);
 }
