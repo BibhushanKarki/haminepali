@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Noto Sans', sans-serif !important;
+  overflow-x: hidden;
 }
 .nav-link{
   color:black !important;

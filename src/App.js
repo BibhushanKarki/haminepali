@@ -6,7 +6,7 @@ import Footer from './parts/Footer/Footer'
 
 const App = () => {
   return (
-    <div className="container-fluid m-0">
+    <div className="container-fluid">
       <Navbar/>
       <SecondaryNavbar/>
       <Routes/>
