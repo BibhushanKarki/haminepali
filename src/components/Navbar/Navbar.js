@@ -24,7 +24,7 @@ const Navbar = () => {
 						<li className='nav-item dropdown fw-bold'>
 							<a
 								className='nav-link dropdown-toggle'
-								href='#'
+								href='/discover'
 								id='navbarDropdown'
 								role='button'
 								data-bs-toggle='dropdown'
@@ -33,12 +33,12 @@ const Navbar = () => {
 							</a>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/fundraisers'>
 										FundRaisers
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/volunteer'>
 										Volunteer
 									</a>
 								</li>
@@ -47,7 +47,7 @@ const Navbar = () => {
 						<li className='nav-item dropdown fw-bold'>
 							<a
 								className='nav-link dropdown-toggle'
-								href='#'
+								href='/fundraiserfor'
 								id='navbarDropdown'
 								role='button'
 								data-bs-toggle='dropdown'
@@ -56,22 +56,22 @@ const Navbar = () => {
 							</a>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/food'>
 										Food
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/health'>
 										Health
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/education'>
 										Education
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/seemore'>
 										See More...
 									</a>
 								</li>
@@ -80,7 +80,7 @@ const Navbar = () => {
 						<li className='nav-item dropdown fw-bold'>
 							<a
 								className='nav-link dropdown-toggle'
-								href='#'
+								href='/howitwork'
 								id='navbarDropdown'
 								role='button'
 								data-bs-toggle='dropdown'
@@ -89,22 +89,22 @@ const Navbar = () => {
 							</a>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/howitworks'>
 										How it works?
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/haminepali'>
 										Why HamiNepali
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/behindthename'>
 										Behind the name
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='#'>
+									<a className='dropdown-item' href='/successstories'>
 										Success Stories
 									</a>
 								</li>
