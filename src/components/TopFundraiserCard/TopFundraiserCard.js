@@ -19,12 +19,12 @@ const TopFundraiserCard = () => {
             <div class="card" style={cardStyle}>
               <img src={data.cardimg} class="card-img-top" alt="cardimg"/>
               <div class="card-body">
-                <h5 class="card-title" style={{color:'#9F1718'}}>{data.location}</h5>
-                <h5>{data.title}</h5>
+                <h6 class="card-title fw-bold" style={{color:'#9F1718'}}>{data.location}</h6>
+                <h6 className="fw-bold">{data.title}</h6>
                 <p class="card-text">{data.desc}</p>
                 <p>{data.lastDonated}</p>
                 <hr style={cardLineStyle}/>
-                <p className="text-center">{data.totalDonation}</p>
+                <p className="text-center"><span className="fw-bold">{data.gainedDonation}</span><span>{data.neededDonation}</span></p>
               </div>
           </div>
         </div>
