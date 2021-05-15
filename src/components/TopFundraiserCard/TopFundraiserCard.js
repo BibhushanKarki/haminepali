@@ -15,7 +15,7 @@ const TopFundraiserCard = () => {
       <div className="row">
         {data.map((data,key)=>{
           return(
-            <div className="col-md-4" key={key}>
+            <div className="col-md-3 d-flex justify-content-center" key={key}>
             <div class="card" style={cardStyle}>
               <img src={data.cardimg} class="card-img-top" alt="cardimg"/>
               <div class="card-body">
