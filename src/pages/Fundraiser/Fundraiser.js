@@ -1,10 +1,11 @@
 import React from 'react'
-
+import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
 const Fundraiser = () => {
   return (
     <div>
-      <h1>fundraiser</h1>
+      <TopFundRaisers/>
     </div>
+    
   )
 }
 
