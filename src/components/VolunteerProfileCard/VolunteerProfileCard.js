@@ -19,7 +19,7 @@ const VolunteerProfileCard = () => {
       <h2 className="fw-bold my-3" style={{color:'#9F1718',marginLeft:'2rem'}}>Our Volunteer's Profile</h2>
       {data.map((data,key)=>{
         return(
-          <div className="col-md-3 d-flex justify-content-center" key={key}>
+          <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <div className="card" style={cardStyle}>
                 <img src={data.profilePic} className="my-3" style={ppStyle} alt="pp"/>
                 <div className="card-body text-center">

@@ -10,7 +10,7 @@ const ConnectWithUs = () => {
     color:'white',
   }
   return (
-    <div>
+    <div className="connectwithus">
       <h4 className="fw-bold">CONNECT WITH US</h4>
       <ul className="nav-links list-unstyled">
         <li className="my-3"><img width="30px" height="30px" alt="socialicons" src={FacebookIcon}/>&nbsp; <a href="http://" style={navStyle}> Facebook</a></li>
