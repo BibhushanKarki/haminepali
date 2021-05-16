@@ -112,11 +112,11 @@ const Navbar = () => {
 						</li>
 					</ul>
 					<form className='d-flex align-items-center'>
-						<button type='button' class='btn'>
+						<button type='button' className='btn'>
 							Search
 						</button>
 						<span className='mx-2'>|</span>
-						<button type='button' class='btn '>
+						<button type='button' className='btn '>
 							Sign In
 						</button>
 						<span className='mx-2'></span>

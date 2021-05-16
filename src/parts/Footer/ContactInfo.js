@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactInfo = () => {
   return (
-    <div>
+    <div className="contactinfo">
       <h4 className="fw-bold">CONTACT INFO</h4>
       <ul className="nav-links list-unstyled">
         <li className="my-3"><strong>Email:</strong>hmainepali@gmail.com</li>

@@ -5,10 +5,6 @@ const imglink='https://images.unsplash.com/photo-1601972602237-8c79241e468b?ixid
 
 
 const DownloadApp = () => {
-  const imgContainer={
-    width:'550px',
-    height:'250px',
-  }
   const storeStyle={
     width:'160px',
     heigh:'50px',
@@ -16,18 +12,20 @@ const DownloadApp = () => {
   }
   return (
     <div className="row d-flex justify-content-center py-4">
-      <div className="col-md-8 d-flex align-items-center">
-        <div style={imgContainer}>
-          <img src={imglink} alt="appdownload" height="100%" width="100%"/>
+      <div className="col-md-8 d-flex align-items-center downloadApp">
+        <div className="col-md-6 ">
+            <img src={imglink} alt="appdownload" height="100%" width="100%" style={{objectFit:'cover'}}/>
         </div>
-        <div className="downloadDesc mx-4">
+        <div className="downloadDesc mx-4 mx-sm-3 col-md-6 ">
           <h4 className="fw-bold text-uppercase">Available Now</h4>
           <h5 className="fw-bold" style={{color:'#9F1718'}}>HamiNepali App</h5>
           <p className="fw-bold">Start and manage fundraisers, engage with
             supporters, and discover important causes — all 
             on the go</p>
-          <img src={appstore} alt="appstore" style={storeStyle}/>
-          <img src={playstore} alt="playstore" style={storeStyle}/>
+            <div className="storeBtn d-flex">
+              <img src={appstore} alt="appstore" style={storeStyle}/>
+              <img src={playstore} alt="playstore" style={storeStyle}/>
+            </div>
         </div>
       </div>
     </div>

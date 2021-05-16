@@ -18,7 +18,7 @@ const TopFundraiserCard = () => {
       <h2 className="fw-bold my-3" style={{color:'#9F1718',marginLeft:'2rem'}}>Top Fundraisers</h2>
         {data.map((data,key)=>{
           return(
-            <div className="col-md-3 d-flex justify-content-center" key={key}>
+            <div className="col-md-3 mb-3  d-flex justify-content-center" key={key}>
             <div className="card" style={cardStyle}>
               <img src={data.cardimg} className="card-img-top" alt="cardimg"/>
               <div className="card-body">
