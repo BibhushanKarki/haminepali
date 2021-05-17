@@ -1,9 +1,9 @@
 import React from 'react'
-
+import VolunteerProfileCard from '../../components/VolunteerProfileCard/VolunteerProfileCard'
 const Volunteer = () => {
   return (
     <div>
-      <h1>Volunteere page</h1>
+      <VolunteerProfileCard/>
     </div>
   )
 }
