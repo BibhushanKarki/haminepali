@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import ContactPageContent from "../../components/ContactPageContent";
 
 const ContactUs = () => {
-	return (
-		<div>
-			<h1>Contact Us Page</h1>
-		</div>
-	);
+  return (
+    <>
+      <ContactPageContent />
+    </>
+  );
 };
 
 export default ContactUs;

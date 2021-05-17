@@ -2,27 +2,27 @@ import React from "react";
 import { PrivacyPageData as data } from "./PrivacyPolicyData";
 import { QuestionAnswerData as text } from "./QuestionAnswerData";
 
-const privacyH1 = {
-  borderBottom: "3px solid #9F1718",
-  textAlign: "center",
-  fontSize: "30px",
-  fontWeight: "bold",
-  color: "#9F1718",
-};
-
-const sectionHeading = {
-  fontSize: "25px",
-  color: "#9F1718",
-};
-
-const sectionHeadingh1 = {
-  borderBottom: "1px solid rgb(208 96 97)",
-  fontSize: "25px",
-  color: "#9F1718",
-  fontWeight: "600",
-};
-
 const PrivacyPolicySection = () => {
+  const privacyH1 = {
+    borderBottom: "3px solid #9F1718",
+    textAlign: "center",
+    fontSize: "30px",
+    fontWeight: "bold",
+    color: "#9F1718",
+  };
+
+  const sectionHeading = {
+    fontSize: "25px",
+    color: "#9F1718",
+  };
+
+  const sectionHeadingh1 = {
+    borderBottom: "1px solid rgb(208 96 97)",
+    fontSize: "25px",
+    color: "#9F1718",
+    fontWeight: "600",
+  };
+
   return (
     <>
       <section className="privacy-section">
