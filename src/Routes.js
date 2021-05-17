@@ -9,9 +9,12 @@ import Transparency from './pages/Transparency/Transparency';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Fundraiser from './pages/Fundraiser/Fundraiser';
+import Covid from './pages/Covid/Covid';
 import Food from './pages/Food/Food';
 import Health from './pages/Health/Health';
 import Education from './pages/Education/Education';
+import Housing from './pages/Housing/Housing';
+import Clothing from './pages/Clothing/Clothing';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
 import WhyHamiNepal from './pages/WhyHamiNepal/WhyHamiNepal';
 import BehindTheName from './pages/BehindTheName/BehindTheName';
@@ -30,9 +33,12 @@ const Routes = () => {
 			<Route path='/aboutus' component={AboutUs} />
 			<Route path='/contactus' component={ContactUs} />
 			<Route path='/fundraisers' component={Fundraiser} />
+			<Route path='/covid' component={Covid} />
 			<Route path='/food' component={Food} />
 			<Route path='/health' component={Health} />
 			<Route path='/education' component={Education} />
+			<Route path='/housing' component={Housing} />
+			<Route path='/clothing' component={Clothing} />
 			<Route path='/howitworks' component={HowItWorks} />
 			<Route path='/whyhaminepal' component={WhyHamiNepal} />
 			<Route path='/behindthename' component={BehindTheName} />

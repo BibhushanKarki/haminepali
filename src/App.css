@@ -45,6 +45,15 @@ body{
     height:130px !important;
   }
 }
+@media(max-width:992px){
+  .navbar-nav{
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+  }
+  #navbarSupportedContent form{
+    justify-content:center !important;
+  }
+}
 @media(max-width:500px){
   .contactinfo ,.connectwithus ,.quicklinks{
     text-align: center;
@@ -63,6 +72,11 @@ body{
   }
   .downloadDesc h4{
     font-size:18px !important;
+  }
+}
+@media(max-width:715px){
+  .secNav>a{
+    font-size:12px;
   }
 }
 @media(max-width:630px){
