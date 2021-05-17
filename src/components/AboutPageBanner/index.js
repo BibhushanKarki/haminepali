@@ -5,12 +5,12 @@ const AboutPageBanner = () => {
   const aboutBanner = {
     marginTop: "3.5rem",
     backgroundColor: "#9F1718",
-    height: "25vh",
+    height: "40vh",
     color: "#fff",
   };
-  const hrline={
-    borderBottom:"2px solid white"
-  }
+  const hrline = {
+    borderBottom: "2px solid white",
+  };
   const aboutSubheading = {
     marginTop: "20px",
     textAlign: "center",
@@ -31,7 +31,7 @@ const AboutPageBanner = () => {
       <section className="about-banner">
         <div className="row" style={aboutBanner}>
           <div className="about-heading col-md-12 d-flex justify-content-center flex-column align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-2">
               <h1 className="pb-2 text-center" style={hrline}>
                 ABOUT US
               </h1>

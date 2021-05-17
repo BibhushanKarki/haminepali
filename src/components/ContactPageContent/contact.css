@@ -1,4 +1,4 @@
-.card {
+.card .form-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid #9f1718;
+  border: 2px solid #9f1718;
   border-radius: 6px;
   -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
   height: 681px;
