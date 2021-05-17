@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutPageData as text } from "./AboutPageTextData/AboutPageData";
+import { AboutPageData as data } from "./AboutPageTextData/AboutPageData";
 
 const AboutPageBanner = () => {
   const aboutBanner = {
@@ -18,13 +18,6 @@ const AboutPageBanner = () => {
     marginTop: "20px",
     textAlign: "center",
     fontSize: "23px",
-  };
-
-  const horizontalLine = {
-    height: "1px",
-    width: "300px",
-    backgroundColor: "white !important",
-    textAlign: "center",
   };
 
   const sectionContent = {
@@ -46,8 +39,6 @@ const AboutPageBanner = () => {
                 ABOUT US
               </h1>
             </div>
-            {/* <hr style={horizontalLine} /> */}
-
             <p style={aboutSubheading}>
               Humanitarian Action and long-term development programs.
             </p>
@@ -60,10 +51,10 @@ const AboutPageBanner = () => {
           <div className="row">
             <div className="col">
               <div className="section-content-paragraph" style={sectionContent}>
-                {text.map((text, key) => {
+                {data.map((data, key) => {
                   return (
                     <p style={contentParaghaph} key={key}>
-                      {text.paragraph}
+                      {data.paragraph}
                     </p>
                   );
                 })}
