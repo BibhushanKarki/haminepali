@@ -5,6 +5,12 @@ const FooterLogo = () => {
     <a className="navbar-brand" href="/">
       <img src={FootLogo} alt="footerlogo" width="180" height="170"/>
     </a>
+
+
+
+
+
+  
   )
 }
 
