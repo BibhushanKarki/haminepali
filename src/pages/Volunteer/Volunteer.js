@@ -3,7 +3,7 @@ import VolunteerProfileCard from '../../components/VolunteerProfileCard/Voluntee
 const Volunteer = () => {
   return (
     <div>
-      <VolunteerProfileCard/>
+      <VolunteerProfileCard title="Top Fundraisers"/>
     </div>
   )
 }

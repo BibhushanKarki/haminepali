@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <HomePageCover/>
       <HomePageTexts/>
-      <TopFundraiserCard/>
+      <TopFundraiserCard title="Top Fundraisers"/>
       <VolunteerProfileCard/>
       <DownloadApp/>
     </div>

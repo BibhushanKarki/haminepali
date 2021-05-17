@@ -1,7 +1,7 @@
 import React from 'react'
 import {FundraiserCardData as data} from './FundraiserCardData'
 
-const TopFundraiserCard = () => {
+const TopFundraiserCard = ({title}) => {
   const cardStyle={
     width: '18rem'
   }
@@ -15,7 +15,7 @@ const TopFundraiserCard = () => {
   return (
     <div className="cardContainer my-4">
       <div className="row">
-      <h2 className="fw-bold my-3" style={{color:'#9F1718',marginLeft:'2rem'}}>Top Fundraisers</h2>
+      <h2 className="fw-bold my-3" style={{color:'#9F1718',marginLeft:'2rem'}}>{title}</h2>
         {data.map((data,key)=>{
           return(
             <div className="col-md-3 mb-3  d-flex justify-content-center" key={key}>

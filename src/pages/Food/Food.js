@@ -1,9 +1,12 @@
 import React from 'react'
+import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
 
 const Food = () => {
   return (
     <div>
-      <h1>Food</h1>
+      <TopFundRaisers title="Trending Covid Fundraisers"/>
+      <TopFundRaisers title="Top Fundraisers"/>
+      <TopFundRaisers />
     </div>
   )
 }

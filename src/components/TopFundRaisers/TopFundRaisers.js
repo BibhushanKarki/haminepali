@@ -1,9 +1,9 @@
 import React from 'react'
 import TopFundraiserCard from '../TopFundraiserCard/TopFundraiserCard'
 
-const TopFundRaisers = () => {
+const TopFundRaisers = ({title}) => {
   return (
-      <TopFundraiserCard/>
+      <TopFundraiserCard title={title}/>
   )
 }
 
