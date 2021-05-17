@@ -1,5 +1,5 @@
 import React from "react";
-// import "./contact.css";
+import "./contact.css";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -29,7 +29,6 @@ const ContactPageContent = () => {
 
   return (
     <>
-<<<<<<< HEAD
       <div
         className="row d-flex justify-content-center  mt-5"
         style={contactBanner}
@@ -37,81 +36,6 @@ const ContactPageContent = () => {
         <div className="col-md-8 d-flex align-items-center contactForm">
           <div className="col-md-6 ">
             <div className="card form-card px-5 py-5" style={cardStyle}>
-=======
-      {/* <section className="contact-banner">
-        <div className="row" style={contactBanner}>
-          <div className="form-section">
-            <div className="col-md-12 ms-5" style={messageBox}>
-              <form className="mt-5 row g-3"> */}
-      {/* <div className="mb-5 "> */}
-      {/* <div className="col-auto">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="FirstName"
-                    required
-                  />
-                </div>
-                <div className="col-auto">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="LastName"
-                    required
-                  />
-                </div>
-                {/* </div> */}
-
-      {/* <div className="mb-5">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    placeholder="Email Address"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div className="mb-5">
-                  <textarea
-                    type="text"
-                    className="form-control"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-
-                <div className="mb-5">
-                  <textarea
-                    type="text"
-                    className="form-control"
-                    placeholder="Additional Details"
-                  ></textarea>
-                </div>
-                <div className="mb-5 form-check">
-                  <input
-                    type="checkbox"
-                    className="form-control"
-                    className="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label className="form-check-label">Check me out</label>
-                </div>
-                <div className=" text-center">
-                  <button type="submit" className="btn btn-primary">
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section style={contactBanner}>
-        <div className="container d-flex flex-row text-center">
-          <div className="col-md-6">
-            <div className="card contactcard px-5 py-5">
-              {/* <h1 style={heading}>Contact us form</h1>{" "} */}
->>>>>>> bccd982647a52f368ed1ed8872f81debdfdf1347
               <div className="row">
                 <div className="col-md-6">
                   <input
@@ -174,14 +98,14 @@ const ContactPageContent = () => {
               }}
               allowfullScreen
             />
-            <div className="contact-details d-flex ">
-              <div className="col-auto">
+            <div className="contact-details d-flex text-center">
+              <div className="col-md-6 text-center">
                 <h3 style={heading}>Contact Us</h3>
                 <p style={subHeading}>Pulchock,Lalitpur</p>
                 <p style={subHeading}>haminepal@gmail.com</p>
                 <p style={subHeading}>Tel: 01-5010510/512</p>
               </div>
-              <div className="col-auto">
+              <div className="col-md-6 text-center">
                 <h3 style={heading}>Follow Us</h3>
                 <div style={iconStyle}>
                   <FaFacebookSquare />
