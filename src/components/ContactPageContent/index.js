@@ -86,7 +86,7 @@ const ContactPageContent = () => {
       <section style={contactBanner}>
         <div className="container d-flex flex-row text-center">
           <div className="col-md-6">
-            <div className="card px-5 py-5">
+            <div className="card contactcard px-5 py-5">
               {/* <h1 style={heading}>Contact us form</h1>{" "} */}
               <div className="row">
                 <div className="col-md-6">
