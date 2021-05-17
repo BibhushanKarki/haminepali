@@ -18,6 +18,7 @@ import HowItWorks from './pages/HowItWorks/HowItWorks';
 import WhyHamiNepal from './pages/WhyHamiNepal/WhyHamiNepal';
 import BehindTheName from './pages/BehindTheName/BehindTheName';
 import SuccessStories from './pages/SuccessStories/SuccessStories';
+import PrivacyPolicySection from './components/PrivacyPolicySection'
 import PageNotFound from './pages/404/PageNotFound';
 
 const Routes = () => {
@@ -42,6 +43,7 @@ const Routes = () => {
 			<Route path='/whyhaminepal' component={WhyHamiNepal} />
 			<Route path='/behindthename' component={BehindTheName} />
 			<Route path='/successstories' component={SuccessStories} />
+			<Route path='/privacy-policy' component={PrivacyPolicySection} />
 			<Route component={PageNotFound} />
 		</Switch>
 	);
