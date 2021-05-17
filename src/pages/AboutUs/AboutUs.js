@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import AboutPageBanner from "../../components/AboutPageBanner";
 
 const AboutUs = () => {
   return (
     <div>
-      <h1>About Us Page</h1>
+      <AboutPageBanner/>
     </div>
   )
 }
