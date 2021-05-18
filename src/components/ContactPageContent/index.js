@@ -97,14 +97,14 @@ const ContactPageContent = () => {
         <div className="col-md-7 map-section text-center ">
           <iframe
             id="gmap_canvas"
-            src="https://maps.google.com/maps?q=sahid%20marg,biratnagar&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
             title="myFrame"
             allowfullScreen
           />
           <div className=" col-md-12 contact-details d-flex text-center mt-4">
             <div className="col-md-6 ">
               <h3 style={heading}>Contact Us</h3>
-              <p style={subHeading}>Pulchock,Lalitpur</p>
+              <p style={subHeading}>Pulchowk,Lalitpur</p>
               <p style={subHeading}>haminepal@gmail.com</p>
               <p style={subHeading}>Tel: 01-5010510/512</p>
             </div>

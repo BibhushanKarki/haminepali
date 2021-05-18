@@ -9,8 +9,8 @@ const EventSection = () => {
     boxShadow: "9px 10px 5px -8px rgba(191,183,183,0.75)",
   };
   const imageSection = {
-    width: "200px",
-    height: "200px",
+    width: "150px",
+    height: "150px",
     borderRadius: "50%",
     overflow: "hidden",
   };
@@ -20,7 +20,7 @@ const EventSection = () => {
       <div className="row mt-5 px-5">
         <div class="card mb-3" style={cardSection}>
           <div class="row no-gutters">
-            <div class="col-md-2 mt-2 ">
+            <div class="col-md-2 mt-4 ">
               <img src={avatar} alt="Avatar" style={imageSection} />
             </div>
             <div class="col-md-8  mt-5 ">
@@ -57,7 +57,7 @@ const EventSection = () => {
       <div className="row mt-5 px-5">
         <div class="card mb-3" style={cardSection}>
           <div class="row no-gutters">
-            <div class="col-md-2 mt-2 ">
+            <div class="col-md-2  mt-4  ">
               <img src={avatar} alt="Avatar" style={imageSection} />
             </div>
             <div class="col-md-8  mt-5 ">
@@ -94,7 +94,7 @@ const EventSection = () => {
       <div className="row mt-5 px-5">
         <div class="card mb-3" style={cardSection}>
           <div class="row no-gutters">
-            <div class="col-md-2 mt-2 ">
+            <div class="col-md-2  mt-4  ">
               <img src={avatar} alt="Avatar" style={imageSection} />
             </div>
             <div class="col-md-8  mt-5 ">
@@ -130,7 +130,7 @@ const EventSection = () => {
       <div className="row mt-5 px-5">
         <div class="card mb-3" style={cardSection}>
           <div class="row no-gutters">
-            <div class="col-md-2 mt-2 ">
+            <div class="col-md-2  mt-4  ">
               <img src={avatar} alt="Avatar" style={imageSection} />
             </div>
             <div class="col-md-8  mt-5 ">
