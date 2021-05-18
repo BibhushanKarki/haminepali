@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import EventSection from "../../components/EventPageSection";
 
 const Events = () => {
   return (
-    <div>
-      <h1>Events Page</h1>
-    </div>
-  )
-}
+    <>
+      <EventSection />
+    </>
+  );
+};
 
-export default Events
+export default Events;
