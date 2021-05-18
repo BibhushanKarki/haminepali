@@ -49,3 +49,39 @@
   outline: 0;
   box-shadow: 0 0 0 1px rgb(255, 255, 255) !important;
 }
+
+/* @media (min-width: 800px) {
+  .map-section iframe {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .map-section iframe {
+    width: 200px;
+  }
+}
+
+@media (min-width: 576px) {
+  .map-section iframe {
+    width: 380px;
+  }
+}
+
+@media (min-width: 471px) {
+  .map-section iframe {
+    width: 350px;
+  }
+}
+
+@media (min-width: 360px) {
+  .map-section iframe {
+    width: 323px;
+  }
+}
+
+@media (min-width: 280px) {
+  .map-section iframe {
+    width: 250px;
+  }
+} */
