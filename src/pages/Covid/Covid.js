@@ -1,10 +1,10 @@
 import React from 'react'
 import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
-import GetStarted from '../../components/GetStartedSection/GetStarted'
+import GetStartedCovid from '../../components/GetStartedSection/GetStartedCovid'
 const Covid = () => {
   return (
     <div>
-      <GetStarted/>
+      <GetStartedCovid/>
       <TopFundRaisers title="Trending Covid Fundraisers"/>
       <TopFundRaisers title="Top Fundraisers"/>
       <TopFundRaisers />
