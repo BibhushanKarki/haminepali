@@ -3,17 +3,14 @@ import { AboutPageData as data } from "./AboutPageTextData/AboutPageData";
 
 const AboutPageBanner = () => {
   const aboutBanner = {
-    marginTop: "50px",
+    marginTop: "3.5rem",
     backgroundColor: "#9F1718",
-    height: "380px",
+    height: "40vh",
     color: "#fff",
   };
-
-  const aboutH1 = {
+  const hrline = {
     borderBottom: "2px solid white",
-    textAlign: "center",
   };
-
   const aboutSubheading = {
     marginTop: "20px",
     textAlign: "center",
@@ -35,7 +32,7 @@ const AboutPageBanner = () => {
         <div className="row" style={aboutBanner}>
           <div className="about-heading col-md-12 d-flex justify-content-center flex-column align-items-center">
             <div className="col-md-2">
-              <h1 className="pb-2" style={aboutH1}>
+              <h1 className="pb-2 text-center" style={hrline}>
                 ABOUT US
               </h1>
             </div>

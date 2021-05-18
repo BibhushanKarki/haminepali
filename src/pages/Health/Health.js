@@ -1,9 +1,12 @@
 import React from 'react'
+import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
 
 const Health = () => {
   return (
     <div>
-      <h1>Health</h1>
+      <TopFundRaisers title="Trending Covid Fundraisers"/>
+      <TopFundRaisers title="Top Fundraisers"/>
+      <TopFundRaisers/>
     </div>
   )
 }

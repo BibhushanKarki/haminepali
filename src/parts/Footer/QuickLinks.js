@@ -15,7 +15,7 @@ const QuickLinks = () => {
         <Link to="/volunteers" style={navStyle}>
           <li className="my-3">Volunteers</li>
         </Link>
-        <Link to="/haminepali" style={navStyle}>
+        <Link to="/aboutus" style={navStyle}>
           <li className="my-3">About HamiNepali</li>
         </Link>
         <Link to="/contactus" style={navStyle}>

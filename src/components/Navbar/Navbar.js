@@ -55,6 +55,11 @@ const Navbar = () => {
 								Fundraiser For
 							</a>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
+							<li>
+									<a className='dropdown-item' href='/covid'>
+										Covid
+									</a>
+								</li>
 								<li>
 									<a className='dropdown-item' href='/food'>
 										Food
@@ -71,8 +76,13 @@ const Navbar = () => {
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/seemore'>
-										See More...
+									<a className='dropdown-item' href='/housing'>
+										Housing
+									</a>
+								</li>
+								<li>
+									<a className='dropdown-item' href='/clothing'>
+										Clothing
 									</a>
 								</li>
 							</ul>

@@ -36,6 +36,10 @@ body{
   cursor: pointer;
   transform: scale(1.3);
 }
+.mt-n4 {
+  margin-top: -3.5rem !important;
+}
+
 @media(max-width:1000px){
   .contactinfo h4,.connectwithus h4,.quicklinks h4{
     font-size: 18px !important;
@@ -43,6 +47,15 @@ body{
   .footerlogo img{
     width:140px !important;
     height:130px !important;
+  }
+}
+@media(max-width:992px){
+  .navbar-nav{
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+  }
+  #navbarSupportedContent form{
+    justify-content:center !important;
   }
 }
 @media(max-width:500px){
@@ -63,6 +76,11 @@ body{
   }
   .downloadDesc h4{
     font-size:18px !important;
+  }
+}
+@media(max-width:715px){
+  .secNav>a{
+    font-size:12px;
   }
 }
 @media(max-width:630px){

@@ -1,14 +1,14 @@
 import React from 'react'
 import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
 
-const Education = () => {
+const Housing = () => {
   return (
     <div>
       <TopFundRaisers title="Trending Covid Fundraisers"/>
       <TopFundRaisers title="Top Fundraisers"/>
-      <TopFundRaisers/>
+      <TopFundRaisers />
     </div>
   )
 }
 
-export default Education
+export default Housing

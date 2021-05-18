@@ -1,11 +1,11 @@
 import React from 'react'
 import TopFundRaisers from '../../components/TopFundRaisers/TopFundRaisers'
+
 const Fundraiser = () => {
   return (
     <div>
-      <TopFundRaisers/>
+      <TopFundRaisers title="Top Fundraiser"/>
     </div>
-    
   )
 }
 
