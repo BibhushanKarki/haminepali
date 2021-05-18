@@ -1,5 +1,6 @@
 {
 	"name": "haminepali",
+	"start_url": ".",
 	"homepage": "http://haminepal.org",
 	"version": "0.1.0",
 	"private": true,
