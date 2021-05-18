@@ -9,8 +9,16 @@ body{
 }
 .btn-primary,.btn-custom{
   background-color:#9F1718 !important;
-  color:white;
+  color:white !important;
   border:2px solid transparent !important;
+}
+.btn-getStarted{
+  background-color:#9F1718 !important;
+  color:white !important;
+  border:2px solid transparent !important;
+  width: 250px;height:70px;
+  padding:0 1rem;
+  font-size: 28px;
 }
 .btn:hover{
   background-color:white !important;

@@ -56,6 +56,9 @@ import Fundraiser from "./pages/Fundraiser/Fundraiser";
 import Food from "./pages/Food/Food";
 import Health from "./pages/Health/Health";
 import Education from "./pages/Education/Education";
+import Clothing from "./pages/Clothing/Clothing";
+import Covid from "./pages/Covid/Covid";
+import Housing from "./pages/Housing/Housing";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
 import BehindTheName from "./pages/BehindTheName/BehindTheName";
@@ -75,9 +78,12 @@ const Routes = () => {
       <Route path="/aboutus" component={AboutUs} />
       <Route path="/contactus" component={ContactUs} />
       <Route path="/fundraisers" component={Fundraiser} />
+      <Route path="/covid" component={Covid} />
       <Route path="/food" component={Food} />
       <Route path="/health" component={Health} />
       <Route path="/education" component={Education} />
+      <Route path="/clothing" component={Clothing} />
+      <Route path="/housing" component={Housing} />
       <Route path="/howitworks" component={HowItWorks} />
       <Route path="/whyhaminepal" component={WhyHamiNepal} />
       <Route path="/behindthename" component={BehindTheName} />
