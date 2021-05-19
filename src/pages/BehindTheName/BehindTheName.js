@@ -1,9 +1,10 @@
 import React from 'react'
+import BehindTheNameCard from '../../components/BehindTheNameCard/BehindTheNameCard'
 
 const BehindTheName = () => {
   return (
     <div>
-      <h1>Behind the name</h1>
+      <BehindTheNameCard/>
     </div>
   )
 }

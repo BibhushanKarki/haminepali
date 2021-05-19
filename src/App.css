@@ -16,8 +16,7 @@ body {
   border:2px solid transparent !important;
 }
 
-.btn-secondary,
-.btn-custom {
+.btn-secondary{
   background-color: #55acee !important;
   color: white !important;
   border: 2px solid transparent !important;
