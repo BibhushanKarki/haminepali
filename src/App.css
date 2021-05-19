@@ -7,6 +7,9 @@ body{
 .nav-link{
   color:black !important;
 }
+.btn{
+  border:2px solid transparent !important;
+}
 .btn-primary,.btn-custom{
   background-color:#9F1718 !important;
   color:white !important;

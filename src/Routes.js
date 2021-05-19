@@ -44,7 +44,6 @@ const Routes = () => {
       <Route path="/whyhaminepal" component={WhyHamiNepal} />
       <Route path="/behindthename" component={BehindTheName} />
       <Route path="/successstories" component={SuccessStories} />
-      <Route path="/successstories" component={SuccessStories} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={PageNotFound} />
     </Switch>
