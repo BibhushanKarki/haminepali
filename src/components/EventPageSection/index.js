@@ -16,11 +16,11 @@ const EventSection = () => {
                 </div>
                 <div className="col-md-8  mt-5 ">
                   <div className="card-body">
-                    <h5 className="card-title">{data.title}</h5>
+                    <h5 className="card-title heading">{data.title}</h5>
                     <p className="card-text">
                       {data.paragraph}
                       <Link
-                        to="#"
+                        to="/event-extended"
                         style={{ color: "#9F1718", textDecoration: "none" }}
                       >
                         See more
@@ -30,13 +30,16 @@ const EventSection = () => {
                 </div>
                 <div className="col-md-2 ">
                   <div className="card-body d-flex flex-column">
-                    <Link to="#" className="btn btn-primary mt-4 ">
+                    <Link to="/volunteer" className="btn btn-primary mt-4 ">
                       Volunteer
                     </Link>
-                    <Link to="#" className="btn  btn-primary mt-4 ">
+                    <Link to="/donate" className="btn  btn-primary mt-4 ">
                       Donate
                     </Link>
-                    <Link to="#" className="btn btn-secondary mt-4 ">
+                    <Link
+                      to="#"
+                      className="btn btn-secondary button-secondary mt-4 "
+                    >
                       Share
                     </Link>
                   </div>
