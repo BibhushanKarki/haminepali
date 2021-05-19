@@ -12,12 +12,18 @@ const EventSection = () => {
             <div className="card card-event-section mb-3">
               <div className="row no-gutters">
                 <div className="col-md-2 mt-4 ">
-                  <img src={data.image} alt="Avatar" className="imageSection" />
+                  <div className="imageContainer">
+                    <img
+                      src={data.image}
+                      alt="Avatar"
+                      className="imageSection"
+                    />
+                  </div>
                 </div>
                 <div className="col-md-8  mt-5 ">
                   <div className="card-body">
                     <h5 className="card-title heading">{data.title}</h5>
-                    <p className="card-text">
+                    <p className="card-text sub-heading">
                       {data.paragraph}
                       <Link
                         to="/event-extended"

@@ -37,3 +37,27 @@
     border-left: none;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .imageContainer {
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
+  }
+  .sub-heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .imageContainer {
+    text-align: center;
+  }
+  .heading {
+    text-align: center;
+  }
+  .sub-heading {
+    text-align: center;
+  }
+}

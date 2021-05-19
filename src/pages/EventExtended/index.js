@@ -1,9 +1,10 @@
 import React from "react";
+import EventExtendedSection from "../../components/EventExtendedSection";
 
 const EventExtended = () => {
   return (
     <>
-      <h1>Event-Extended</h1>
+      <EventExtendedSection />
     </>
   );
 };
