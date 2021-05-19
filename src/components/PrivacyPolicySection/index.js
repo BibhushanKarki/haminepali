@@ -69,9 +69,7 @@ const PrivacyPolicySection = () => {
                         {text.question}
                       </h1>
                     </div>
-                    <p className="mt-3 mb-4" key={key}>
-                      {text.answer}
-                    </p>
+                    <p className="mt-3 mb-4">{text.answer}</p>
                   </div>
                 );
               })}
