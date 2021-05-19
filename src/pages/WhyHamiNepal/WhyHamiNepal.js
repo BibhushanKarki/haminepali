@@ -10,12 +10,6 @@ const WhyHamiNepal = () => {
   const hrline={
     borderBottom:"2px solid white",
   }
-  const howImgStyle={
-    width:'95vw',
-    height:'250px',
-    objectFit:'cover',
-    objectPosition:'center center',
-  }
 
   return (
     <section className="why">

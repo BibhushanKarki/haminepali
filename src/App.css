@@ -7,7 +7,6 @@ body {
 .nav-link {
   color: black !important;
 }
-<<<<<<< HEAD
 .btn{
   border:2px solid transparent !important;
 }
@@ -15,13 +14,6 @@ body {
   background-color:#9F1718 !important;
   color:white !important;
   border:2px solid transparent !important;
-=======
-.btn-primary,
-.btn-custom {
-  background-color: #9f1718 !important;
-  color: white !important;
-  border: 2px solid transparent !important;
->>>>>>> d046058af2dea7759bca6555356db392532cee8a
 }
 
 .btn-secondary,

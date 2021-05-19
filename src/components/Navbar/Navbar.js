@@ -108,7 +108,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/whyhaminepali">
+                  <a className="dropdown-item" href="/whyhaminepal">
                     Why HamiNepali
                   </a>
                 </li>
