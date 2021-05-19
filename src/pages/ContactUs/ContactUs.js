@@ -1,5 +1,5 @@
 import React from "react";
-import ContactPageContent from "../../components/ContactPageContent";
+import ContactPageContent from "../../components/ContactPageSection";
 
 const ContactUs = () => {
   return (

@@ -5,6 +5,7 @@ import Donate from "./pages/Donate/Donate";
 import Volunteer from "./pages/Volunteer/Volunteer";
 import Cause from "./pages/Cause/Cause";
 import Events from "./pages/Events/Events";
+import EventExtended from "./pages/EventExtended";
 import Transparency from "./pages/Transparency/Transparency";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
@@ -30,6 +31,7 @@ const Routes = () => {
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/cause" component={Cause} />
       <Route path="/events" component={Events} />
+      <Route path="/event-extended" component={EventExtended} />
       <Route path="/transparency" component={Transparency} />
       <Route path="/aboutus" component={AboutUs} />
       <Route path="/contactus" component={ContactUs} />
