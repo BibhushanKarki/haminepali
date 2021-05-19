@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./event.css";
-import { EventSectionData as data } from "./EventSectionData";
-import { BsFillCalendarFill } from "react-icons/bs";
+import "./upcoming.css";
+import { UpComingEventData as data } from "./UpComingEventData";
 
-const EventSection = () => {
+const UpComingEventSection = () => {
   return (
     <>
       {data.map((data) => {
@@ -56,19 +55,8 @@ const EventSection = () => {
           </div>
         );
       })}
-
-      <div className="row px-5">
-        <div className="col-md-12 upcoming-event-section">
-          <Link to="/upcoming-event" className="btn btn-primary mt-4 ">
-            Upcoming Events{" "}
-            <span>
-              <BsFillCalendarFill />
-            </span>
-          </Link>
-        </div>
-      </div>
     </>
   );
 };
 
-export default EventSection;
+export default UpComingEventSection;

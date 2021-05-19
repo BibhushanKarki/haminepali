@@ -27,7 +27,7 @@ const EventExtendedSection = () => {
               <img
                 className="card-img-top image-container"
                 src="./img/orphans.png"
-                alt="Card image cap"
+                alt="orphans"
                 style={{ height: 300 }}
               />
               <div className="mt-md-3 ">
@@ -95,7 +95,7 @@ const EventExtendedSection = () => {
                 <img
                   className="card-img-top rounded-circle"
                   src="./img/pic2.jpg"
-                  alt="event"
+                  alt="profile"
                 />
               </div>
               <div className="card-body text-center">
@@ -112,7 +112,7 @@ const EventExtendedSection = () => {
                 <img
                   className="card-img-top rounded-circle"
                   src="./img/pic2.jpg"
-                  alt="Card image cap"
+                  alt="profile"
                 />
               </div>
               <div className="card-body text-center">
@@ -129,7 +129,7 @@ const EventExtendedSection = () => {
                 <img
                   className="card-img-top rounded-circle"
                   src="./img/pic2.jpg"
-                  alt="Card image cap"
+                  alt="profile"
                 />
               </div>
               <div className="card-body text-center">
@@ -146,7 +146,7 @@ const EventExtendedSection = () => {
                 <img
                   className="card-img-top rounded-circle"
                   src="./img/pic2.jpg"
-                  alt="Card image cap"
+                  alt="profile"
                 />
               </div>
               <div className="card-body text-center">
