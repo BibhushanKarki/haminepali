@@ -130,9 +130,11 @@ const Navbar = () => {
               Search
             </button>
             <span className="mx-2">|</span>
-            <button type="button" className="btn ">
-              Sign In
-            </button>
+            <a href="/sign-in">
+              <button type="button" className="btn ">
+                Sign In
+              </button>
+            </a>
             <span className="mx-2"></span>
             <button className="btn btn-primary px-3" type="submit">
               Join Now
