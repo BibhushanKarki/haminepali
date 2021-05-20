@@ -57,9 +57,6 @@ a{
 .mt-n4 {
   margin-top: -3.5rem !important;
 }
-#pills-tab li button.active{
-  
-}
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,
