@@ -5,10 +5,10 @@ const SignInSection = () => {
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
-        <div className="row d-flex justify-content-center">
+        <form className="row d-flex justify-content-center">
           <div className="col-md-6">
             <div
-              className="card form-card px-5 py-3 text-center"
+              className="card px-5 py-3 text-center"
               style={{
                 boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
               }}
@@ -54,10 +54,16 @@ const SignInSection = () => {
                 </div>
               </div>
               <hr />
-              <div className="row mt-3 ">
-                <div className="col-md-12">
+              <div className="row mt-3 mb-3">
+                <div className="col-md-6">
+                  <Link to="/sign-up" style={{ textDecoration: "none" }}>
+                    Don't have an account?
+                    <span style={{ color: "#9F1718" }}>Sign Up</span>
+                  </Link>
+                </div>
+                <div className="col-md-6">
                   <Link
-                    to="/"
+                    to="#"
                     style={{ textDecoration: "none", color: "#9F1718" }}
                   >
                     Forget Password
@@ -66,7 +72,7 @@ const SignInSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
