@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown fw-bold">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
                 href="/discover"
                 id="navbarDropdown"
@@ -32,22 +32,22 @@ const Navbar = () => {
                 aria-expanded="false"
               >
                 Discover
-              </a>
+              </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="/fundraisers">
+                  <Link className="dropdown-item" href="/fundraisers">
                     FundRaisers
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/volunteer">
+                  <Link className="dropdown-item" href="/volunteer">
                     Volunteer
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item dropdown fw-bold">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
                 href="/fundraiserfor"
                 id="navbarDropdown"
@@ -56,42 +56,42 @@ const Navbar = () => {
                 aria-expanded="false"
               >
                 Fundraiser For
-              </a>
+              </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="/covid">
+                  <Link className="dropdown-item" href="/covid">
                     Covid
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/food">
+                  <Link className="dropdown-item" href="/food">
                     Food
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/health">
+                  <Link className="dropdown-item" href="/health">
                     Health
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/education">
+                  <Link className="dropdown-item" href="/education">
                     Education
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/housing">
+                  <Link className="dropdown-item" href="/housing">
                     Housing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/clothing">
+                  <Link className="dropdown-item" href="/clothing">
                     Clothing
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item dropdown fw-bold">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
                 href="/howitwork"
                 id="navbarDropdown"
@@ -100,27 +100,27 @@ const Navbar = () => {
                 aria-expanded="false"
               >
                 How it works
-              </a>
+              </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="/howitworks">
+                  <Link className="dropdown-item" href="/howitworks">
                     How it works?
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/whyhaminepal">
+                  <Link className="dropdown-item" href="/whyhaminepal">
                     Why HamiNepali
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/behindthename">
+                  <Link className="dropdown-item" href="/behindthename">
                     Behind the name
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/successstories">
+                  <Link className="dropdown-item" href="/successstories">
                     Success Stories
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -130,17 +130,17 @@ const Navbar = () => {
               Search
             </button>
             <span className="mx-2">|</span>
-            <a href="/sign-in">
+            <Link href="/sign-in">
               <button type="button" className="btn ">
                 Sign In
               </button>
-            </a>
+            </Link>
             <span className="mx-2"></span>
-            <a href="/sign-up">
+            <Link href="/sign-up">
               <button className="btn btn-primary px-3" type="button">
                 Join Now
               </button>
-            </a>
+            </Link>
           </form>
         </div>
       </nav>
