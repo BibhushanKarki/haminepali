@@ -66,14 +66,13 @@ const SignUpPageSection = () => {
                     />
                   </div>
                 </div>
-              </div>
-              <div className="row mt-3 mb-3">
-                <div className="col-md-12">
-                  <button type="submit" className=" btn btn-primary">
-                    Next
-                  </button>
+                <div className="row mt-4 mb-3">
+                  <div className="col-md-12">
+                    <button type="submit" className=" btn btn-primary">
+                      Register
+                    </button>
+                  </div>
                 </div>
-                <hr />
               </div>
             </div>
           </form>
