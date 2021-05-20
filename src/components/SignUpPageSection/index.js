@@ -69,21 +69,11 @@ const SignUpPageSection = () => {
               <div className="row mt-3 mb-3">
                 <div className="col-md-12">
                   <button type="submit" className=" btn btn-primary">
-                    Login
+                    Register
                   </button>
                 </div>
               </div>
               <hr />
-              <div className="row mt-3 ">
-                <div className="col-md-12">
-                  <Link
-                    to="/"
-                    style={{ textDecoration: "none", color: "#9F1718" }}
-                  >
-                    Forget Password
-                  </Link>
-                </div>
-              </div>
             </div>
           </div>
         </div>
