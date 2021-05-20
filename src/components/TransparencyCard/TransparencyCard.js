@@ -1,5 +1,4 @@
 import React from 'react'
-import AppButton from '../UI/Buttons/AppButton'
 import {TransparencyCardData as data} from './TransparencyCardData'
 
 const TransparencyCard = () => {
@@ -34,13 +33,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <div className="card" style={cardStyle}>
-                <img src={data.img} className="mb-3" style={ppStyle} alt="pp"/>
+                <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
+                </a>
               </div>
           </div>
         )
@@ -52,13 +52,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <div className="card" style={cardStyle}>
-                <img src={data.img} className="mb-3" style={ppStyle} alt="pp"/>
+              <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
+                </a>
               </div>
           </div>
         )
@@ -70,13 +71,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <div className="card" style={cardStyle}>
-                <img src={data.img} className="mb-3" style={ppStyle} alt="pp"/>
+              <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
+                </a>
               </div>
           </div>
         )
@@ -88,13 +90,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <div className="card" style={cardStyle}>
-                <img src={data.img} className="mb-3" style={ppStyle} alt="pp"/>
+              <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
+                </a>
               </div>
           </div>
         )

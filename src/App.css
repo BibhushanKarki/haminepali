@@ -4,18 +4,23 @@ body {
   font-family: "Noto Sans", sans-serif !important;
   overflow-x: hidden;
 }
+a{
+  text-decoration: none !important;
+}
 .nav-link {
   color: black !important;
 }
 .btn{
   border:2px solid transparent !important;
 }
-.btn-primary,.btn-custom{
+.btn-primary,.btn-custom,#pills-tab li button.active{
   background-color:#9F1718 !important;
   color:white !important;
   border:2px solid transparent !important;
 }
-
+#pills-tab li button{
+  border:2px solid transparent !important;
+}
 .btn-getStarted {
   background-color: #9f1718 !important;
   color: white !important;
@@ -52,7 +57,6 @@ body {
 .mt-n4 {
   margin-top: -3.5rem !important;
 }
-
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,

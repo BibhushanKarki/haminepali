@@ -6,7 +6,7 @@ const SignInSection = () => {
     <>
       <div className="container-sm  mt-5 mb-5">
         <div className="row">
-          <form className=" d-flex justify-content-center">
+          <form className="d-flex justify-content-center">
             <div className="col-md-6">
               <div
                 className="card px-5 py-3 text-center"
