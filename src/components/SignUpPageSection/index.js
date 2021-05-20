@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const SignUpPageSection = () => {
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
-        <div className="row d-flex justify-content-center">
+        <form className="row d-flex justify-content-center">
           <div className="col-md-6">
             <div
-              className="card form-card px-5 py-3 text-center"
+              className="card px-5 py-3 text-center"
               style={{
                 boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
               }}
@@ -76,7 +75,7 @@ const SignUpPageSection = () => {
               <hr />
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
