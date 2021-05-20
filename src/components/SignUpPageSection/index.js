@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const SignUpPageSection = () => {
   return (
@@ -69,7 +68,7 @@ const SignUpPageSection = () => {
               <div className="row mt-3 mb-3">
                 <div className="col-md-12">
                   <button type="submit" className=" btn btn-primary">
-                    Register
+                    Next
                   </button>
                 </div>
               </div>
