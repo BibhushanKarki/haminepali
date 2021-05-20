@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SignInSection = () => {
+const SignUpPageSection = () => {
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
@@ -21,9 +21,29 @@ const SignInSection = () => {
                   color: "#9F1718",
                 }}
               >
-                Sign In
+                Sign Up
               </div>
               <hr />
+              <div className="row">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Firstname"
+                    name="firstname"
+                    required
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="LastName"
+                    name="lastname"
+                    required
+                  />
+                </div>
+              </div>
               <div className="row mt-3">
                 <div className="col-md-12">
                   <input
@@ -72,4 +92,4 @@ const SignInSection = () => {
   );
 };
 
-export default SignInSection;
+export default SignUpPageSection;

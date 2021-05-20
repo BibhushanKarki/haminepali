@@ -136,9 +136,11 @@ const Navbar = () => {
               </button>
             </a>
             <span className="mx-2"></span>
-            <button className="btn btn-primary px-3" type="submit">
-              Join Now
-            </button>
+            <a href="/sign-up">
+              <button className="btn btn-primary px-3" type="button">
+                Join Now
+              </button>
+            </a>
           </form>
         </div>
       </nav>
