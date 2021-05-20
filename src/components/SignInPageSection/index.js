@@ -5,74 +5,76 @@ const SignInSection = () => {
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
-        <form className="row d-flex justify-content-center">
-          <div className="col-md-6">
-            <div
-              className="card px-5 py-3 text-center"
-              style={{
-                boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
-              }}
-            >
+        <div className="row">
+          <form className=" d-flex justify-content-center">
+            <div className="col-md-6">
               <div
-                className="card-title "
+                className="card px-5 py-3 text-center"
                 style={{
-                  fontWeight: "bold",
-                  fontSize: 30,
-                  color: "#9F1718",
+                  boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
                 }}
               >
-                Sign In
-              </div>
-              <hr />
-              <div className="row mt-3">
-                <div className="col-md-12">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Email-Address"
-                    name="email"
-                    required
-                  />
+                <div
+                  className="card-title "
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: 30,
+                    color: "#9F1718",
+                  }}
+                >
+                  Sign In
                 </div>
-              </div>
-              <div className="row mt-3">
-                <div className="col-md-12">
-                  <input
-                    type="password"
-                    className="form-control"
-                    placeholder="Password"
-                    name="password"
-                    required
-                  />
+                <hr />
+                <div className="row mt-3">
+                  <div className="col-md-12">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Email-Address"
+                      name="email"
+                      required
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="row mt-3 mb-3">
-                <div className="col-md-12">
-                  <button type="submit" className=" btn btn-primary">
-                    Login
-                  </button>
+                <div className="row mt-3">
+                  <div className="col-md-12">
+                    <input
+                      type="password"
+                      className="form-control"
+                      placeholder="Password"
+                      name="password"
+                      required
+                    />
+                  </div>
                 </div>
-              </div>
-              <hr />
-              <div className="row mt-3 mb-3">
-                <div className="col-md-6">
-                  <Link to="/sign-up" style={{ textDecoration: "none" }}>
-                    Don't have an account?
-                    <span style={{ color: "#9F1718" }}>Sign Up</span>
-                  </Link>
+                <div className="row mt-3 mb-3">
+                  <div className="col-md-12">
+                    <button type="submit" className=" btn btn-primary">
+                      Login
+                    </button>
+                  </div>
                 </div>
-                <div className="col-md-6">
-                  <Link
-                    to="#"
-                    style={{ textDecoration: "none", color: "#9F1718" }}
-                  >
-                    Forget Password
-                  </Link>
+                <hr />
+                <div className="row mt-3 mb-3">
+                  <div className="col-md-6">
+                    <Link to="/sign-up" style={{ textDecoration: "none" }}>
+                      Don't have an account?
+                      <span style={{ color: "#9F1718" }}>Sign Up</span>
+                    </Link>
+                  </div>
+                  <div className="col-md-6">
+                    <Link
+                      to="#"
+                      style={{ textDecoration: "none", color: "#9F1718" }}
+                    >
+                      Forget Password
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </>
   );
