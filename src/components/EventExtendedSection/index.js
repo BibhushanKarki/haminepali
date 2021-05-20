@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./event-extended.css";
-// import { EventExtendedSectionData as data } from "./EventExtendedSectionData";
+import { EventExtendedSectionData as items } from "./EventExtendedSectionData";
 
 const EventExtendedSection = () => {
   return (
@@ -89,74 +89,27 @@ const EventExtendedSection = () => {
 
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-3">
-            <div className="card card-01">
-              <div className="profile-box">
-                <img
-                  className="card-img-top rounded-circle"
-                  src="./img/pic2.jpg"
-                  alt="profile"
-                />
+          {items.map((items) => {
+            return (
+              <div className="col-md-3" key={items.id}>
+                <div className="card card-01">
+                  <div className="profile-box">
+                    <img
+                      className="card-img-top rounded-circle"
+                      src={items.image}
+                      alt="profile"
+                    />
+                  </div>
+                  <div className="card-body text-center">
+                    <h4 className="card-title">{items.name}</h4>
+                    <p className="card-text mb-4 " style={{ color: "#9F1718" }}>
+                      {items.position}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="card-body text-center">
-                <h4 className="card-title">Malala Yousafzai</h4>
-                <p className="card-text" style={{ color: "#9F1718" }}>
-                  Supporting Volunteer
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card card-01">
-              <div className="profile-box">
-                <img
-                  className="card-img-top rounded-circle"
-                  src="./img/pic2.jpg"
-                  alt="profile"
-                />
-              </div>
-              <div className="card-body text-center">
-                <h4 className="card-title">Malala Yousafzai</h4>
-                <p className="card-text" style={{ color: "#9F1718" }}>
-                  Supporting Volunteer
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card card-01">
-              <div className="profile-box">
-                <img
-                  className="card-img-top rounded-circle"
-                  src="./img/pic2.jpg"
-                  alt="profile"
-                />
-              </div>
-              <div className="card-body text-center">
-                <h4 className="card-title">Malala Yousafzai</h4>
-                <p className="card-text" style={{ color: "#9F1718" }}>
-                  Supporting Volunteer
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="card card-01">
-              <div className="profile-box">
-                <img
-                  className="card-img-top rounded-circle"
-                  src="./img/pic2.jpg"
-                  alt="profile"
-                />
-              </div>
-              <div className="card-body text-center">
-                <h4 className="card-title">Malala Yousafzai</h4>
-                <p className="card-text" style={{ color: "#9F1718" }}>
-                  Supporting Volunteer
-                </p>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </>
