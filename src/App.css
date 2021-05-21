@@ -57,6 +57,21 @@ a{
 .mt-n4 {
   margin-top: -3.5rem !important;
 }
+.secNav .nav-item .dropdown {
+  position:relative;
+}
+.dropdown-menu{
+  margin-top: 0;
+  position: absolute !important;
+  top:100%;
+  left:0;
+  right:0;
+  z-index:10;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,
