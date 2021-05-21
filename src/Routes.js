@@ -22,9 +22,10 @@ import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
 import BehindTheName from "./pages/BehindTheName/BehindTheName";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TransparencyDetail from './pages/TransparencyDetail/TransparencyDetail'
+import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import DonateAdministration from "./pages/DonateAdministration";
 import PageNotFound from "./pages/404/PageNotFound";
 
 const Routes = () => {
@@ -55,6 +56,7 @@ const Routes = () => {
       <Route path="/transparencydetail" component={TransparencyDetail} />
       <Route path="/sign-in" component={SignIn} />
       <Route path="/sign-up" component={SignUp} />
+      <Route path="/donate-administration" component={DonateAdministration} />
       <Route component={PageNotFound} />
     </Switch>
   );
