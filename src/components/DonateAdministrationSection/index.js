@@ -59,7 +59,7 @@ const DonateAdministrationSection = () => {
       <div className="container mb-5">
         <div className="row ">
           <div className="col-md-12 d-flex justify-content-center">
-            <Link to="/upcoming-event" className="btn btn-primary mt-4 ">
+            <Link to="#" className="btn btn-primary mt-4 ">
               Donate To Motivate
             </Link>
           </div>
