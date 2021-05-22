@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<div className="row">
-		<nav className='navbar navbar-expand-lg navbar-light bg-light'>
+		<div className='row'>
+			<nav className='navbar navbar-expand-lg navbar-light bg-light'>
 				<Link className='navbar-brand' to='/'>
 					<img src={Logo} alt='' width='100' height='85' />
 				</Link>
@@ -22,23 +22,23 @@ const Navbar = () => {
 				<div className='collapse navbar-collapse' id='navbarSupportedContent'>
 					<ul className='navbar-nav me-auto mb-2 mb-lg-0'>
 						<li className='nav-item dropdown fw-bold'>
-							<a
+							<Link
 								className='nav-link dropdown-toggle'
-								href='/discover'
+								to='/discover'
 								id='navbarDropdown'
 								role='button'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
 								Discover
-							</a>
+							</Link>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<a className='dropdown-item' href='/fundraisers'>
+									<a className='dropdown-item' to='/fundraisers'>
 										FundRaisers
 									</a>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/volunteer'>
+									<a className='dropdown-item' to='/volunteer'>
 										Volunteer
 									</a>
 								</li>
@@ -47,7 +47,7 @@ const Navbar = () => {
 						<li className='nav-item dropdown fw-bold'>
 							<a
 								className='nav-link dropdown-toggle'
-								href='/fundraiserfor'
+								to='/fundraiserfor'
 								id='navbarDropdown'
 								role='button'
 								data-bs-toggle='dropdown'
@@ -55,42 +55,42 @@ const Navbar = () => {
 								Fundraiser For
 							</a>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
-							<li>
-									<a className='dropdown-item' href='/covid'>
+								<li>
+									<Link clLinkssNLinkme='dropdown-item' to='/covid'>
 										Covid
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/food'>
+									<Link className='dropdown-item' to='/food'>
 										Food
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/health'>
+									<Link className='dropdown-item' to='/health'>
 										Health
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/education'>
+									<Link className='dropdown-item' to='/education'>
 										Education
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/housing'>
+									<Link className='dropdown-item' to='/housing'>
 										Housing
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/clothing'>
+									<Link className='dropdown-item' to='/clothing'>
 										Clothing
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</li>
 						<li className='nav-item dropdown fw-bold'>
 							<a
 								className='nav-link dropdown-toggle'
-								href='/howitwork'
+								to='/howitwork'
 								id='navbarDropdown'
 								role='button'
 								data-bs-toggle='dropdown'
@@ -99,24 +99,24 @@ const Navbar = () => {
 							</a>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
-									<a className='dropdown-item' href='/howitworks'>
+									<Link className='dropdown-item' to='/howitworks'>
 										How it works?
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/haminepali'>
+									<Link className='dropdown-item' to='/haminepali'>
 										Why HamiNepali
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/behindthename'>
+									<Link className='dropdown-item' to='/behindthename'>
 										Behind the name
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a className='dropdown-item' href='/successstories'>
+									<Link className='dropdown-item' to='/successstories'>
 										Success Stories
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</li>
@@ -135,7 +135,7 @@ const Navbar = () => {
 						</button>
 					</form>
 				</div>
-		</nav>
+			</nav>
 		</div>
 	);
 };
