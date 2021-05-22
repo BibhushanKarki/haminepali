@@ -41,6 +41,11 @@ const FundraiserDescription = () => {
       <div className="row">
         <Comments/>
       </div>
+      <div className="row">
+        <div className="col-md-4">
+          <Link to="#" className="btn btn-plain">See all</Link>
+        </div>
+      </div>
     </div>
   )
 }

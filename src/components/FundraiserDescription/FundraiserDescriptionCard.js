@@ -14,13 +14,13 @@ const FundraiserDescriptionCard = () => {
           <div className="d-flex flex-column"><h6>{data.totalFollowers}</h6><p>Followers</p></div>
         </div>
         <div className="d-flex flex-column align-items-center">
-          <Link to="#" className="btn btn-secondary button-secondary my-2 w-50 fw-bold">Share</Link>
-          <Link to="#" className="btn btn-primary my-2 w-50 fw-bold">Donate</Link>
+          <button className="btn btn-secondary button-secondary my-2 w-50 fw-bold">Share</button>
+          <button className="btn btn-primary my-2 w-50 fw-bold">Donate</button>
         </div>
         <p>{data.recentDonation} people just donated</p>
         <hr />
         <div className="d-flex align-items-center">
-          <img src="" alt="img" />
+          <img style={{height:'28px',width:'28px'}} src="https://image.flaticon.com/icons/png/512/860/860784.png" alt="img" />
           <div className="d-flex flex-column">
             <p>{data.recentDoner}</p>
             <div className="d-flex">
