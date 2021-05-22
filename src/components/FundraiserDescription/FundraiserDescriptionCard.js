@@ -4,17 +4,19 @@ import {FundraiserDescriptionCardData as data} from './FundraiserDescriptionData
 
 const FundraiserDescriptionCard = () => {
   return (
-    <div class="card text-center" style={{width: '18rem'}}>
-      <div class="card-body">
-        <h6 class="card-title">Special title treatment</h6>
+    <div className="card text-center" style={{width: '18rem'}}>
+      <div className="card-body">
+        <h6 className="card-title">Rs{data.fundRaised} raised of Rs{data.fundRequired}</h6>
         <hr />
-        <div>
+        <div className="d-flex flex-row justify-content-around">
           <div className="d-flex flex-column"><h6>{data.totalDoners}</h6><p>Doners</p></div>
           <div className="d-flex flex-column"><h6>{data.totalShares}</h6><p>Shares</p></div>
           <div className="d-flex flex-column"><h6>{data.totalFollowers}</h6><p>Followers</p></div>
         </div>
-        <Link to="#" className="btn btn-secondary button-secondary my-2 ">Share</Link>
-        <Link to="#" className="btn btn-primary button-secondary my-2 ">Donate</Link>
+        <div className="d-flex flex-column align-items-center">
+          <Link to="#" className="btn btn-secondary button-secondary my-2 w-50 fw-bold">Share</Link>
+          <Link to="#" className="btn btn-primary my-2 w-50 fw-bold">Donate</Link>
+        </div>
         <p>{data.recentDonation} people just donated</p>
         <hr />
         <div className="d-flex align-items-center">
@@ -28,7 +30,7 @@ const FundraiserDescriptionCard = () => {
           </div>
         </div>
         <hr />
-        <Link to="#" className="btn">See all</Link>
+        <Link to="#" className="btn btn-plain">See all</Link>
       </div>
     </div>
   )

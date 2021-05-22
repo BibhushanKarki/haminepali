@@ -18,6 +18,11 @@ a{
   color:white !important;
   border:2px solid transparent !important;
 }
+.btn-plain{
+  background-color:#fff !important;
+  color:#9F1718 !important;
+  border:2px solid #9F1718 !important;
+}
 .button-secondary {
   background-color: #55acee !important;
   color: white !important;
@@ -39,6 +44,11 @@ a{
   background-color: white !important;
   color: #9f1718 !important;
   border: 2px solid #9f1718 !important;
+}
+.btn-plain:hover{
+  background-color: #9f1718 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
 }
 
 .btn-donation {

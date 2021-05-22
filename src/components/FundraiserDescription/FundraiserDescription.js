@@ -7,13 +7,13 @@ import {Link} from 'react-router-dom'
 
 const FundraiserDescription = () => {
   return (
-    <div className="row">
-      <div className="row">
+    <div className="row mx-2 my-4">
+      <div className="row my-2">
         <h1>{data.title}</h1>
-        <div className="col-md-7">
+        <div className="col-md-8">
           <img src={data.img} alt="img" />
         </div>
-        <div className="col-md-5">
+        <div className="col-md-4">
           <FundraiserDescriptionCard/>
         </div>
       </div>
@@ -27,12 +27,12 @@ const FundraiserDescription = () => {
           <p>{data.para}</p>
         </div>
       </div>
-      <div className="row">
+      <div className="row mb-4 my-4">
         <div className="col-md-4 d-flex justify-content-center">
-          <AppButton title="Contact Directly"/>
+          <AppButton buttontext="Contact Directly"/>
         </div>
         <div className="col-md-4 d-flex justify-content-center">
-          <AppButton title="Donate"/>
+          <AppButton buttontext="Donate"/>
         </div>
         <div className="col-md-4 d-flex justify-content-center">
           <Link to="#" className="btn button-secondary">Share</Link>
