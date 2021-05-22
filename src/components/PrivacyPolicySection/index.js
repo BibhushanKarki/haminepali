@@ -1,6 +1,6 @@
 import React from "react";
 import { PrivacyPageData as data } from "./PrivacyPolicyData";
-import { QuestionAnswerData as text } from "./QuestionAnswerData";
+import { QuestionAnswerData as items } from "./QuestionAnswerData";
 
 const PrivacyPolicySection = () => {
   const privacyH1 = {
@@ -61,17 +61,15 @@ const PrivacyPolicySection = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              {text.map((text, key) => {
+              {items.map((items) => {
                 return (
-                  <div key={text.id}>
+                  <div key={items.id}>
                     <div className="col-md-6">
                       <h1 className="mt-3 pb-2" style={sectionHeadingh1}>
-                        {text.question}
+                        {items.question}
                       </h1>
                     </div>
-                    <p className="mt-3 mb-4" key={key}>
-                      {text.answer}
-                    </p>
+                    <p className="mt-3 mb-4">{items.answer}</p>
                   </div>
                 );
               })}

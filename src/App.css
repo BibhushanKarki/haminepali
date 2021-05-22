@@ -1,127 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
-body{
-  font-family: 'Noto Sans', sans-serif !important;
+body {
+  font-family: "Noto Sans", sans-serif !important;
   overflow-x: hidden;
 }
-.nav-link{
-  color:black !important;
+a{
+  text-decoration: none !important;
 }
-.btn-primary,.btn-custom{
+.nav-link {
+  color: black !important;
+}
+.btn{
+  border:2px solid transparent !important;
+}
+.btn-primary,.btn-custom,#pills-tab li button.active{
   background-color:#9F1718 !important;
   color:white !important;
   border:2px solid transparent !important;
 }
-.btn-getStarted{
-  background-color:#9F1718 !important;
-  color:white !important;
+.button-secondary {
+  background-color: #55acee !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+}
+#pills-tab li button{
   border:2px solid transparent !important;
-  width: 250px;height:70px;
-  padding:0 1rem;
+}
+.btn-getStarted {
+  background-color: #9f1718 !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+  width: 250px;
+  height: 70px;
+  padding: 0 1rem;
   font-size: 28px;
 }
-.btn:hover{
-  background-color:white !important;
-  color:#9F1718 !important;
-  border:2px solid #9F1718 !important;
+.btn:hover {
+  background-color: white !important;
+  color: #9f1718 !important;
+  border: 2px solid #9f1718 !important;
 }
 
-.btn-donation{
-  background-color:#fff !important;
-  padding:0.5rem;
+.btn-donation {
+  background-color: #fff !important;
+  padding: 0.5rem;
   pointer-events: none !important;
 }
-.btn-donation-red{
-  background-color:#9F1718 !important;
-  color:#fff !important;
-  padding:0.5rem;
+.btn-donation-red {
+  background-color: #9f1718 !important;
+  color: #fff !important;
+  padding: 0.5rem;
   pointer-events: none !important;
 }
-.playbtn{
-  transition: all .4s ease-in-out;
+.playbtn {
+  transition: all 0.4s ease-in-out;
 }
-.playbtn:hover{
+.playbtn:hover {
   cursor: pointer;
   transform: scale(1.3);
 }
 .mt-n4 {
   margin-top: -3.5rem !important;
 }
+.secNav .nav-item .dropdown {
+  position:relative;
+}
+.dropdown-menu{
+  margin-top: 0;
+  position: absolute !important;
+  top:100%;
+  left:0;
+  right:0;
+  z-index:10;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
 
-@media(max-width:1000px){
-  .contactinfo h4,.connectwithus h4,.quicklinks h4{
+@media (max-width: 1000px) {
+  .contactinfo h4,
+  .connectwithus h4,
+  .quicklinks h4 {
     font-size: 18px !important;
   }
-  .footerlogo img{
-    width:140px !important;
-    height:130px !important;
+  .footerlogo img {
+    width: 140px !important;
+    height: 130px !important;
   }
 }
-@media(max-width:992px){
-  .navbar-nav{
+@media (max-width: 992px) {
+  .navbar-nav {
     flex-direction: row !important;
     justify-content: space-evenly !important;
   }
-  #navbarSupportedContent form{
-    justify-content:center !important;
+  #navbarSupportedContent form {
+    justify-content: center !important;
   }
 }
-@media(max-width:500px){
-  .contactinfo ,.connectwithus ,.quicklinks{
+@media (max-width: 500px) {
+  .contactinfo,
+  .connectwithus,
+  .quicklinks {
     text-align: center;
-    margin:1rem 0;
+    margin: 1rem 0;
   }
 }
-@media(max-width:768px){
-  .btn-donation,.btn-donation-red{
-    font-size:15px;
+@media (max-width: 768px) {
+  .btn-donation,
+  .btn-donation-red {
+    font-size: 15px;
   }
-  .downloadDesc p{
-    font-size:12px;
+  .downloadDesc p {
+    font-size: 12px;
   }
-  .downloadDesc h5{
-    font-size:18px !important;
+  .downloadDesc h5 {
+    font-size: 18px !important;
   }
-  .downloadDesc h4{
-    font-size:18px !important;
-  }
-}
-@media(max-width:715px){
-  .secNav>a{
-    font-size:12px;
+  .downloadDesc h4 {
+    font-size: 18px !important;
   }
 }
-@media(max-width:630px){
-  .downloadApp{
-    flex-direction: column !important; 
-  }
-  .downloadDesc{
-    margin-top:1rem;
+@media (max-width: 715px) {
+  .secNav > a {
+    font-size: 12px;
   }
 }
-@media(max-width:486px){
-  .btn-donation,.btn-donation-red{
-    font-size:12px;
-  }
-}
-@media(max-width:420px){
-  .donationDetail{
+@media (max-width: 630px) {
+  .downloadApp {
     flex-direction: column !important;
   }
-  .donationDetail>div:first-child,.donationDetail>div:nth-child(2){
+  .downloadDesc {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 486px) {
+  .btn-donation,
+  .btn-donation-red {
+    font-size: 12px;
+  }
+}
+@media (max-width: 420px) {
+  .donationDetail {
+    flex-direction: column !important;
+  }
+  .donationDetail > div:first-child,
+  .donationDetail > div:nth-child(2) {
     margin-bottom: 1rem;
   }
-  .donationDetail>div>button{
-    width:50%;
+  .donationDetail > div > button {
+    width: 50%;
   }
 }
-@media(max-width:375px){
- .storeBtn{
+@media (max-width: 375px) {
+  .storeBtn {
     flex-direction: column !important;
   }
-  .storeBtn img{
-    width:100% !important;
-    height:100% !important;
+  .storeBtn img {
+    width: 100% !important;
+    height: 100% !important;
     margin-bottom: 5px;
   }
 }

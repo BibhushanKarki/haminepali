@@ -32,7 +32,7 @@ const ContactPageContent = () => {
     <>
       <div className="row mt-5" style={contactBanner}>
         <div className="col-md-5 px-5">
-          <div className="card form-card px-5 py-5" style={cardStyle}>
+          <form className="card form-card px-5 py-5" style={cardStyle}>
             <div className="row">
               <div className="col-md-6">
                 <input
@@ -91,7 +91,7 @@ const ContactPageContent = () => {
                 Send Message
               </button>
             </div>
-          </div>
+          </form>
         </div>
 
         <div className="col-md-7 map-section text-center ">

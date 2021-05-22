@@ -1,0 +1,42 @@
+import React from 'react'
+import AppButton from '../UI/Buttons/AppButton'
+import {BehindTheNameData as data} from './BehindTheNameData'
+
+const BehindTheNameCard = () => {
+  const cardStyle={
+    width: '18rem'
+  }
+  const ppStyle={
+    borderRadius: '50%',
+    height:'100px',
+    width:'100px',
+    objectFit:'cover',
+    alignSelf:'center'
+  }
+  return (
+    <div className="behindTheNameCardContainer my-4">
+      <div className="row">
+      <h2 className="fw-bold my-3 text-center" style={{color:'#9F1718',marginLeft:'2rem'}}>Behind The Name</h2>
+      {data.map((data,key)=>{
+        return(
+          <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
+              <div className="card" style={cardStyle}>
+                <img src={data.img} className="my-3" style={ppStyle} alt="pp"/>
+                <div className="card-body text-center">
+                <h6 className="card-title fw-bold" style={{color:'#9F1718'}}>{data.designation}</h6>
+                  <h6 className="card-title fw-bold">{data.fullname}</h6>
+                  <p className="card-text">
+                    {data.desc}
+                  </p>
+                  <AppButton buttontext="Read More"/>
+                </div>
+              </div>
+          </div>
+        )
+      })}
+      </div>
+    </div>
+  )
+}
+
+export default BehindTheNameCard

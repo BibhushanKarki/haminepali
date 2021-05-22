@@ -49,9 +49,9 @@ const AboutPageBanner = () => {
           <div className="row">
             <div className="col">
               <div className="section-content-paragraph" style={sectionContent}>
-                {data.map((data, key) => {
+                {data.map((data) => {
                   return (
-                    <p style={contentParaghaph} key={key}>
+                    <p style={contentParaghaph} key={data.id}>
                       {data.paragraph}
                     </p>
                   );

@@ -1,9 +1,9 @@
 import React from 'react'
-
+import SuccessStoriesCard from '../../components/SuccessStoriesCard/SuccessStoriesCard'
 const SuccessStories = () => {
   return (
     <div>
-      <h1>Successstories</h1>
+      <SuccessStoriesCard/>
     </div>
   )
 }

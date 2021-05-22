@@ -5,6 +5,8 @@ import Donate from "./pages/Donate/Donate";
 import Volunteer from "./pages/Volunteer/Volunteer";
 import Cause from "./pages/Cause/Cause";
 import Events from "./pages/Events/Events";
+import EventExtended from "./pages/EventExtended";
+import UpComingEvent from "./pages/UpComimgEvent";
 import Transparency from "./pages/Transparency/Transparency";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
@@ -20,6 +22,11 @@ import WhyHamiNepal from "./pages/WhyHamiNepal/WhyHamiNepal";
 import BehindTheName from "./pages/BehindTheName/BehindTheName";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import DonateAdministration from "./pages/DonateAdministration";
+import FundRaiserDescription from './pages/FundRaiserDescription/FundRaiserDescription'
 import PageNotFound from "./pages/404/PageNotFound";
 
 const Routes = () => {
@@ -30,6 +37,8 @@ const Routes = () => {
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/cause" component={Cause} />
       <Route path="/events" component={Events} />
+      <Route path="/event-extended" component={EventExtended} />
+      <Route path="/upcoming-event" component={UpComingEvent} />
       <Route path="/transparency" component={Transparency} />
       <Route path="/aboutus" component={AboutUs} />
       <Route path="/contactus" component={ContactUs} />
@@ -44,8 +53,12 @@ const Routes = () => {
       <Route path="/whyhaminepal" component={WhyHamiNepal} />
       <Route path="/behindthename" component={BehindTheName} />
       <Route path="/successstories" component={SuccessStories} />
-      <Route path="/successstories" component={SuccessStories} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/transparencydetail" component={TransparencyDetail} />
+      <Route path="/sign-in" component={SignIn} />
+      <Route path="/sign-up" component={SignUp} />
+      <Route path="/donate-administration" component={DonateAdministration} />
+      <Route path="/fundraiserdescription" component={FundRaiserDescription} />
       <Route component={PageNotFound} />
     </Switch>
   );

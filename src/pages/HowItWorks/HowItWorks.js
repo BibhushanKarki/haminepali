@@ -18,9 +18,9 @@ const HowItWorks = () => {
   }
 
   return (
-    <section className="about-banner">
+    <section className="how">
         <div className="row" style={titleStyle}>
-          <div className="about-heading col-md-12 d-flex justify-content-center flex-column align-items-center">
+          <div className="col-md-12 d-flex justify-content-center flex-column align-items-center">
             <div className="col-md-6">
               <h1 className="pb-2 text-center" style={hrline} >
                 How HamiNepal Works?
