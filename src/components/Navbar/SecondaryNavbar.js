@@ -79,7 +79,7 @@ const SecondaryNavbar = () => {
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/cause"
+                  to="/events"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >

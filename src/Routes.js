@@ -26,6 +26,7 @@ import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
+import FundRaiserDescription from './pages/FundRaiserDescription/FundRaiserDescription'
 import PageNotFound from "./pages/404/PageNotFound";
 
 const Routes = () => {
@@ -57,6 +58,7 @@ const Routes = () => {
       <Route path="/sign-in" component={SignIn} />
       <Route path="/sign-up" component={SignUp} />
       <Route path="/donate-administration" component={DonateAdministration} />
+      <Route path="/fundraiserdescription" component={FundRaiserDescription} />
       <Route component={PageNotFound} />
     </Switch>
   );
