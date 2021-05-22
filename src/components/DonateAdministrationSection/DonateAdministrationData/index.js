@@ -2,7 +2,7 @@ export const DonateAdministrationData = [
   {
     id: 1,
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, laoreet tincidunt montes, orci nisi enim quis commodo. Ut tellus libero est consequat aliquet posuere. Duis condimentum volutpat augue in. Habitant porta magna viverra mauris quis arcu magna maecenas justo. Eros, eget neque, sit dictum etiam magna nibh. Iaculis sed metus sit ut id. Iaculis nam purus dignissim sapien diam. In eget pulvinar vitae placerat egestas malesuada nunc. Egestas eu magnis varius purus ut pharetra proin",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, laoreet tincidunt montes, orci nisi enim quis commodo. Ut tellus libero est consequat aliquet posuere. Duis condimentum volutpat augue in. Habitant porta magna viverra mauris quis arcu magna maecenas justo. Eros, eget neque, sit dictum etiam magna nibh. Iaculis sed metus sit ut id. Iaculis nam purus dignissim sapien diam. In eget pulvinar vitae placerat egestas malesuada nunc. Egestas eu magnis varius purus ut pharetra proin.Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
   },
 
   {

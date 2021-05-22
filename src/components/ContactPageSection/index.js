@@ -32,64 +32,66 @@ const ContactPageContent = () => {
     <>
       <div className="row mt-5" style={contactBanner}>
         <div className="col-md-5 px-5">
-          <form className="card form-card px-5 py-5" style={cardStyle}>
-            <div className="row">
-              <div className="col-md-6">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Firstname*"
-                  name="firstname"
-                  required
-                />
+          <form>
+            <div className="card form-card px-5 py-5" style={cardStyle}>
+              <div className="row">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Firstname*"
+                    name="firstname"
+                    required
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="LastName*"
+                    name="lastname"
+                    required
+                  />
+                </div>
               </div>
-              <div className="col-md-6">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="LastName*"
-                  name="lastname"
-                  required
-                />
+              <div className="row mt-3">
+                <div className="col-md-12">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Email-Address*"
+                    name="email"
+                    required
+                  />
+                </div>
               </div>
-            </div>
-            <div className="row mt-3">
-              <div className="col-md-12">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Email-Address*"
-                  name="email"
-                  required
-                />
+              <div className="row mt-4">
+                <div className="col-md-12">
+                  <textarea
+                    rows="6"
+                    className="form-control"
+                    placeholder="Message*"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
               </div>
-            </div>
-            <div className="row mt-4">
-              <div className="col-md-12">
-                <textarea
-                  rows="6"
-                  className="form-control"
-                  placeholder="Message*"
-                  name="message"
-                  required
-                ></textarea>
+              <div className="row mt-4">
+                <div className="col-md-12">
+                  <textarea
+                    rows="6"
+                    className="form-control"
+                    placeholder="Additional Details"
+                    name="additionaldetails"
+                    required
+                  ></textarea>
+                </div>
               </div>
-            </div>
-            <div className="row mt-4">
-              <div className="col-md-12">
-                <textarea
-                  rows="6"
-                  className="form-control"
-                  placeholder="Additional Details"
-                  name="additionaldetails"
-                  required
-                ></textarea>
+              <div className="text-center">
+                <button type="submit" className="btn btn-success mt-5">
+                  Send Message
+                </button>
               </div>
-            </div>
-            <div className="text-center">
-              <button type="submit" className="btn btn-success mt-5">
-                Send Message
-              </button>
             </div>
           </form>
         </div>

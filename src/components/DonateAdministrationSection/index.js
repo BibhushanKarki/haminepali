@@ -19,11 +19,11 @@ const DonateAdministrationSection = () => {
 
   const sectionContent = {
     marginTop: "50px",
-    marginBottom: "50px",
+    marginBottom: "30px",
   };
 
   const contentParaghaph = {
-    marginTop: "10px",
+    marginTop: "5px",
   };
   return (
     <>
