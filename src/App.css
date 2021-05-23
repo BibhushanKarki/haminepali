@@ -86,7 +86,35 @@ a{
 .dropdown:hover .dropdown-menu{
   display: block;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.hr {
+  display: inline-block;
+}
+.hr:after {
+  content: '';
+  display: block;
+  border-radius: 10px;
+  border-top: 5px solid #9f1718 ;
+  margin-top: 0.5em;
+}
+.hrblack {
+  display: inline-block;
+}
+.hrblack:after {
+  content: '';
+  display: block;
+  border-radius: 10px;
+  border-top: 1px solid #000 ;
+  margin-top: 0.5em;
+}
 
+/* Responsive Css */
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,

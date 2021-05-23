@@ -8,21 +8,21 @@ import {Link} from 'react-router-dom'
 const FundraiserDescription = () => {
   return (
     <div className="row mx-2 my-4">
-      <div className="row my-2">
+      <div className="row my-4">
         <h1>{data.title}</h1>
         <div className="col-md-8">
-          <img src={data.img} alt="img" />
+          <img style={{width:'950px'}} src={data.img} alt="img" />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 d-flex justify-content-center">
           <FundraiserDescriptionCard/>
         </div>
       </div>
       <hr />
-      <p>{data.createdDate}&nbsp; | &nbsp;{data.tags}</p>
+      <p className="">{data.createdDate}&nbsp; | &nbsp;{data.tags}</p>
       <hr />
       <div className="row">
-        <div className="col-md-12" style={{border:'2px solid gray',padding:'1.5rem'}}>
-          <p>{data.para}</p>
+        <div className="col-md-12" style={{border:'2px solid lightgray',padding:'1.5rem'}}>
+          <p>{data.para} {data.para}</p>
           <p>{data.para}</p>
           <p>{data.para}</p>
         </div>
