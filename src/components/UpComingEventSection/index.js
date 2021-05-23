@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./upcoming.css";
 import { UpComingEventData as data } from "./UpComingEventData";
 
 const UpComingEventSection = () => {
+  const [inputValue, setInputValue] = useState("");
   return (
     <>
       {data.map((data) => {
@@ -42,12 +44,155 @@ const UpComingEventSection = () => {
                     <Link to="/donate" className="btn  btn-primary mt-4 ">
                       Donate
                     </Link>
-                    <Link
-                      to="#"
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#shareModal"
                       className="btn btn-secondary button-secondary mt-4 "
                     >
                       Share
-                    </Link>
+                    </button>
+                    {/* <!-- Modal --> */}
+                    <div
+                      className="modal fade"
+                      id="shareModal"
+                      tabindex="-1"
+                      aria-labelledby="shareModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                          <div className="modal-header share-modal-header">
+                            <h5 className="modal-title" id="shareModal">
+                              Help by Sharing
+                            </h5>
+                            <button
+                              type="button"
+                              className="btn-close share-button-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div className="modal-body">
+                            <div className="row mb-2  ">
+                              <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
+                                <div className="col">
+                                  <Link to="#">
+                                    <img
+                                      src="img/facebook.png"
+                                      alt="facebook"
+                                    />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 15,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Facebook
+                                  </h5>
+                                </div>
+
+                                <div className="col">
+                                  <Link to="#">
+                                    <img src="img/viber.png" alt="facebook" />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 15,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Viber
+                                  </h5>
+                                </div>
+
+                                <div className="col">
+                                  <Link to="#">
+                                    <img src="img/twitter.png" alt="facebook" />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Twitter
+                                  </h5>
+                                </div>
+
+                                <div className="col">
+                                  <Link to="#">
+                                    <img
+                                      src="img/instagram.jpg"
+                                      alt="facebook"
+                                    />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Instagram
+                                  </h5>
+                                </div>
+                                <div className="col">
+                                  <Link to="#">
+                                    <img
+                                      src="img/whatsapp.png"
+                                      alt="facebook"
+                                    />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Whataspp
+                                  </h5>
+                                </div>
+                              </div>
+                            </div>
+
+                            <hr className="hrLine" />
+
+                            <h5
+                              className="modal-title share-modal-title"
+                              id="shareModal"
+                            >
+                              Copy link
+                            </h5>
+                            <div className="row">
+                              <div className="col-md-8">
+                                <input
+                                  className="form-control"
+                                  type="text"
+                                  value={inputValue}
+                                  onChange={(e) =>
+                                    setInputValue(e.target.value)
+                                  }
+                                />
+                              </div>
+                              <div className="col-md-4">
+                                <CopyToClipboard text={inputValue}>
+                                  <button className="btn btn-primary mt-2 text-center">
+                                    Copy
+                                  </button>
+                                </CopyToClipboard>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="modal-footer"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
