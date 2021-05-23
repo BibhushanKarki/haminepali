@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./event.css";
 import { EventSectionData as data } from "./EventSectionData";
 import { BsFillCalendarFill } from "react-icons/bs";
 
 const EventSection = () => {
+  const [inputValue, setInputValue] = useState("");
+
   return (
     <>
       {data.map((data) => {
@@ -43,48 +46,63 @@ const EventSection = () => {
                     <Link to="/donate" className="btn  btn-primary mt-4 ">
                       Donate
                     </Link>
-                    <div
+                    <button
                       type="button"
                       data-bs-toggle="modal"
                       data-bs-target="#shareModal"
                       className="btn btn-secondary button-secondary mt-4 "
                     >
                       Share
-                    </div>
+                    </button>
                     {/* <!-- Modal --> */}
                     <div
-                      class="modal fade"
+                      className="modal fade"
                       id="shareModal"
                       tabindex="-1"
                       aria-labelledby="shareModalLabel"
                       aria-hidden="true"
                     >
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="shareModal">
+                      <div className="modal-dialog modal-dialog-centered">
+                        <div className="modal-content">
+                          <div className="modal-header share-modal-header">
+                            <h5 className="modal-title" id="shareModal">
                               Help by Sharing
                             </h5>
                             <button
                               type="button"
-                              class="btn-close"
+                              className="btn-close share-button-close"
                               data-bs-dismiss="modal"
                               aria-label="Close"
                             ></button>
                           </div>
-                          <div class="modal-body">...</div>
-                          <div class="modal-footer">
-                            <button
-                              type="button"
-                              class="btn btn-secondary"
-                              data-bs-dismiss="modal"
+                          <div className="modal-body">
+                            <h5
+                              className="modal-title share-modal-title"
+                              id="shareModal"
                             >
-                              Close
-                            </button>
-                            <button type="button" class="btn btn-primary">
-                              Save changes
-                            </button>
+                              Copy link
+                            </h5>
+                            <div className="row">
+                              <div className="col-md-8">
+                                <input
+                                  className="form-control"
+                                  type="text"
+                                  value={inputValue}
+                                  onChange={(e) =>
+                                    setInputValue(e.target.value)
+                                  }
+                                />
+                              </div>
+                              <div className="col-md-4">
+                                <CopyToClipboard text={inputValue}>
+                                  <button className="btn btn-primary mt-2 text-center">
+                                    Copy
+                                  </button>
+                                </CopyToClipboard>
+                              </div>
+                            </div>
                           </div>
+                          <div className="modal-footer"></div>
                         </div>
                       </div>
                     </div>
