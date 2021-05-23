@@ -26,7 +26,7 @@ import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
-import FundRaiserDescription from './pages/FundRaiserDescription/FundRaiserDescription'
+import FundRaiserDescription from "./pages/FundRaiserDescription/FundRaiserDescription";
 import PageNotFound from "./pages/404/PageNotFound";
 
 const Routes = () => {
