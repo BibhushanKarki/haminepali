@@ -5,7 +5,7 @@ const SignUpPageSection = () => {
     <>
       <div className="container-sm  mt-5 mb-5">
         <form className="row ">
-          <form className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center">
             <div className="col-md-6">
               <div
                 className="card px-5 py-3 text-center"
@@ -75,7 +75,7 @@ const SignUpPageSection = () => {
                 </div>
               </div>
             </div>
-          </form>
+          </div>
         </form>
       </div>
     </>
