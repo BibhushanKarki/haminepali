@@ -5,8 +5,8 @@ const SignUpSection = () => {
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
-        <div className="row ">
-          <form className="d-flex justify-content-center">
+        <form className="row ">
+          <div className="d-flex justify-content-center">
             <div className="col-md-6">
               <div
                 className="card px-5 py-3 text-center"
@@ -29,7 +29,7 @@ const SignUpSection = () => {
                   <div className="col-md-6">
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control lastname"
                       placeholder="LastName"
                       name="lastname"
                       required
@@ -159,8 +159,34 @@ const SignUpSection = () => {
                     />
                   </div>
                 </div>
+                <div className="row mt-5">
+                  <div className="col-md-12 volunteer-map-section">
+                    <iframe
+                      id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      title="myFrame"
+                      allowfullScreen
+                    />
+                  </div>
+                </div>
 
-                <div className="row mt-5 mb-3">
+                <div className="row mt-3">
+                  <div className="col-md-12 d-flex flex-row">
+                    <div className="col-md-2">
+                      <input
+                        className="form-check-input "
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                      />
+                    </div>
+                    <div className="col-md-10" style={{ color: "#9f1718" }}>
+                      I agree terms of service & privacy policy.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row mt-4 mb-3">
                   <div className="col-md-12">
                     <button type="submit" className=" btn btn-primary">
                       Submit
@@ -169,8 +195,8 @@ const SignUpSection = () => {
                 </div>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </>
   );

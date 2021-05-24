@@ -14,10 +14,6 @@
   width: 575px !important;
 }
 
-.card input {
-  margin-top: 10px;
-}
-
 .btn-success {
   color: #fff;
   background-color: #9f1718;
@@ -63,10 +59,17 @@
   .map-section iframe {
     width: 400px;
   }
+  .card .lastname {
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 360px) {
   .map-section iframe {
     width: 300px;
+  }
+
+  .card .lastname {
+    margin-top: 15px;
   }
 }

@@ -47,7 +47,7 @@ const ContactPageContent = () => {
                 <div className="col-md-6">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control lastname"
                     placeholder="LastName*"
                     name="lastname"
                     required

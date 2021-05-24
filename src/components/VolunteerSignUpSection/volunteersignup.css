@@ -21,3 +21,30 @@
 .separator:not(:empty)::after {
   margin-left: 0.25em;
 }
+
+.volunteer-map-section iframe {
+  border: 0;
+  width: 540px;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .volunteer-map-section iframe {
+    width: 400px;
+  }
+
+  .card .lastname {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .volunteer-map-section iframe {
+    width: 300px;
+  }
+  .card .lastname {
+    margin-top: 15px;
+  }
+}
