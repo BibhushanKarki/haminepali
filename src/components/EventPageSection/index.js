@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./event.css";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { EventSectionData as data } from "./EventSectionData";
 import { BsFillCalendarFill } from "react-icons/bs";
 
@@ -58,7 +58,7 @@ const EventSection = () => {
                     <div
                       className="modal fade"
                       id="shareModal"
-                      tabindex="-1"
+                      tabIndex="-1"
                       aria-labelledby="shareModalLabel"
                       aria-hidden="true"
                     >
