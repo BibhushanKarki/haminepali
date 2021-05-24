@@ -76,6 +76,95 @@ const EventSection = () => {
                             ></button>
                           </div>
                           <div className="modal-body">
+                            <div className="row mb-2  ">
+                              <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
+                                <div className="col">
+                                  <Link to="#">
+                                    <img
+                                      src="img/facebook.png"
+                                      alt="facebook"
+                                    />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 15,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Facebook
+                                  </h5>
+                                </div>
+
+                                <div className="col">
+                                  <Link to="#">
+                                    <img src="img/viber.png" alt="facebook" />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 15,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Viber
+                                  </h5>
+                                </div>
+
+                                <div className="col">
+                                  <Link to="#">
+                                    <img src="img/twitter.png" alt="facebook" />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Twitter
+                                  </h5>
+                                </div>
+
+                                <div className="col">
+                                  <Link to="#">
+                                    <img
+                                      src="img/instagram.jpg"
+                                      alt="facebook"
+                                    />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Instagram
+                                  </h5>
+                                </div>
+                                <div className="col">
+                                  <Link to="#">
+                                    <img
+                                      src="img/whatsapp.png"
+                                      alt="facebook"
+                                    />
+                                  </Link>
+                                  <h5
+                                    style={{
+                                      fontSize: 14,
+                                      fontWeight: 600,
+                                      marginTop: 20,
+                                    }}
+                                  >
+                                    Whataspp
+                                  </h5>
+                                </div>
+                              </div>
+                            </div>
+
+                            <hr className="hrLine" />
+
                             <h5
                               className="modal-title share-modal-title"
                               id="shareModal"

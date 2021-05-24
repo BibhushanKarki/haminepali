@@ -38,6 +38,24 @@
   object-fit: cover;
 }
 
+.share-modal-header {
+  background-color: #9f1718;
+  color: #ffffff;
+}
+
+.share-button-close {
+  color: #ffffff;
+}
+
+.share-modal-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hrLine {
+  border-bottom: 2px solid black;
+}
+
 /* .volunteer-heading {
   border-bottom: 1px solid gray;
 } */
