@@ -98,6 +98,7 @@ const EventExtendedSection = () => {
                       className="card-img-top rounded-circle"
                       src={items.image}
                       alt="profile"
+                      style={{objectFit:'cover'}}
                     />
                   </div>
                   <div className="card-body text-center">
