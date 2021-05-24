@@ -1,9 +1,9 @@
 import React from 'react'
-
+import TopFundraisers from '../../components/TopFundRaisers/TopFundRaisers'
 const Cause = () => {
   return (
     <div>
-      <h1>About us page</h1>
+      <TopFundraisers/>
     </div>
   )
 }
