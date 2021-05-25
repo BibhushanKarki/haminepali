@@ -1,6 +1,7 @@
 import React from "react";
 import { PrivacyPageData as data } from "./PrivacyPolicyData";
 import { QuestionAnswerData as items } from "./QuestionAnswerData";
+import Slide from "react-reveal/Slide";
 
 const PrivacyPolicySection = () => {
   const privacyH1 = {
@@ -41,18 +42,20 @@ const PrivacyPolicySection = () => {
       <section className="mt-3">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              <h1 style={sectionHeading}>
-                We are commited to protecting and respecting your privacy.
-              </h1>
-              {data.map((data, key) => {
-                return (
-                  <p className="mt-3" key={key}>
-                    {data.paragraph}
-                  </p>
-                );
-              })}
-            </div>
+            <Slide bottom>
+              <div className="col-md-12">
+                <h1 style={sectionHeading}>
+                  We are commited to protecting and respecting your privacy.
+                </h1>
+                {data.map((data, key) => {
+                  return (
+                    <p className="mt-3" key={key}>
+                      {data.paragraph}
+                    </p>
+                  );
+                })}
+              </div>
+            </Slide>
           </div>
         </div>
       </section>
@@ -60,20 +63,22 @@ const PrivacyPolicySection = () => {
       <section className="mt-3">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
-              {items.map((items) => {
-                return (
-                  <div key={items.id}>
-                    <div className="col-md-6">
-                      <h1 className="mt-3 pb-2" style={sectionHeadingh1}>
-                        {items.question}
-                      </h1>
+            <Slide bottom>
+              <div className="col-md-12">
+                {items.map((items) => {
+                  return (
+                    <div key={items.id}>
+                      <div className="col-md-6">
+                        <h1 className="mt-3 pb-2" style={sectionHeadingh1}>
+                          {items.question}
+                        </h1>
+                      </div>
+                      <p className="mt-3 mb-4">{items.answer}</p>
                     </div>
-                    <p className="mt-3 mb-4">{items.answer}</p>
-                  </div>
-                );
-              })}
-            </div>
+                  );
+                })}
+              </div>
+            </Slide>
           </div>
         </div>
       </section>
