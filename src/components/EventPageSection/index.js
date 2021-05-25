@@ -172,9 +172,9 @@ const EventSection = () => {
                               Copy link
                             </h5>
                             <div className="row">
-                              <div className="col-md-8">
+                              <div className="col-md-8 ">
                                 <input
-                                  className="form-control"
+                                  className="form-control mt-2"
                                   type="text"
                                   value={inputValue}
                                   onChange={(e) =>

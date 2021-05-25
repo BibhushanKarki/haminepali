@@ -170,7 +170,7 @@ const UpComingEventSection = () => {
                               Copy link
                             </h5>
                             <div className="row">
-                              <div className="col-md-8">
+                              <div className="col-md-8 mt-2">
                                 <input
                                   className="form-control"
                                   type="text"

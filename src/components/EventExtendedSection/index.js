@@ -186,7 +186,7 @@ const EventExtendedSection = () => {
                         <div className="row">
                           <div className="col-md-8">
                             <input
-                              className="form-control"
+                              className="form-control mt-2"
                               type="text"
                               value={inputValue}
                               onChange={(e) => setInputValue(e.target.value)}
@@ -232,7 +232,7 @@ const EventExtendedSection = () => {
                       className="card-img-top rounded-circle"
                       src={items.image}
                       alt="profile"
-                      style={{objectFit:'cover'}}
+                      style={{ objectFit: "cover" }}
                     />
                   </div>
                   <div className="card-body text-center">
