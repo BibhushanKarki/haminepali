@@ -29,9 +29,9 @@ const HowItWorks = () => {
           </div>
         </div>
         <div className="col-md-12 d-flex justify-content-center mt-n4">
-            <div class="card col-md-8">
-                <div class="card-body p-4">
-                  <p class="card-text" style={{color:'#9F1718'}}>Hami Nepal has been connecting hundreds of volunteers to local communities all overthe world since its first initiation in 2015. The emergency response program and the post-earthquake rehabilitation programs were the initial programs successfully carried out by Hami Nepal.This is a Group Volunteer Organization initiated by the youth with a vision to create sustainable in the local communities through community development. The “I to We” movement initiated by Hami Nepal is based on uniting to aid the people in need.</p>
+            <div className="card col-md-8">
+                <div className="card-body p-4">
+                  <p className="card-text" style={{color:'#9F1718'}}>Hami Nepal has been connecting hundreds of volunteers to local communities all overthe world since its first initiation in 2015. The emergency response program and the post-earthquake rehabilitation programs were the initial programs successfully carried out by Hami Nepal.This is a Group Volunteer Organization initiated by the youth with a vision to create sustainable in the local communities through community development. The “I to We” movement initiated by Hami Nepal is based on uniting to aid the people in need.</p>
                 </div>
             </div>
           </div>

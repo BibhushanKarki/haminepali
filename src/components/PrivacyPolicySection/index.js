@@ -65,9 +65,9 @@ const PrivacyPolicySection = () => {
           <div className="row">
             <Slide bottom>
               <div className="col-md-12">
-                {items.map((items) => {
+                {items.map((items,key) => {
                   return (
-                    <div key={items.id}>
+                    <div key={key} >
                       <div className="col-md-6">
                         <h1 className="mt-3 pb-2" style={sectionHeadingh1}>
                           {items.question}

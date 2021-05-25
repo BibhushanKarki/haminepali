@@ -30,7 +30,7 @@ const HomePageCover = () => {
           type="button"
           data-bs-toggle="modal"
           data-bs-target="#donateModal"
-          className="btn btn-primary mt-4 "
+          className="btn btn-primary mt-4 fw-bold"
         >
           Donate
           <BsChevronRight />

@@ -101,7 +101,7 @@ const ContactPageContent = () => {
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
             title="myFrame"
-            allowfullScreen
+            allowFullScreen
           />
           <div className=" col-md-12 contact-details d-flex text-center mt-4">
             <div className="col-md-6 ">
