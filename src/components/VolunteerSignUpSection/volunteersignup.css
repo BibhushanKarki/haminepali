@@ -35,7 +35,7 @@
     width: 400px;
   }
 
-  .card .lastname {
+  .card .input-section {
     margin-top: 15px;
   }
 }
@@ -44,7 +44,7 @@
   .volunteer-map-section iframe {
     width: 300px;
   }
-  .card .lastname {
+  .card .input-section {
     margin-top: 15px;
   }
 }

@@ -29,7 +29,7 @@ const SignUpSection = () => {
                   <div className="col-md-6">
                     <input
                       type="text"
-                      className="form-control lastname"
+                      className="form-control input-section"
                       placeholder="LastName"
                       name="lastname"
                       required
@@ -128,10 +128,10 @@ const SignUpSection = () => {
                       required
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 ">
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control input-section"
                       placeholder="State/Province/Religion"
                       name="state"
                       required
@@ -152,7 +152,7 @@ const SignUpSection = () => {
                   <div className="col-md-6">
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control input-section"
                       placeholder="Street Address"
                       name="streetaddress"
                       required

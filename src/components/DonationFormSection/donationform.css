@@ -19,13 +19,31 @@
 }
 
 @media only screen and (max-width: 600px) {
+  /* .card .donation-card {
+    width: 300px !important;
+  } */
   .card .card-input-section {
     margin-top: 15px;
   }
 }
 
 @media only screen and (max-width: 360px) {
+  /* .card .donation-card {
+    width: 500px !important;
+  } */
   .card .card-input-section {
     margin-top: 15px;
+  }
+}
+
+@media only screen and(max-width: 576px) {
+  .pay-with {
+    text-align: center;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  .pay-with {
+    text-align: center;
   }
 }
