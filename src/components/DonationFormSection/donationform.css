@@ -19,19 +19,13 @@
 }
 
 @media only screen and (max-width: 600px) {
-  /* .card .donation-card {
-    width: 300px !important;
-  } */
-  .card .card-input-section {
+  .donation-card .card-input-section input {
     margin-top: 15px;
   }
 }
 
 @media only screen and (max-width: 360px) {
-  /* .card .donation-card {
-    width: 500px !important;
-  } */
-  .card .card-input-section {
+  .donation-card .card-input-section input {
     margin-top: 15px;
   }
 }

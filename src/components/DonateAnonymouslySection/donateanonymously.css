@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px) {
+  .donate-anonymously-card .card-input-section input {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .donate-anonymously-card .card-input-section input {
+    margin-top: 15px;
+  }
+}

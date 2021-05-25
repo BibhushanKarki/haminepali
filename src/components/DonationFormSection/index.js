@@ -26,7 +26,7 @@ const DonationFormSection = () => {
                 <img src={haminepali} alt="logo" />
               </Link>
 
-              <Link to="#">
+              <Link to="/donate-anonymously">
                 <button className="btn btn-primary my-2 my-sm-0" type="button">
                   Donate Anonymously
                 </button>
@@ -46,7 +46,7 @@ const DonationFormSection = () => {
                 <form className="d-flex justify-content-center">
                   <div className="col-md-12">
                     <div
-                      className="card donation card px-5 py-3 text-center"
+                      className="card donation-card px-5 py-3 text-center"
                       style={{
                         border: "none",
                         boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
@@ -62,10 +62,10 @@ const DonationFormSection = () => {
                             required
                           />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 card-input-section">
                           <input
                             type="text"
-                            className="form-control card-input-section"
+                            className="form-control "
                             placeholder="LastName"
                             name="lastname"
                             required
@@ -82,12 +82,12 @@ const DonationFormSection = () => {
                             required
                           />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 card-input-section">
                           <input
                             type="number"
-                            className="form-control card-input-section"
-                            placeholder="Mobile Number"
-                            name="mobile"
+                            className="form-control "
+                            placeholder="Phone Number"
+                            name="phone"
                             required
                           />
                         </div>
@@ -114,10 +114,10 @@ const DonationFormSection = () => {
                             required
                           />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 card-input-section">
                           <input
                             type="text"
-                            className="form-control card-input-section"
+                            className="form-control "
                             placeholder="State/Province/Region"
                             name="state"
                             required
@@ -135,10 +135,10 @@ const DonationFormSection = () => {
                             required
                           />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 card-input-section">
                           <input
                             type="text"
-                            className="form-control card-input-section"
+                            className="form-control "
                             placeholder="Country"
                             name="country"
                             required
