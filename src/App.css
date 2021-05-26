@@ -112,7 +112,16 @@ a{
   border-top: 1px solid #000 ;
   margin-top: 0.5em;
 }
-
+.main-card{
+  background-color: #ebebeb;
+}
+.comment-card{
+  background-color: #9f1717f1;
+}
+.comment-form{
+  width:85% !important;
+  display: inline !important;
+}
 /* Responsive Css */
 @media (max-width: 1000px) {
   .contactinfo h4,
