@@ -1,10 +1,12 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {FundraiserDescriptionCardData as data} from './FundraiserDescriptionData'
+import Fade from 'react-reveal/Fade';
 
 const FundraiserDescriptionCard = () => {
   return (
-    <div className="card text-center" style={{width: '90%'}}>
+    <Fade right>
+      <div className="card text-center" style={{width: '90%'}}>
       <div className="card-body">
         <h6 className="card-title hr mb-4"><b>Rs {data.fundRaised} raised</b> of Rs{data.fundRequired}</h6>
         <div className="d-flex flex-row justify-content-around">
@@ -39,7 +41,8 @@ const FundraiserDescriptionCard = () => {
         </div>
         <Link to="#" className="btn btn-plain">See all</Link>
       </div>
-    </div>
+      </div>
+    </Fade>
   )
 }
 

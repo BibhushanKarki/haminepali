@@ -4,6 +4,7 @@ import Comments from './Comments'
 import {FundraiserDescriptionData as data} from './FundraiserDescriptionData'
 import AppButton from '../UI/Buttons/AppButton'
 import {Link} from 'react-router-dom'
+import Fade from 'react-reveal/Fade';
 
 const FundraiserDescription = () => {
   return (
@@ -11,7 +12,7 @@ const FundraiserDescription = () => {
       <div className="row my-4">
         <h1>{data.title}</h1>
         <div className="col-md-8">
-          <img style={{width:'950px'}} src={data.img} alt="img" />
+        <Fade left><img style={{width:'950px'}} src={data.img} alt="img" /></Fade>
         </div>
         <div className="col-md-4 d-flex justify-content-center">
           <FundraiserDescriptionCard/>

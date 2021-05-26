@@ -1,5 +1,6 @@
 import React from 'react'
 import {FundraiserDescriptionComments as data} from './FundraiserDescriptionData'
+import Fade from 'react-reveal/Fade';
 const Comments = () => {
   return (
     <div>
@@ -7,6 +8,7 @@ const Comments = () => {
       <hr />
       {data.map((data,key)=>{
         return(
+          <Fade bottom>
           <div className="d-flex flex-column" key={key}>
             <div className="d-flex">
              <img style={{height:'28px',width:'28px'}} src="https://image.flaticon.com/icons/png/512/860/860784.png" alt="img" />
@@ -18,6 +20,7 @@ const Comments = () => {
             </div>
             <hr />
           </div>
+          </Fade>
         )
       })}
     </div>

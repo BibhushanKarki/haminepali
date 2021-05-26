@@ -1,6 +1,7 @@
 import React from 'react'
 import {GetStarted  as data} from './GetStartedData'
 import GetStartedBtn from './GetStartedBtn'
+import Fade from 'react-reveal/Fade';
 
 const GetStartedCovid = () => {
   const imgStyle ={
@@ -10,14 +11,15 @@ const GetStartedCovid = () => {
   }
   return (
     <div className="row d-flex align-items-center m-4">
-      <div className="col-md-6">
+      <Fade left><div className="col-md-6">
         <h1>{data.covid.title}</h1>
         <h4 className="my-4" style={{color:'gray'}}>{data.covid.punchline}</h4>
         <GetStartedBtn buttontitle="Get Started"/>
-      </div>
+      </div></Fade>
+      <Fade right>
       <div className="col-md-6 text-center">
         <img src={data.covid.imgCovid} alt="covidimg" style={imgStyle} />
-      </div>
+      </div></Fade>
     </div>
   )
 }

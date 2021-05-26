@@ -5,6 +5,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import { EventSectionData as data } from "./EventSectionData";
 import { BsFillCalendarFill } from "react-icons/bs";
 import DonationFormSection from "../../components/DonationFormSection";
+import Fade from 'react-reveal/Fade';
 
 const EventSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -14,7 +15,8 @@ const EventSection = () => {
       {data.map((data) => {
         return (
           <div className="row mt-5 px-5" key={data.id}>
-            <div className="card card-event-section mb-3">
+            <Fade bottom>
+              <div className="card card-event-section mb-3">
               <div className="row no-gutters">
                 <div className="col-md-2 mt-4 ">
                   <div className="imageContainer">
@@ -215,12 +217,13 @@ const EventSection = () => {
                 </div>
               </div>
             </div>
+          </Fade>
           </div>
         );
       })}
 
       <div className="row px-5">
-        <div className="col-md-12 upcoming-event-section">
+      <Fade bottom><div className="col-md-12 upcoming-event-section">
           <Link to="/upcoming-event" className="btn btn-primary mt-4 ">
             Upcoming Events{" "}
             <span>
@@ -228,6 +231,7 @@ const EventSection = () => {
             </span>
           </Link>
         </div>
+        </Fade>
       </div>
     </>
   );

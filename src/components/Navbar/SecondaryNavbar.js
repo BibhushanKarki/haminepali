@@ -62,7 +62,7 @@ const SecondaryNavbar = () => {
                   <Link to="/health" className="dropdown-item">
                     Health
                   </Link>
-                  <Link to="/volunteer" className="dropdown-item">
+                  <Link to="/housing" className="dropdown-item">
                     Housing
                   </Link>
                   <Link to="/clothing" className="dropdown-item">
