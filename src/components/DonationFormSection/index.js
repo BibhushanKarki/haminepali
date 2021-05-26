@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import haminepali from "../../assets/images/haminepalilogo1.png";
 import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
+import DonateAnonymouslySection from "../../components/DonateAnonymouslySection";
 
 import "./donationform.css";
 
@@ -28,11 +29,16 @@ const DonationFormSection = () => {
                 <img src={haminepali} alt="logo" />
               </Link>
 
-              <Link to="/donate-anonymously">
-                <button className="btn btn-primary my-2 my-sm-0" type="button">
-                  Donate Anonymously
-                </button>
-              </Link>
+              <button
+                className="btn btn-primary my-2 my-sm-0"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#donateanonymouslyModal"
+              >
+                Donate Anonymously
+              </button>
+
+              <DonateAnonymouslySection />
             </nav>
 
             <div className="row mt-5">

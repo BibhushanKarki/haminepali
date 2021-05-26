@@ -22,7 +22,7 @@ const SecondaryNavbar = () => {
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/donate"
+                  to="#"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >
@@ -49,7 +49,7 @@ const SecondaryNavbar = () => {
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/cause"
+                  to="#"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >
@@ -79,7 +79,7 @@ const SecondaryNavbar = () => {
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/events"
+                  to="#"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >
@@ -96,6 +96,9 @@ const SecondaryNavbar = () => {
               </div>
               <Link style={navStyle} to="/transparency">
                 Transparency
+              </Link>
+              <Link style={navStyle} to="/">
+                Our Community
               </Link>
               <Link style={navStyle} to="/aboutus">
                 About Us
