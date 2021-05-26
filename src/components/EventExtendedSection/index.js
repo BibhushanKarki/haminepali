@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./event-extended.css";
 import { EventExtendedSectionData as items } from "./EventExtendedSectionData";
+import DonationFormSection from "../../components/DonationFormSection";
 
 const EventExtendedSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -59,13 +60,19 @@ const EventExtendedSection = () => {
               </div>
               <hr />
               <div className="text-center mb-5">
-                <Link to="/volunteer" className="btn btn-primary mt-4 ">
+                <Link to="/volunteer-signup" className="btn btn-primary mt-4 ">
                   Volunteer
                 </Link>
                 &nbsp; &nbsp; &nbsp;
-                <Link to="/donate" className="btn  btn-primary mt-4 ">
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#donateModal"
+                  className="btn btn-primary mt-4"
+                >
                   Donate
-                </Link>
+                </button>
+                <DonationFormSection />
                 &nbsp; &nbsp; &nbsp;
                 <button
                   type="button"

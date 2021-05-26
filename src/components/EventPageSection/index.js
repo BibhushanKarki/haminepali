@@ -4,6 +4,7 @@ import "./event.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { EventSectionData as data } from "./EventSectionData";
 import { BsFillCalendarFill } from "react-icons/bs";
+import DonationFormSection from "../../components/DonationFormSection";
 
 const EventSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -40,12 +41,27 @@ const EventSection = () => {
                 </div>
                 <div className="col-md-2 ">
                   <div className="card-body d-flex flex-column">
-                    <Link to="/volunteer" className="btn btn-primary mt-4 ">
+                    <Link
+                      to="/volunteer-signup"
+                      className="btn btn-primary mt-4 "
+                    >
                       Volunteer
                     </Link>
-                    <Link to="/donate" className="btn  btn-primary mt-4 ">
+                    {/* <Link
+                      to="/donation-form"
+                      className="btn  btn-primary mt-4 "
+                    >
                       Donate
-                    </Link>
+                    </Link> */}
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#donateModal"
+                      className="btn btn-primary mt-4"
+                    >
+                      Donate
+                    </button>
+                    <DonationFormSection />
                     <button
                       type="button"
                       data-bs-toggle="modal"

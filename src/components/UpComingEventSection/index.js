@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./upcoming.css";
 import { UpComingEventData as data } from "./UpComingEventData";
+import DonationFormSection from "../../components/DonationFormSection";
 
 const UpComingEventSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -38,12 +39,21 @@ const UpComingEventSection = () => {
                 </div>
                 <div className="col-md-2 ">
                   <div className="card-body d-flex flex-column">
-                    <Link to="/volunteer" className="btn btn-primary mt-4 ">
+                    <Link
+                      to="/volunteer-signup"
+                      className="btn btn-primary mt-4 "
+                    >
                       Volunteer
                     </Link>
-                    <Link to="/donate" className="btn  btn-primary mt-4 ">
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#donateModal"
+                      className="btn btn-primary mt-4"
+                    >
                       Donate
-                    </Link>
+                    </button>
+                    <DonationFormSection />
                     <button
                       type="button"
                       data-bs-toggle="modal"

@@ -12,7 +12,7 @@ const QuickLinks = () => {
         <Link to="/fundraisers" style={navStyle}>
           <li className="my-3">Fundraisers</li>
         </Link>
-        <Link to="/volunteers" style={navStyle}>
+        <Link to="/volunteer" style={navStyle}>
           <li className="my-3">Volunteers</li>
         </Link>
         <Link to="/aboutus" style={navStyle}>
