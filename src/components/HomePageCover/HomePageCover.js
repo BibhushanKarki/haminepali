@@ -1,8 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import HeroImg from "../../assets/images/coverimg.png";
 import Play from "../../assets/images/play.png";
-// import AppButton from "../../components/UI/Buttons/AppButton";
 import { BsChevronRight } from "react-icons/bs";
 import DonationFormSection from "../../components/DonationFormSection";
 
@@ -14,6 +12,7 @@ const HomePageCover = () => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
+    objectFit: "cover",
   };
   const donateBtn = {
     marginLeft: "4rem",

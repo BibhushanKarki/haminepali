@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import haminepali from "../../assets/images/haminepalilogo1.png";
+import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
+
 import "./donationform.css";
 
 const DonationFormSection = () => {
@@ -231,12 +233,13 @@ const DonationFormSection = () => {
                             type="submit"
                             className=" btn btn-primary"
                             data-bs-toggle="modal"
-                            data-bs-target="#registerModal"
+                            data-bs-target="#donationModal"
                           >
                             Donate Now
                           </button>
                         </div>
                       </div>
+                      <ThankyouForDonationForm />
                     </div>
                   </div>
                 </form>
