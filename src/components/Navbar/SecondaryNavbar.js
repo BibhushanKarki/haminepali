@@ -101,7 +101,7 @@ const SecondaryNavbar = () => {
               <Link style={navStyle} to="/transparency">
                 Transparency
               </Link>
-              <Link style={navStyle} to="/">
+              <Link style={navStyle} to="/community">
                 Our Community
               </Link>
               <Link style={navStyle} to="/aboutus">

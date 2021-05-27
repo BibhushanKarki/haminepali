@@ -27,6 +27,7 @@ import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
 import FundRaiserDescription from "./pages/FundRaiserDescription/FundRaiserDescription";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
+import OurCommunity from "./pages/OurCommunity/OurCommunity";
 import DonateAnonymouslySection from "./components/DonateAnonymouslySection";
 import PageNotFound from "./pages/404/PageNotFound";
 
@@ -40,6 +41,7 @@ const Routes = () => {
       <Route path="/events/:key" component={Events} />
       <Route path="/event/:key/:slug" component={EventExtended} />
       <Route path="/transparency" component={Transparency} />
+      <Route path="/community" component={OurCommunity} />
       <Route path="/aboutus" component={AboutUs} />
       <Route path="/contactus" component={ContactUs} />
       <Route path="/fundraisers" component={Fundraiser} />
