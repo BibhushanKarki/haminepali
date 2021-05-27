@@ -101,25 +101,25 @@ const DonateAnonymouslySection = () => {
                       <div className="row mt-3">
                         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                           <div className="pay-with">
-                            <img src="img/esewa_logo.png" alt="esewa" />
+                            <img src="/img/esewa_logo.png" alt="esewa" />
                           </div>
                         </div>
 
                         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                           <div className="pay-with">
-                            <img src="img/khalti_logo.png" alt="khalti" />
+                            <img src="/img/khalti_logo.png" alt="khalti" />
                           </div>
                         </div>
 
                         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                           <div className="pay-with">
-                            <img src="img/gofundme_logo.png" alt="gofundme" />
+                            <img src="/img/gofundme_logo.png" alt="gofundme" />
                           </div>
                         </div>
 
                         <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                           <div className="pay-with">
-                            <img src="img/paypal_logo.jpg" alt="paypal" />
+                            <img src="/img/paypal_logo.jpg" alt="paypal" />
                           </div>
                         </div>
                       </div>

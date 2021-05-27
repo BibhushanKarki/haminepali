@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { EventSectionData } from "../EventPageSection/EventSectionData";
 
 const SecondaryNavbar = () => {
   const navStyle = {
@@ -86,12 +87,15 @@ const SecondaryNavbar = () => {
                   Events
                 </Link>
                 <div className="dropdown-menu">
-                  <Link to="/events" className="dropdown-item">
-                    Ongoing Events
-                  </Link>
-                  <Link to="/upcoming-event" className="dropdown-item">
-                    Upcoming Events
-                  </Link>
+                  {EventSectionData.map((keyBundle) => (
+                    <Link
+                      to={`/events/${keyBundle.key}`}
+                      className="dropdown-item"
+                      key={keyBundle.key}
+                    >
+                      {keyBundle.displayName}
+                    </Link>
+                  ))}
                 </div>
               </div>
               <Link style={navStyle} to="/transparency">
