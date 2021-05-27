@@ -101,7 +101,7 @@ const EventExtendedSection = () => {
                           <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
                             <div className="col">
                               <Link to="#">
-                                <img src="img/facebook.png" alt="facebook" />
+                                <img src="/img/facebook.png" alt="facebook" />
                               </Link>
                               <h5
                                 style={{
@@ -116,7 +116,7 @@ const EventExtendedSection = () => {
 
                             <div className="col">
                               <Link to="#">
-                                <img src="img/viber.png" alt="facebook" />
+                                <img src="/img/viber.png" alt="facebook" />
                               </Link>
                               <h5
                                 style={{
@@ -131,7 +131,7 @@ const EventExtendedSection = () => {
 
                             <div className="col">
                               <Link to="#">
-                                <img src="img/twitter.png" alt="facebook" />
+                                <img src="/img/twitter.png" alt="twitter" />
                               </Link>
                               <h5
                                 style={{
@@ -146,7 +146,7 @@ const EventExtendedSection = () => {
 
                             <div className="col">
                               <Link to="#">
-                                <img src="img/instagram.jpg" alt="facebook" />
+                                <img src="/img/instagram.jpg" alt="instagram" />
                               </Link>
                               <h5
                                 style={{
@@ -160,7 +160,7 @@ const EventExtendedSection = () => {
                             </div>
                             <div className="col">
                               <Link to="#">
-                                <img src="img/whatsapp.png" alt="facebook" />
+                                <img src="/img/whatsapp.png" alt="whatsapp" />
                               </Link>
                               <h5
                                 style={{
