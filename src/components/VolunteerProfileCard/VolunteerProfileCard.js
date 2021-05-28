@@ -47,7 +47,13 @@ const VolunteerProfileCard = () => {
                       <p className="text-center">{data.num}</p>
                     </div>
                   </Link>
-                  <div class="card-footer text-center">
+                  <div
+                    class="card-footer text-center "
+                    style={{
+                      backgroundColor: "#f5f5f500",
+                      borderTop: "1px solid #f9fafb",
+                    }}
+                  >
                     <AppButton buttontext="Donate to motivate" />
                   </div>
                 </div>
