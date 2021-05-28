@@ -2,6 +2,7 @@ import React from "react";
 import { BiStar } from "react-icons/bi";
 import AppButton from "../UI/Buttons/AppButton";
 import { VolunteerProfileData } from "./VolunteerProfileData";
+import "./volunteerprofile.css";
 
 const VolunterProfileSection = () => {
   const profileSection = {
@@ -15,8 +16,11 @@ const VolunterProfileSection = () => {
     <>
       <div className="container">
         <div className="row  mt-5">
-          <div className="col-md-4 " style={{ marginTop: 220 }}>
-            <AppButton buttontext="Donate To Motivate" />
+          <div className="col-md-4 volunteer-button">
+            <AppButton
+              buttontext="Donate To Motivate"
+              className="button-heading"
+            />
           </div>
           <div className="col-md-4 mt-2 text-center ">
             <img src="/img/pic2.jpg" alt="profile" style={profileSection} />
@@ -29,7 +33,8 @@ const VolunterProfileSection = () => {
             <BiStar size={30} style={{ fill: "#9F1718" }} />
             <p className="text-center mt-3">1250</p>
           </div>
-          <div className="col-md-4 text-center" style={{ marginTop: 160 }}>
+
+          <div className="col-md-4 rating-section text-center ">
             <h5>Rate this person</h5>
             <p>Tell others what you think</p>
             <BiStar size={30} />
