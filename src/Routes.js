@@ -22,11 +22,13 @@ import BehindTheName from "./pages/BehindTheName/BehindTheName";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
+import TransparencyExtended from "./pages/TransparencyExtended";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
 import FundRaiserDescription from "./pages/FundRaiserDescription/FundRaiserDescription";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
+import VolunteerProfile from "./pages/VolunteerProfile";
 import OurCommunity from "./pages/OurCommunity/OurCommunity";
 import DonateAnonymouslySection from "./components/DonateAnonymouslySection";
 import PageNotFound from "./pages/404/PageNotFound";
@@ -57,11 +59,13 @@ const Routes = () => {
       <Route path="/successstories" component={SuccessStories} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/transparencydetail" component={TransparencyDetail} />
+      <Route path="/transparency-extended" component={TransparencyExtended} />
       <Route path="/sign-in" component={SignIn} />
       <Route path="/sign-up" component={SignUp} />
       <Route path="/donate-administration" component={DonateAdministration} />
       <Route path="/fundraiserdescription" component={FundRaiserDescription} />
       <Route path="/volunteer-signup" component={VolunteerSignUp} />
+      <Route path="/volunteer-profile" component={VolunteerProfile} />
       <Route path="/donate-anonymously" component={DonateAnonymouslySection} />
       <Route component={PageNotFound} />
     </Switch>

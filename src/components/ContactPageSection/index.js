@@ -106,9 +106,9 @@ const ContactPageContent = () => {
           <div className=" col-md-12 contact-details d-flex text-center mt-4">
             <div className="col-md-6 ">
               <h3 style={heading}>Contact Us</h3>
-              <p style={subHeading}>Pulchowk,Lalitpur</p>
-              <p style={subHeading}>haminepal@gmail.com</p>
-              <p style={subHeading}>Tel: 01-5010510/512</p>
+              <p style={subHeading}>Ranibari-27, Samakhusi, Kathmandu</p>
+              <p style={subHeading}>info@haminepal.org</p>
+              <p style={subHeading}>Phone: +977-9808543667, +977-9845628191</p>
             </div>
             <div className="col-md-6  ">
               <h3 style={heading}>Follow Us</h3>
@@ -119,7 +119,7 @@ const ContactPageContent = () => {
                 &nbsp;&nbsp;&nbsp;
                 <FaInstagram />
                 &nbsp;&nbsp;&nbsp;
-                <FaLinkedinIn />
+                <FaLinkedinIn /> 
               </div>
             </div>
           </div>

@@ -31,7 +31,7 @@ const HowItWorks = () => {
         <div className="col-md-12 d-flex justify-content-center mt-n4">
             <div className="card col-md-8">
                 <div className="card-body p-4">
-                  <p className="card-text" style={{color:'#9F1718'}}>Hami Nepal has been connecting hundreds of volunteers to local communities all overthe world since its first initiation in 2015. The emergency response program and the post-earthquake rehabilitation programs were the initial programs successfully carried out by Hami Nepal.This is a Group Volunteer Organization initiated by the youth with a vision to create sustainable in the local communities through community development. The “I to We” movement initiated by Hami Nepal is based on uniting to aid the people in need.</p>
+                  <p className="card-text" style={{color:'#9F1718'}}>Our main objective is to help anyone in need without any hesitations and expectation of payback. Hami Nepal directly connects donors and recipients to maintain transparency. The organisation doesn’t spend any of the received donations on administration cost as we believe that 100% of the donation should reach the recipient in order to establish effective helping. All of our volunteers, mobilised for the authentication of the problem, logistics and delivery, cover their own expenses in order to save the administrative expense. We are implementing skill-based volunteering to facilitate healthcare services and mitigate the risk of this devastating COVID-19 cases surge, at the time being.</p>
                 </div>
             </div>
           </div>
