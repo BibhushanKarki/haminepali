@@ -1,5 +1,6 @@
 import React from "react";
 import { BiStar } from "react-icons/bi";
+import { VolunteerProfileData } from "./VolunteerProfileData";
 
 const VolunterProfileSection = () => {
   const profileSection = {
@@ -42,91 +43,43 @@ const VolunterProfileSection = () => {
         <hr />
       </div>
 
-      <div className="Volunter-heading text-center mt-5">
-        <h3 style={{ color: "#9F1718", fontWeight: "bold" }}>Volunteered</h3>
+      <div className="container">
+        <div className="row">
+          <div className=" col-md-12 Volunter-heading text-center mt-5">
+            <h3 style={{ color: "#9F1718", fontWeight: "bold" }}>
+              Volunteered
+            </h3>
+          </div>
+        </div>
       </div>
 
       <div className="container mt-5">
         <div className="row">
-          <div className="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="/img/volunteer.jpg"
-                alt="volunteer's profile"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  semper neque, est vitae ornare nec elementum, consectetur.
-                  Fringilla elementum at diam in. Cras eget tristique nisl
-                  gravida sed odio neque dui ac. Semper id mauris tristique
-                  bibendum lacus enim varius. At sed massa dui pellentesque nibh
-                  venenatis. Urna in ut orci neque sed. Elementum eget pulvinar
-                  imperdiet dui, ipsum cursus sed imperdiet facilisis.
-                </p>
+          {VolunteerProfileData.map((data) => {
+            return (
+              <div className="col-md-3" key={data.id}>
+                <div className="card">
+                  <img
+                    className="card-img-top"
+                    src={data.image}
+                    alt="volunteer's profile"
+                  />
+                  <div className="card-body">
+                    <p className="card-text">{data.description}</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="../img/volunteer.jpg"
-                alt="volunteer's profile"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  semper neque, est vitae ornare nec elementum, consectetur.
-                  Fringilla elementum at diam in. Cras eget tristique nisl
-                  gravida sed odio neque dui ac. Semper id mauris tristique
-                  bibendum lacus enim varius. At sed massa dui pellentesque nibh
-                  venenatis. Urna in ut orci neque sed. Elementum eget pulvinar
-                  imperdiet dui, ipsum cursus sed imperdiet facilisis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="../img/volunteer.jpg"
-                alt="volunteer's profile"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  semper neque, est vitae ornare nec elementum, consectetur.
-                  Fringilla elementum at diam in. Cras eget tristique nisl
-                  gravida sed odio neque dui ac. Semper id mauris tristique
-                  bibendum lacus enim varius. At sed massa dui pellentesque nibh
-                  venenatis. Urna in ut orci neque sed. Elementum eget pulvinar
-                  imperdiet dui, ipsum cursus sed imperdiet facilisis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="/img/volunteer.jpg"
-                alt="volunteer's profile"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  semper neque, est vitae ornare nec elementum, consectetur.
-                  Fringilla elementum at diam in. Cras eget tristique nisl
-                  gravida sed odio neque dui ac. Semper id mauris tristique
-                  bibendum lacus enim varius. At sed massa dui pellentesque nibh
-                  venenatis. Urna in ut orci neque sed. Elementum eget pulvinar
-                  imperdiet dui, ipsum cursus sed imperdiet facilisis.
-                </p>
-              </div>
-            </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="container ">
+        <div className="row">
+          <div className=" col-md-12 Share-button text-center mt-5">
+            <button type="button" className="btn btn-primary">
+              Share
+            </button>
           </div>
         </div>
       </div>
