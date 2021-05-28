@@ -11,7 +11,7 @@ const OurCommunityCard = () => {
     return (
       <div
         className="row d-flex flex-column  my-4 align-items-center"
-        style={{ backgroundColor: "#ffeaea73" }}
+        style={{ backgroundColor: "#ffeaea8d" }}
       >
         {data.map((data, key) => {
           return (
