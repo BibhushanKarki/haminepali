@@ -1,5 +1,6 @@
 import React from "react";
 import { BiStar } from "react-icons/bi";
+import AppButton from '../UI/Buttons/AppButton'
 
 const VolunterProfileSection = () => {
   const profileSection = {
@@ -14,29 +15,27 @@ const VolunterProfileSection = () => {
       <div className="container">
         <div className="row  mt-5">
           <div className="col-md-4 " style={{ marginTop: 220 }}>
-            <button type="button" className="btn btn-primary">
-              Donate To Motivate
-            </button>
+            <AppButton buttontext="Donate To Motivate"/>
           </div>
           <div className="col-md-4 mt-2 text-center ">
             <img src="/img/pic2.jpg" alt="profile" style={profileSection} />
             <h5 className="mt-3">Levi Ackerman</h5>
             <p>“Lets help the needy one”</p>
-            <BiStar />
-            <BiStar />
-            <BiStar />
-            <BiStar />
-            <BiStar />
+            <BiStar size={30} style={{ fill: '#9F1718' }} />
+            <BiStar size={30} style={{ fill: '#9F1718' }} />
+            <BiStar size={30} style={{ fill: '#9F1718' }} />
+            <BiStar size={30} style={{ fill: '#9F1718' }} />
+            <BiStar size={30} style={{ fill: '#9F1718' }} />
             <p className="text-center">1250</p>
           </div>
           <div className="col-md-4 text-center" style={{ marginTop: 160 }}>
             <h5>Rate this person</h5>
             <p>Tell others what you think</p>
-            <BiStar />
-            <BiStar />
-            <BiStar />
-            <BiStar />
-            <BiStar />
+            <BiStar size={30} />
+            <BiStar size={30} />
+            <BiStar size={30} />
+            <BiStar size={30} />
+            <BiStar size={30} />
           </div>
         </div>
         <hr />
