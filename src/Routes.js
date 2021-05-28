@@ -22,7 +22,6 @@ import BehindTheName from "./pages/BehindTheName/BehindTheName";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
-
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
@@ -31,6 +30,7 @@ import VolunteerSignUp from "./pages/VolunteerSignUp";
 import VolunteerProfile from "./pages/VolunteerProfile";
 import OurCommunity from "./pages/OurCommunity/OurCommunity";
 import DonateAnonymouslySection from "./components/DonateAnonymouslySection";
+import EditProfile from "./pages/EditProfile";
 import PageNotFound from "./pages/404/PageNotFound";
 
 const Routes = () => {
@@ -66,6 +66,7 @@ const Routes = () => {
       <Route path="/volunteer-signup" component={VolunteerSignUp} />
       <Route path="/volunteer-profile" component={VolunteerProfile} />
       <Route path="/donate-anonymously" component={DonateAnonymouslySection} />
+      <Route path="/edit-profile" component={EditProfile} />
       <Route component={PageNotFound} />
     </Switch>
   );
