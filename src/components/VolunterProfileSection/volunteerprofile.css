@@ -4,6 +4,7 @@
 .rating-section {
   margin-top: 160px;
 }
+
 @media only screen and (max-width: 600px) {
   .volunteer-button {
     margin-top: 30px;
