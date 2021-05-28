@@ -5,9 +5,9 @@ const ContactInfo = () => {
     <div className="contactinfo">
       <h4 className="fw-bold">CONTACT INFO</h4>
       <ul className="nav-links list-unstyled">
-        <li className="my-3"><strong>Email:</strong>hmainepali@gmail.com</li>
-        <li className="my-3"><strong>Phone No:</strong>01-5010510/512</li>
-        <li className="my-3"><strong>Location:</strong>Pulchowk,Lalitpur</li>
+        <li className="my-3"><strong>Email:</strong>info@haminepal.org</li>
+        <li className="my-3"><strong>Phone No:</strong>+977-9808543667, +977-9845628191</li>
+        <li className="my-3"><strong>Location:</strong>Ranibari-27, Samakhusi Kathmandu</li>
       </ul>
     </div>
   )
