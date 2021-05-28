@@ -22,9 +22,6 @@ const HomePageCover = () => {
   return (
     <div className="row herorow" style={heroStyle}>
       <div style={donateBtn} className="col-md-12">
-        {/* <AppButton
-          buttontext="Donate >"
-        /> */}
         <button
           type="button"
           data-bs-toggle="modal"

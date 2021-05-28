@@ -27,6 +27,7 @@ import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
 import FundRaiserDescription from "./pages/FundRaiserDescription/FundRaiserDescription";
 import VolunteerSignUp from "./pages/VolunteerSignUp";
+import VolunteerProfile from "./pages/VolunteerProfile";
 import OurCommunity from "./pages/OurCommunity/OurCommunity";
 import DonateAnonymouslySection from "./components/DonateAnonymouslySection";
 import PageNotFound from "./pages/404/PageNotFound";
@@ -62,6 +63,7 @@ const Routes = () => {
       <Route path="/donate-administration" component={DonateAdministration} />
       <Route path="/fundraiserdescription" component={FundRaiserDescription} />
       <Route path="/volunteer-signup" component={VolunteerSignUp} />
+      <Route path="/volunteer-profile" component={VolunteerProfile} />
       <Route path="/donate-anonymously" component={DonateAnonymouslySection} />
       <Route component={PageNotFound} />
     </Switch>
