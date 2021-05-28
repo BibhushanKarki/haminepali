@@ -22,6 +22,7 @@ import BehindTheName from "./pages/BehindTheName/BehindTheName";
 import SuccessStories from "./pages/SuccessStories/SuccessStories";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
+import TransparencyExtended from "./pages/TransparencyExtended";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
@@ -58,6 +59,7 @@ const Routes = () => {
       <Route path="/successstories" component={SuccessStories} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/transparencydetail" component={TransparencyDetail} />
+      <Route path="/transparency-extended" component={TransparencyExtended} />
       <Route path="/sign-in" component={SignIn} />
       <Route path="/sign-up" component={SignUp} />
       <Route path="/donate-administration" component={DonateAdministration} />
