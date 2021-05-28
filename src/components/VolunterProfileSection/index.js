@@ -1,11 +1,7 @@
 import React from "react";
 import { BiStar } from "react-icons/bi";
-<<<<<<< HEAD
-import AppButton from '../UI/Buttons/AppButton'
-=======
 import { VolunteerProfileData } from "./VolunteerProfileData";
->>>>>>> 38cfb4fbe893ae7fee65c32bdb7b6d9af6e79d71
-
+import AppButton from '../UI/Buttons/AppButton'
 const VolunterProfileSection = () => {
   const profileSection = {
     borderRadius: "50%",
