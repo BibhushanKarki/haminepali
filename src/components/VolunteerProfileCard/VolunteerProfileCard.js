@@ -33,7 +33,7 @@ const VolunteerProfileCard = () => {
             >
               <Zoom>
                 <div className="card" style={cardStyle}>
-                  <Link to="/volunteer-profile" style={{ textAlign: "center" }}>
+                  <Link to="/volunteer-profile" style={{ textAlign: "center",color:'black' }}>
                     <img
                       src={data.profilePic}
                       className="my-3"

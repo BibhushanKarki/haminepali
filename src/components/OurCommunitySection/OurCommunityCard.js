@@ -11,7 +11,7 @@ const OurCommunityCard = () => {
     return (
       <div className="row">
 
-      <div className="col-md-12 d-flex flex-row align-items-center justify-content-between my-3">
+      <div className="col-md-12 d-flex flex-row align-items-center justify-content-between my-3" style={{backgroundColor:'white'}}>
         <div className="col-md-3"></div>
         <div className="col-md-4">
               <div className="search"> <i className="fa fa-search"></i> <input type="text" className="form-control" placeholder="Have a question? Ask Now"/> <button className="btn btn-primary">Search</button> 
