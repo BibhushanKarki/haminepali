@@ -122,6 +122,60 @@ a{
   width:85% !important;
   display: inline !important;
 }
+
+/* Search bar */
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+  height: 50px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4
+}
+.search input:focus {
+  box-shadow: none;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 110px;
+}
+
+.search-nav {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+  border:none;
+}
+
+.search-nav input {
+  height: 35px;
+  text-indent: 25px;
+  border:none;
+  text-align: right;
+}
+.search-nav input:focus {
+  box-shadow: none;
+}
+.search-nav .fa-search {
+  position: absolute;
+  top: 10px;
+  right: 30%;
+}
+
+.btn:focus{
+  box-shadow: none !important;
+}
 /* Responsive Css */
 @media (max-width: 1000px) {
   .contactinfo h4,

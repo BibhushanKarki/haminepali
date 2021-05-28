@@ -126,9 +126,8 @@ const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex align-items-center">
-            <button type="button" className="btn">
-              Search
-            </button>
+            <div className="search-nav"> <i className="fa fa-search"></i> <input type="text" className="form-control" placeholder="Search"/> 
+            </div>
             <span className="mx-2">|</span>
             <Link to="/sign-in">
               <button type="button" className="btn ">
