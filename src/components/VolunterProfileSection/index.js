@@ -1,10 +1,7 @@
 import React from "react";
 import { BiStar } from "react-icons/bi";
-<<<<<<< HEAD
-import AppButton from '../UI/Buttons/AppButton'
-=======
+import AppButton from "../UI/Buttons/AppButton";
 import { VolunteerProfileData } from "./VolunteerProfileData";
->>>>>>> 38cfb4fbe893ae7fee65c32bdb7b6d9af6e79d71
 
 const VolunterProfileSection = () => {
   const profileSection = {
@@ -19,18 +16,18 @@ const VolunterProfileSection = () => {
       <div className="container">
         <div className="row  mt-5">
           <div className="col-md-4 " style={{ marginTop: 220 }}>
-            <AppButton buttontext="Donate To Motivate"/>
+            <AppButton buttontext="Donate To Motivate" />
           </div>
           <div className="col-md-4 mt-2 text-center ">
             <img src="/img/pic2.jpg" alt="profile" style={profileSection} />
             <h5 className="mt-3">Levi Ackerman</h5>
             <p>“Lets help the needy one”</p>
-            <BiStar size={30} style={{ fill: '#9F1718' }} />
-            <BiStar size={30} style={{ fill: '#9F1718' }} />
-            <BiStar size={30} style={{ fill: '#9F1718' }} />
-            <BiStar size={30} style={{ fill: '#9F1718' }} />
-            <BiStar size={30} style={{ fill: '#9F1718' }} />
-            <p className="text-center">1250</p>
+            <BiStar size={30} style={{ fill: "#9F1718" }} />
+            <BiStar size={30} style={{ fill: "#9F1718" }} />
+            <BiStar size={30} style={{ fill: "#9F1718" }} />
+            <BiStar size={30} style={{ fill: "#9F1718" }} />
+            <BiStar size={30} style={{ fill: "#9F1718" }} />
+            <p className="text-center mt-3">1250</p>
           </div>
           <div className="col-md-4 text-center" style={{ marginTop: 160 }}>
             <h5>Rate this person</h5>
