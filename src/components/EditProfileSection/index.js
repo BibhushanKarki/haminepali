@@ -1,7 +1,7 @@
 import React from "react";
 import "./editprofile.css";
 import { FaRegEdit } from "react-icons/fa";
-import background from "../../assets/images/pic2.jpg";
+import background from "../../assets/images/user.jpg";
 
 const EditProfileSection = () => {
   return (
@@ -24,7 +24,10 @@ const EditProfileSection = () => {
                 }}
               >
                 <span class="glyphicon glyphicon-camera"></span>
-                <span>Change Image</span>
+                <span>
+                  {" "}
+                  <FaRegEdit color={"#9f1718"} />
+                </span>
               </div>
             </label>
             <input type="File" name="fileToUpload" id="fileToUpload" />
