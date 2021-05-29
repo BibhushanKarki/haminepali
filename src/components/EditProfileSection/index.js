@@ -22,19 +22,7 @@ const EditProfileSection = () => {
                   alt="userProfile"
                 />
                 <h4 className="card-title">Levi Ackerman</h4>
-                {/* <h6 className="card-subtitle mb-2 text-muted">Famous Actor</h6>
-                <p className="card-text">
-                  Robert John Downey Jr.'career has included critical and
-                  popular success in his youth, followed by a period of
-                  substance abuse and legal difficulties, and a resurgence of
-                  commercial success in middle age.{" "}
-                </p>
-                <a href="#" className="btn btn-info">
-                  Follow
-                </a>
-                <a href="#" className="btn btn-outline-info">
-                  Message
-                </a> */}
+
                 <form>
                   <div className="row">
                     <div className="col-md-6">
