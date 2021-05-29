@@ -75,7 +75,7 @@ const SignInSection = (props) => {
     };
 
     if (isLoggedIn) {
-      return <Redirect to="/profile" />;
+      return <Redirect to="/volunteer-profile" />;
     }
 
   return (
