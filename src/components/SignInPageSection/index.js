@@ -1,14 +1,88 @@
-import React,{useState} from "react";
+import React,{useState, useRef} from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Redirect } from 'react-router-dom';
+import { login } from "../../store/Actions/AuthActions";
+import Form from "react-validation/build/form";
+import Input from "react-validation/build/input";
+import CheckButton from "react-validation/build/button";
+import { isEmail } from "validator";
 
-const SignInSection = () => {
+// Validation
+
+const required = value => {
+  if (!value) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        This field is required!
+      </div>
+    );
+  }
+};
+
+const mail = value => {
+  if (!isEmail(value)) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        This is not a valid email.
+      </div>
+    );
+  }
+};
+
+const SignInSection = (props) => {
+  const form = useRef();
+  const checkBtn = useRef();
+
   const [email,setEmail]=useState("");
   const [password,setPassword]=useState("");
+  const [loading, setLoading] = useState(false);
+
+  const { isLoggedIn } = useSelector(state => state.auth);
+  const { message } = useSelector(state => state.message);
+
+  const dispatch = useDispatch();
+  
+  const onChangeEmail = (e) => {
+    const email = e.target.value;
+    setEmail(email);
+  };
+
+  const onChangePassword = (e) => {
+    const password = e.target.value;
+    setPassword(password);
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    form.current.validateAll();
+
+    if (checkBtn.current.context._errors.length === 0) {
+      dispatch(login(email, password))
+        .then(() => {
+          props.history.push("/profile");
+          window.location.reload();
+        })
+        .catch(() => {
+          setLoading(false);
+        });
+    } else {
+      setLoading(false);
+    }
+    };
+
+    if (isLoggedIn) {
+      return <Redirect to="/profile" />;
+    }
+
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
         <div className="row">
-          <form className="d-flex justify-content-center">
+          <Form className="d-flex justify-content-center" onSubmit={handleLogin} ref={form}>
             <div className="col-md-6">
               <div
                 className="card px-5 py-3 text-center"
@@ -29,35 +103,50 @@ const SignInSection = () => {
                 <hr />
                 <div className="row mt-3">
                   <div className="col-md-12">
-                    <input
+                    <Input
                       type="text"
                       className="form-control"
                       placeholder="Email-Address"
                       value={email}
-                      onChange={(e)=> setEmail(e.target.value)}
-                      required
+                      onChange={onChangeEmail}
+                      validations={[required,mail]}
                     />
                   </div>
                 </div>
                 <div className="row mt-3">
                   <div className="col-md-12">
-                    <input
+                    <Input
                       type="password"
                       className="form-control"
                       placeholder="Password"
                       value={password}
-                      onChange={(e)=> setPassword(e.target.value)}
-                      required
+                      onChange={onChangePassword}
+                      validations={[required]}
                     />
                   </div>
                 </div>
                 <div className="row mt-3 mb-3">
                   <div className="col-md-12">
-                    <button type="submit" className=" btn btn-primary">
+                    <button className=" btn btn-primary" disabled={loading}>
+                    {loading && (
+                <span className="spinner-border spinner-border-sm"></span>
+              )}
                       Login
                     </button>
                   </div>
                 </div>
+
+                {message && (
+                <div className="form-group">
+                  <div className="alert alert-danger" role="alert">
+                    {message}
+                  </div>
+                </div>
+              )}
+              <CheckButton
+                  style={{ display: "none" }}
+                  ref={checkBtn}
+                />
                 <hr />
                 <div className="row mt-3 mb-3">
                   <div className="col-md-6">
@@ -77,7 +166,7 @@ const SignInSection = () => {
                 </div>
               </div>
             </div>
-          </form>
+          </Form>
         </div>
       </div>
     </>
