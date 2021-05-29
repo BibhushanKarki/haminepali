@@ -1,26 +1,35 @@
 import React from "react";
 import "./editprofile.css";
 import { FaRegEdit } from "react-icons/fa";
+import background from "../../assets/images/pic2.jpg";
+
 const EditProfileSection = () => {
   return (
     <>
-      <div
-        className="card w-50 mt-5  mx-auto "
-        style={{ boxShadow: "none", border: "none" }}
-      >
+      <form className="mt-4">
         <div
-          className="card-header"
-          style={{ backgroundColor: "#9f1718", height: 200 }}
-        ></div>
-        <div className="card-body text-center">
-          <img
-            className="avatar rounded-circle"
-            src="/img/pic2.jpg"
-            alt="userProfile"
-          />
+          className="card w-50 mt-5  mx-auto "
+          style={{ boxShadow: "none", border: "none" }}
+        >
+          <div
+            className="card-header"
+            style={{ backgroundColor: "#9f1718", height: 200 }}
+          ></div>
+          <div className="card-body text-center">
+            <label for="fileToUpload">
+              <div
+                class="profile-pic"
+                style={{
+                  backgroundImage: `url(${background})`,
+                }}
+              >
+                <span class="glyphicon glyphicon-camera"></span>
+                <span>Change Image</span>
+              </div>
+            </label>
+            <input type="File" name="fileToUpload" id="fileToUpload" />
 
-          <form className="mt-4">
-            <div className="row">
+            <div className="row mt-3">
               <div className="col-md-6">
                 <input
                   type="text"
@@ -99,9 +108,9 @@ const EditProfileSection = () => {
                 </button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+      </form>
     </>
   );
 };
