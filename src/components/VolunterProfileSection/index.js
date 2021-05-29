@@ -1,8 +1,8 @@
 import React from "react";
-import { BiStar } from "react-icons/bi";
 import AppButton from "../UI/Buttons/AppButton";
 import { VolunteerProfileData } from "./VolunteerProfileData";
 import "./volunteerprofile.css";
+import StarRating from "../../pages/StarRating";
 
 const VolunterProfileSection = () => {
   const profileSection = {
@@ -26,22 +26,14 @@ const VolunterProfileSection = () => {
             <img src="/img/pic2.jpg" alt="profile" style={profileSection} />
             <h5 className="mt-3">Levi Ackerman</h5>
             <p>“Lets help the needy one”</p>
-            <BiStar size={30} style={{ fill: "#9F1718" }} />
-            <BiStar size={30} style={{ fill: "#9F1718" }} />
-            <BiStar size={30} style={{ fill: "#9F1718" }} />
-            <BiStar size={30} style={{ fill: "#9F1718" }} />
-            <BiStar size={30} style={{ fill: "#9F1718" }} />
+            <StarRating />
             <p className="text-center mt-3">1250</p>
           </div>
 
           <div className="col-md-4 rating-section text-center ">
             <h5>Rate this person</h5>
             <p>Tell others what you think</p>
-            <BiStar size={30} />
-            <BiStar size={30} />
-            <BiStar size={30} />
-            <BiStar size={30} />
-            <BiStar size={30} />
+            <StarRating />
           </div>
         </div>
         <hr />
