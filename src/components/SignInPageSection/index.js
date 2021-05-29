@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 
 const SignInSection = () => {
+  const [email,setEmail]=useState("");
+  const [password,setPassword]=useState("");
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
@@ -31,7 +33,8 @@ const SignInSection = () => {
                       type="text"
                       className="form-control"
                       placeholder="Email-Address"
-                      name="email"
+                      value={email}
+                      onChange={(e)=> setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -42,7 +45,8 @@ const SignInSection = () => {
                       type="password"
                       className="form-control"
                       placeholder="Password"
-                      name="password"
+                      value={password}
+                      onChange={(e)=> setPassword(e.target.value)}
                       required
                     />
                   </div>
