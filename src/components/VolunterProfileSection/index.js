@@ -1,5 +1,6 @@
 import React from "react";
 import AppButton from "../UI/Buttons/AppButton";
+import { FaStar } from "react-icons/fa";
 import { VolunteerProfileData } from "./VolunteerProfileData";
 import "./volunteerprofile.css";
 import StarRating from "../../pages/StarRating";
@@ -26,7 +27,11 @@ const VolunterProfileSection = () => {
             <img src="/img/pic2.jpg" alt="profile" style={profileSection} />
             <h5 className="mt-3">Levi Ackerman</h5>
             <p>“Lets help the needy one”</p>
-            <StarRating />
+            <FaStar size={30} color={"#9F1718"} />
+            <FaStar size={30} color={"#9F1718"} />
+            <FaStar size={30} color={"#9F1718"} />
+            <FaStar size={30} color={"#9F1718"} />
+            <FaStar size={30} color={"#9F1718"} />
             <p className="text-center mt-3">1250</p>
           </div>
 
