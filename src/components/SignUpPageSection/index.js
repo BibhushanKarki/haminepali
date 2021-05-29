@@ -1,11 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 import Verify from "../../assets/images/verify.png";
 
 const SignUpPageSection = () => {
+  const [firstname,setFirstname]=useState("");
+  const [lastname,setLastname]=useState("");
+  const [email,setEmail]=useState("");
+  const [password,setPassword]=useState("");
+  function handleSubmit(e) {
+    e.preventDefault();
+
+  }
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
-        <form className="row ">
+        <form className="row " onSubmit={handleSubmit}>
           <div className="d-flex justify-content-center">
             <div className="col-md-6">
               <div
@@ -31,7 +39,8 @@ const SignUpPageSection = () => {
                       type="text"
                       className="form-control"
                       placeholder="Firstname"
-                      name="firstname"
+                      value={firstname}
+                      onChange={(e)=> setFirstname(e.target.value)}
                       required
                     />
                   </div>
@@ -40,7 +49,8 @@ const SignUpPageSection = () => {
                       type="text"
                       className="form-control lastname"
                       placeholder="LastName"
-                      name="lastname"
+                      value={lastname}
+                      onChange={(e)=> setLastname(e.target.value)}
                       required
                     />
                   </div>
@@ -51,7 +61,8 @@ const SignUpPageSection = () => {
                       type="text"
                       className="form-control"
                       placeholder="Email-Address"
-                      name="email"
+                      value={email}
+                      onChange={(e)=> setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -62,7 +73,8 @@ const SignUpPageSection = () => {
                       type="password"
                       className="form-control"
                       placeholder="Password"
-                      name="password"
+                      value={password}
+                      onChange={(e)=> setPassword(e.target.value)}
                       required
                     />
                   </div>
