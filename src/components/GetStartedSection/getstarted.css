@@ -17,13 +17,13 @@
     text-align: center;
     margin-top: 50px;
   }
-  .get-started-title h1{
-    font-size: '20px';
+  .get-started-title h1 {
+    font-size: "20px";
   }
   .image-right {
     margin-top: 50px;
     object-fit: cover;
-    height:500px;
+    height: 500px;
   }
 
   .imageStyle {
@@ -32,8 +32,8 @@
     object-fit: cover;
   }
 }
-@media only screen and (max-width:850px){
-  .main-content{
+@media only screen and (max-width: 850px) {
+  .main-content {
     flex-direction: column !important;
   }
   .imageStyle {
@@ -44,8 +44,8 @@
   .image-right {
     margin-top: 50px;
     object-fit: cover;
-    height:500px;
-    width:550px;
+    height: 500px;
+    width: 550px;
   }
 }
 
@@ -61,13 +61,13 @@
     height: 200px;
     object-fit: cover;
   }
-  .btn-getStarted{
-    width:200px;
-    height:50px;
+  .btn-getStarted {
+    width: 200px;
+    height: 50px;
     font-size: 18px;
-    padding:0 0.5rem;
+    padding: 0 0.5rem;
   }
   .image-right {
-    height:300px;
+    height: 300px;
   }
 }
