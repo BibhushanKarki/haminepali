@@ -1,10 +1,20 @@
-export const FundraiserCardData = {
-		cardimg:
-			'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9vciUyMHBlb3BsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
-		location: 'Biratnagar,Nepal',
-		title: 'Help Saya Shakya Family',
-		desc: 'Saya Shakya (age 22)  is a cheerful,friendly person who lives in Biratnagar is suffering from',
-		lastDonated: 'Last donated 10min Ago',
-		gainedDonation: 'Rs 10,000 raised ',
-		neededDonation:'of Rs 120,000',
-};
+export const FundraiserCardData = [
+  {
+    cardimg: "https://image.flaticon.com/icons/png/512/892/892781.png",
+    location: "Nepal",
+    title: "Bibek Ghimire",
+    desc: "Hats off to all the volunteers doing such great work in this pandemic situation. ",
+    lastDonated: "4 days ago",
+    gainedDonation: "$1000 ",
+    donationLevel: "Top Donation",
+  },
+  {
+    cardimg: "https://image.flaticon.com/icons/png/512/892/892781.png",
+    location: "Nepal",
+    title: "Pasang Sherpa",
+    desc: "Thank you so much to the HamiNepal team for all that you are doing. ",
+    lastDonated: "3 days ago",
+    gainedDonation: "$400 ",
+    donationLevel: "Recent Donation",
+  },
+]; 
