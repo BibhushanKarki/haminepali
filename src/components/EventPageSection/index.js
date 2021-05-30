@@ -28,6 +28,11 @@ const EventSection = () => {
           {key} Events
         </h2>
       </div>
+      {currentEventData.length === 0 ? (
+        <div className="alert alert-info">No {key} Events</div>
+      ) : (
+        ""
+      )}
       {currentEventData.map((data) => {
         return (
           <div className="row mt-5 px-5" key={data.id}>

@@ -10,7 +10,7 @@ const SecondaryNavbar = () => {
   };
   const secNavContainer = {
     backgroundColor: "#9F1718",
-    marginTop:'7rem'
+    marginTop: "7rem",
   };
   return (
     <div className="row justify-content-center" style={secNavContainer}>
@@ -45,7 +45,7 @@ const SecondaryNavbar = () => {
                   </Link>
                 </div>
               </div>
-              <Link style={navStyle} to="/volunteer-signup">
+              <Link style={navStyle} to="/be-volunteer">
                 Be Volunteer
               </Link>
               <div className="nav-item dropdown">
