@@ -8,7 +8,6 @@ const Health = () => {
       <GetStartedHealth/>
       <TopFundRaisers title="Trending Covid Fundraisers"/>
       <TopFundRaisers title="Top Fundraisers"/>
-      <TopFundRaisers/>
     </div>
   )
 }

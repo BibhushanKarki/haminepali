@@ -11,13 +11,13 @@ const GetStartedCovid = () => {
   }
   return (
     <div className="row d-flex align-items-center m-4">
-      <Fade left><div className="col-md-6">
+      <Fade left><div className="col-md-6 col-sm-12">
         <h1>{data.covid.title}</h1>
         <h4 className="my-4" style={{color:'gray'}}>{data.covid.punchline}</h4>
         <GetStartedBtn buttontitle="Get Started"/>
       </div></Fade>
       <Fade right>
-      <div className="col-md-6 text-center">
+      <div className="col-md-6 text-center col-sm-12">
         <img src={data.covid.imgCovid} alt="covidimg" style={imgStyle} />
       </div></Fade>
     </div>

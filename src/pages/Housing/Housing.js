@@ -8,7 +8,6 @@ const Housing = () => {
       <GetStartedHousing/>
       <TopFundRaisers title="Trending Covid Fundraisers"/>
       <TopFundRaisers title="Top Fundraisers"/>
-      <TopFundRaisers />
     </div>
   )
 }
