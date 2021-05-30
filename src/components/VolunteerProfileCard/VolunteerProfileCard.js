@@ -45,7 +45,6 @@ const VolunteerProfileCard = () => {
                 <div className="card-body text-center">
                   <h6 className="card-title fw-bold">{data.profileName}</h6>
                   <p className="card-text">{data.userMsg}</p>
-                  <p className="text-center">{data.num}</p>
                 </div>
               </Link>
               <div
