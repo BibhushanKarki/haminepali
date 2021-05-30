@@ -114,7 +114,7 @@ const EventSection = () => {
                                 <div className="col">
                                   <div
                                     class="fb-share-button"
-                                    data-href="https://developers.facebook.com/docs/plugins/"
+                                    data-href="https://haminepal.netlify.com/"
                                     data-layout="box_count"
                                     data-size="small"
                                   >
@@ -194,6 +194,7 @@ const EventSection = () => {
                                       alt="whatsapp"
                                     />
                                   </Link>
+
                                   <h5
                                     style={{
                                       fontSize: 14,
