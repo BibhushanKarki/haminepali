@@ -57,13 +57,8 @@
   }
 
   .imageStyle {
-<<<<<<< HEAD
     width: 200px;
     height: 200px;
-=======
-    width: 100%;
-    height: 100%;
->>>>>>> caa00f10b5b93668b05b2a17cb0c347d4cece076
     object-fit: cover;
   }
   .btn-getStarted{
