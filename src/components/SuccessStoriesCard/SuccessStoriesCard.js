@@ -22,7 +22,7 @@ const SuccessStories = () => {
         </h2>
         {data.map((data,key)=>{
         return (
-        <div className="col-md-10 mb-3 d-flex justify-content-center text-center">
+        <div className="col-md-10 mb-3 d-flex justify-content-center text-center" key={key}>
           <Zoom>
             <div className="card " >
               <div className="card-body text-center">
@@ -32,6 +32,7 @@ const SuccessStories = () => {
                 >
                   {data.storyTitle}
                 </h4>
+                <img src={data.img} alt="storyimg" />
                 <p className="card-text text-left my-4">{data.storyDetail}</p>
                 {/* <AppButton buttontext="Read More" /> */}
               </div>
