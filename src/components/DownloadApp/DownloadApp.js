@@ -17,7 +17,7 @@ const DownloadApp = () => {
             <img src={imglink} alt="appdownload" height="100%" width="100%" style={{objectFit:'cover'}}/>
         </div>
         <div className="downloadDesc mx-4 mx-sm-3 col-md-6 ">
-          <h4 className="fw-bold text-uppercase">Available Now</h4>
+          <h4 className="fw-bold text-uppercase">Coming Soon</h4>
           <h5 className="fw-bold" style={{color:'#9F1718'}}>HamiNepali App</h5>
           <p className="fw-bold">Start and manage fundraisers, engage with
             supporters, and discover important causes — all 

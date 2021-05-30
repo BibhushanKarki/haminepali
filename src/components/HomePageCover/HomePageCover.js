@@ -5,19 +5,22 @@ import { BsChevronRight } from 'react-icons/bs';
 import DonationFormSection from '../../components/DonationFormSection';
 
 const HomePageCover = () => {
-	const heroStyle = {
-		backgroundImage: `url(${HeroImg})`,
-		height: '600px',
-		color: '#fff',
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'flex-end',
-		objectFit: 'cover',
-	};
-	const donateBtn = {
-		marginLeft: '4rem',
-		marginBottom: '5rem',
-	};
+  const heroStyle = {
+    backgroundImage: `url(${HeroImg})`,
+    backgroundRepeat:'no-repeat',
+    backgroundSize:'100%',
+    backgroundPosition: 'top 5px',
+    height: "600px",
+    color: "#fff",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    objectFit: "cover",
+  };
+  const donateBtn = {
+    marginLeft: "4rem",
+    marginBottom: "5rem",
+  };
 
 	return (
 		<div className='row herorow' style={heroStyle}>

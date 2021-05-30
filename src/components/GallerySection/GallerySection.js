@@ -51,11 +51,11 @@ const GallerySection = () => {
 						</ul>		
 					</div>
 				</div>
-        <div className="row d-flex justify-content-center mt-2">
+        {/* <div className="row d-flex justify-content-center mt-2">
 					<div className="col-md-4 col-md-offset-4 text-center animate-box">
 						<a href="#" className="btn btn-primary btn-lg">See Gallery</a>
 					</div>
-				</div>
+				</div> */}
     </div>
     </div>
     

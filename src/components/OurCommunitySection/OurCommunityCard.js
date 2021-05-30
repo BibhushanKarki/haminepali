@@ -45,9 +45,7 @@ const OurCommunityCard = () => {
         className="col-md-12 d-flex flex-column  mb-4 align-items-center"
         style={{ backgroundColor: "#ffeaea73" }}
       >
-        {data.map((data, key) => {
-          return (
-            <div className="col-md-5" key={key}>
+            <div className="col-md-5">
               <div className="card main-card my-4">
                 <div className="card m-3 p-3">
                   <div className="d-flex align-items-center">
@@ -124,8 +122,6 @@ const OurCommunityCard = () => {
                 </div>
               </div>
             </div>
-          );
-        })}
       </div>
       </div>
     );

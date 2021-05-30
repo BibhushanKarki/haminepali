@@ -25,12 +25,8 @@ const VolunteerProfileCard = () => {
         >
           Our Volunteer's Profile
         </h2>
-        {data.map((data, key) => {
-          return (
             <div
-              className="col-md-3 mb-3 d-flex justify-content-center"
-              key={key}
-            >
+              className="col-md-3 mb-3 d-flex justify-content-center">
               <Zoom>
                 <div className="card" style={cardStyle}>
                   <Link
@@ -62,8 +58,6 @@ const VolunteerProfileCard = () => {
                 </div>
               </Zoom>
             </div>
-          );
-        })}
       </div>
     </div>
   );
