@@ -59,19 +59,27 @@ const ThankyouForDonationForm = () => {
               <div className="social d-flex justify-content-evenly w-100 mt-4">
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/facebook.png" alt="fb" />
-                  <p className="fw-bold mt-2">Facebook</p>
+                  <p className="fw-bold mt-2" style={{ color: "black" }}>
+                    Facebook
+                  </p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/twitter.png" alt="tw" />
-                  <p className="fw-bold mt-2">Twitter</p>
+                  <p className="fw-bold mt-2" style={{ color: "black" }}>
+                    Twitter
+                  </p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/instagram.jpg" alt="insta" />
-                  <p className="fw-bold mt-2">Instagram</p>
+                  <p className="fw-bold mt-2" style={{ color: "black" }}>
+                    Instagram
+                  </p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/whatsapp.png" alt="whatsapp" />
-                  <p className="fw-bold mt-2">Whatsapp</p>
+                  <p className="fw-bold mt-2" style={{ color: "black" }}>
+                    Whatsapp
+                  </p>
                 </div>
               </div>
             </div>

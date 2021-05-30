@@ -45,7 +45,7 @@ const BeVolunteerSection = () => {
         </div>
       </div>
 
-      <div className="container mt-5">
+      <div className="container mt-4 mb-4">
         <div className="row ">
           <div className="col-md-12 text-center">
             <button

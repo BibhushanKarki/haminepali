@@ -1,7 +1,7 @@
-import React,{useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect } from 'react-router-dom';
+import { Redirect } from "react-router-dom";
 import { login } from "../../store/Actions/AuthActions";
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
@@ -10,7 +10,7 @@ import { isEmail } from "validator";
 
 // Validation
 
-const required = value => {
+const required = (value) => {
   if (!value) {
     return (
       <div className="alert alert-danger" role="alert">
@@ -20,7 +20,7 @@ const required = value => {
   }
 };
 
-const mail = value => {
+const mail = (value) => {
   if (!isEmail(value)) {
     return (
       <div className="alert alert-danger" role="alert">
@@ -34,15 +34,15 @@ const SignInSection = (props) => {
   const form = useRef();
   const checkBtn = useRef();
 
-  const [email,setEmail]=useState("");
-  const [password,setPassword]=useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const { isLoggedIn } = useSelector(state => state.auth);
-  const { message } = useSelector(state => state.message);
+  const { isLoggedIn } = useSelector((state) => state.auth);
+  const { message } = useSelector((state) => state.message);
 
   const dispatch = useDispatch();
-  
+
   const onChangeEmail = (e) => {
     const email = e.target.value;
     setEmail(email);
@@ -72,17 +72,21 @@ const SignInSection = (props) => {
     } else {
       setLoading(false);
     }
-    };
+  };
 
-    if (isLoggedIn) {
-      return <Redirect to="/volunteer-profile" />;
-    }
+  if (isLoggedIn) {
+    return <Redirect to="/volunteer-profile" />;
+  }
 
   return (
     <>
       <div className="container-sm  mt-5 mb-5">
         <div className="row">
-          <Form className="d-flex justify-content-center" onSubmit={handleLogin} ref={form}>
+          <Form
+            className="d-flex justify-content-center"
+            onSubmit={handleLogin}
+            ref={form}
+          >
             <div className="col-md-6">
               <div
                 className="card px-5 py-3 text-center"
@@ -109,7 +113,7 @@ const SignInSection = (props) => {
                       placeholder="Email-Address"
                       value={email}
                       onChange={onChangeEmail}
-                      validations={[required,mail]}
+                      validations={[required, mail]}
                     />
                   </div>
                 </div>
@@ -128,25 +132,22 @@ const SignInSection = (props) => {
                 <div className="row mt-3 mb-3">
                   <div className="col-md-12">
                     <button className=" btn btn-primary" disabled={loading}>
-                    {loading && (
-                <span className="spinner-border spinner-border-sm"></span>
-              )}
+                      {loading && (
+                        <span className="spinner-border spinner-border-sm"></span>
+                      )}
                       Login
                     </button>
                   </div>
                 </div>
 
                 {message && (
-                <div className="form-group">
-                  <div className="alert alert-danger" role="alert">
-                    {message}
+                  <div className="form-group">
+                    <div className="alert alert-danger" role="alert">
+                      {message}
+                    </div>
                   </div>
-                </div>
-              )}
-              <CheckButton
-                  style={{ display: "none" }}
-                  ref={checkBtn}
-                />
+                )}
+                <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 <hr />
                 <div className="row mt-3 mb-3">
                   <div className="col-md-6">
@@ -160,7 +161,7 @@ const SignInSection = (props) => {
                       to="#"
                       style={{ textDecoration: "none", color: "#9F1718" }}
                     >
-                      Forget Password
+                      Forgot Password
                     </Link>
                   </div>
                 </div>
