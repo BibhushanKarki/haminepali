@@ -1,19 +1,9 @@
-<<<<<<< HEAD
 import React from "react";
 import FundraiserDescriptionCard from "./FundraiserDescriptionCard";
 import Comments from "./Comments";
 import { FundraiserDescriptionData as data } from "./FundraiserDescriptionData";
 import AppButton from "../UI/Buttons/AppButton";
 import { Link } from "react-router-dom";
-=======
-import React from 'react'
-import FundraiserDescriptionCard from './FundraiserDescriptionCard'
-import Comments from './Comments'
-import {FundraiserDescriptionData as data} from './FundraiserDescriptionData'
-import AppButton from '../UI/Buttons/AppButton'
-import {Link} from 'react-router-dom'
-import Fade from 'react-reveal/Fade';
->>>>>>> b94a0979538cc7f23d114f82d7aa1de68d3fa28e
 
 const FundraiserDescription = () => {
   return (
@@ -66,12 +56,7 @@ const FundraiserDescription = () => {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
   );
 };
-=======
-  )
-}
->>>>>>> b94a0979538cc7f23d114f82d7aa1de68d3fa28e
 
 export default FundraiserDescription;
