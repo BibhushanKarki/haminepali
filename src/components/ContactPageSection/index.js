@@ -57,11 +57,12 @@ const ContactPageContent = () => {
               <div className="row mt-3">
                 <div className="col-md-12">
                   <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Email-Address*"
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email*"
                     name="email"
-                    required
                   />
                 </div>
               </div>
@@ -119,7 +120,7 @@ const ContactPageContent = () => {
                 &nbsp;&nbsp;&nbsp;
                 <FaInstagram />
                 &nbsp;&nbsp;&nbsp;
-                <FaLinkedinIn /> 
+                <FaLinkedinIn />
               </div>
             </div>
           </div>
