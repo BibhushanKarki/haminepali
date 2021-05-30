@@ -1,7 +1,7 @@
 import React from "react";
 import AppButton from "../UI/Buttons/AppButton";
 import { FaStar } from "react-icons/fa";
-import { VolunteerProfileData } from "./VolunteerProfileData";
+// import { VolunteerProfileData } from "./VolunteerProfileData";
 import "./volunteerprofile.css";
 import StarRating from "../../pages/StarRating";
 import { Redirect } from 'react-router-dom';
@@ -32,14 +32,14 @@ const VolunterProfileSection = () => {
             />
           </div>
           <div className="col-md-4 mt-2 text-center ">
-            <img src="/img/pic2.jpg" alt="profile" style={profileSection} />
-            <h5 className="mt-3">Levi Ackerman</h5>
+            <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="profile" style={profileSection} />
+            <h5 className="mt-3">Ram Kumar</h5>
             <p>“Lets help the needy one”</p>
-            <FaStar size={30} color={"#9F1718"} />
-            <FaStar size={30} color={"#9F1718"} />
-            <FaStar size={30} color={"#9F1718"} />
-            <FaStar size={30} color={"#9F1718"} />
-            <FaStar size={30} color={"#9F1718"} />
+            <FaStar size={30} color={"#E4E5E9"} />
+            <FaStar size={30} color={"#E4E5E9"} />
+            <FaStar size={30} color={"#E4E5E9"} />
+            <FaStar size={30} color={"#E4E5E9"} />
+            <FaStar size={30} color={"#E4E5E9"} />
             <p className="text-center mt-3">1250</p>
           </div>
 
@@ -52,7 +52,7 @@ const VolunterProfileSection = () => {
         <hr />
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           <div className=" col-md-12 Volunter-heading text-center mt-5">
             <h3 style={{ color: "#9F1718", fontWeight: "bold" }}>
@@ -60,9 +60,9 @@ const VolunterProfileSection = () => {
             </h3>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="container mt-5">
+      {/* <div className="container mt-5">
         <div className="row">
           {VolunteerProfileData.map((data) => {
             return (
@@ -81,14 +81,15 @@ const VolunterProfileSection = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       <div className="container ">
         <div className="row">
           <div className=" col-md-12 Share-button text-center mt-5">
-            <button type="button" className="btn btn-primary">
+            {/* <button type="button" className="btn btn-primary">
               Share
-            </button>
+            </button> */}
+            <h5>No Post Yet</h5>
           </div>
         </div>
       </div>

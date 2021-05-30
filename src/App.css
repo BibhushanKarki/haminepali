@@ -238,7 +238,9 @@ a{
   .downloadDesc h4 {
     font-size: 18px !important;
   }
-  
+  .herorow{
+    height: 420px !important; 
+  }
 }
 @media (max-width:750px){
   .secNav>a,.secNav>.nav-item{
@@ -254,12 +256,24 @@ a{
     margin-top: 1rem;
   }
 }
+@media (max-width:550px){
+  .herorow{
+    height: 325px !important; 
+  }
+}
 @media (max-width: 500px) {
   .contactinfo,
   .connectwithus,
   .quicklinks {
     text-align: center;
     margin: 1rem 0;
+  }
+  .navbar-nav{
+    flex-wrap: wrap;
+    margin:0.5rem 0;
+  }
+  .secNav>a,.secNav>.nav-item{
+    margin: 0.5rem;
   }
 }
 @media (max-width: 486px) {
@@ -268,6 +282,14 @@ a{
     font-size: 12px;
   }
 }
+
+@media (max-width:422px){
+  .herorow .col-md-12{
+    margin-left: 1rem !important;
+    margin-bottom: 1rem !important; 
+  }
+}
+
 @media (max-width: 420px) {
   .donationDetail {
     flex-direction: column !important;
