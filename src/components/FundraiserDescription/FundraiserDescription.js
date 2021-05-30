@@ -1,28 +1,9 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 052155481b550dfdf401cdfd3dc16a4e1bb9b795
 import React from "react";
 import FundraiserDescriptionCard from "./FundraiserDescriptionCard";
-import Comments from "./Comments";
 import { FundraiserDescriptionData as data } from "./FundraiserDescriptionData";
-import AppButton from "../UI/Buttons/AppButton";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
-=======
->>>>>>> a7db9ffb1ef4677b66bd2f8860e2b119b639e88d
-import React from 'react'
-import FundraiserDescriptionCard from './FundraiserDescriptionCard'
-import Comments from './Comments'
-import {FundraiserDescriptionData as data} from './FundraiserDescriptionData'
-import AppButton from '../UI/Buttons/AppButton'
-import {Link} from 'react-router-dom'
-import Fade from 'react-reveal/Fade';
->>>>>>> 30f9591e50ae3c22dac32b3486469fb1e80f65f1
->>>>>>> 052155481b550dfdf401cdfd3dc16a4e1bb9b795
+import Comments from "./Comments";
+import AppButton from "../UI/Buttons/AppButton";
 
 const FundraiserDescription = () => {
   return (
@@ -77,15 +58,5 @@ const FundraiserDescription = () => {
     </div>
   );
 };
-<<<<<<< HEAD
-=======
-=======
-  )
-}
-<<<<<<< HEAD
-=======
->>>>>>> 30f9591e50ae3c22dac32b3486469fb1e80f65f1
->>>>>>> a7db9ffb1ef4677b66bd2f8860e2b119b639e88d
->>>>>>> 052155481b550dfdf401cdfd3dc16a4e1bb9b795
 
 export default FundraiserDescription;

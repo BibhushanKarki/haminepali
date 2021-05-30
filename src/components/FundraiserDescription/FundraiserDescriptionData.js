@@ -1,24 +1,4 @@
 export const FundraiserDescriptionData = {
-<<<<<<< HEAD
-	title: "Help Saya Shakya's Family",
-	img: 'https://images.unsplash.com/photo-1618245472861-b2b4e88431ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-	createdDate: 'Created 10 Days ago',
-	tags: 'Medical, Illness & Healing',
-	para: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus dolor morbi ut eget volutpat sollicitudin. Tristique convallis arcu tincidunt sed proin adipiscing. Morbi vitae eu faucibus fringilla diam dictum luctus. Quis aliquam felis at suspendisse nulla in facilisis ullamcorpe Lorem consectetur tristique pharetra quisque donec posuere. Fames sit nisi, sit semper vitae',
-};
-
-export const FundraiserDescriptionCardData = {
-	fundRaised: '100,000',
-	fundRequired: '120,000',
-	totalDoners: '1K',
-	totalShares: '517',
-	totalFollowers: '1.6K',
-	recentDonation: '420',
-	recentDoner: 'Puja Shrestha',
-	recentDonerAmount: '50',
-	donationStatus: 'Top Donation',
-};
-=======
   title: "Help Saya Shakya's Family",
   image:
     "https://images.unsplash.com/photo-1510022079733-8b58aca7c4a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80",
@@ -40,29 +20,6 @@ export const FundraiserDescriptionCardData = [
     donationStatus: "Top Donation",
   },
 ];
-<<<<<<< HEAD
-=======
-=======
-export const FundraiserDescriptionData ={
-    title:'Help Saya Shakya\'s Family',
-    img:'https://images.unsplash.com/photo-1618245472861-b2b4e88431ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
-    createdDate:'Created 10 Days ago',
-    tags:'Medical, Illness & Healing',
-    para:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus dolor morbi ut eget volutpat sollicitudin. Tristique convallis arcu tincidunt sed proin adipiscing. Morbi vitae eu faucibus fringilla diam dictum luctus. Quis aliquam felis at suspendisse nulla in facilisis ullamcorpe Lorem consectetur tristique pharetra quisque donec posuere. Fames sit nisi, sit semper vitae'
-  }
-export const FundraiserDescriptionCardData=
-    {fundRaised:'100,000',
-    fundRequired:'120,000',
-    totalDoners:'1K',
-    totalShares:'517',
-    totalFollowers:'1.6K',
-    recentDonation:'420',
-    recentDoner:'Puja Shrestha',
-    recentDonerAmount:'50',
-    donationStatus:'Top Donation'}
->>>>>>> 30f9591e50ae3c22dac32b3486469fb1e80f65f1
->>>>>>> a7db9ffb1ef4677b66bd2f8860e2b119b639e88d
->>>>>>> 052155481b550dfdf401cdfd3dc16a4e1bb9b795
 
 export const FundraiserDescriptionComments = [
   {

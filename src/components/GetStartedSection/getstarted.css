@@ -1,0 +1,36 @@
+.imageStyle {
+  width: 500px;
+  height: 570px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .get-started-covid {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .covid-image {
+    margin-top: 50px;
+    object-fit: cover;
+  }
+
+  .imageStyle {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .get-started-covid {
+    text-align: center;
+    margin-top: 50px;
+    object-fit: cover;
+  }
+
+  .imageStyle {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
