@@ -36,7 +36,6 @@ const EventSection = () => {
       {currentEventData.map((data) => {
         return (
           <div className="row mt-5 px-5" key={data.id}>
-            {/* <Fade bottom> */}
             <div className="card card-event-section mb-3">
               <div className="row no-gutters">
                 <div className="col-md-2 mt-4 ">
@@ -113,12 +112,23 @@ const EventSection = () => {
                             <div className="row mb-2  ">
                               <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
                                 <div className="col">
-                                  <Link to="#">
-                                    <img
-                                      src="/img/facebook.png"
-                                      alt="facebook"
-                                    />
-                                  </Link>
+                                  <div
+                                    class="fb-share-button"
+                                    data-href="https://developers.facebook.com/docs/plugins/"
+                                    data-layout="box_count"
+                                    data-size="small"
+                                  >
+                                    <a
+                                      target="_blank"
+                                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                                      class="fb-xfbml-parse-ignore"
+                                    >
+                                      <img
+                                        src="/img/facebook.png"
+                                        alt="facebook"
+                                      />
+                                    </a>
+                                  </div>
                                   <h5
                                     style={{
                                       fontSize: 15,
@@ -132,7 +142,7 @@ const EventSection = () => {
 
                                 <div className="col">
                                   <Link to="#">
-                                    <img src="/img/viber.png" alt="facebook" />
+                                    <img src="/img/viber.png" alt="viber" />
                                   </Link>
                                   <h5
                                     style={{
@@ -233,7 +243,6 @@ const EventSection = () => {
                 </div>
               </div>
             </div>
-            {/* </Fade> */}
           </div>
         );
       })}
