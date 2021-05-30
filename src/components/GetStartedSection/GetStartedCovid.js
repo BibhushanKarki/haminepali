@@ -6,20 +6,9 @@ import "./getstarted.css";
 
 const GetStartedCovid = () => {
   return (
-    <div className="row d-flex align-items-center m-4">
-<<<<<<< HEAD
-      <Fade left><div className="col-md-6 col-sm-12">
-        <h1>{data.covid.title}</h1>
-        <h4 className="my-4" style={{color:'gray'}}>{data.covid.punchline}</h4>
-        <GetStartedBtn buttontitle="Get Started"/>
-      </div></Fade>
-      <Fade right>
-      <div className="col-md-6 text-center col-sm-12">
-        <img src={data.covid.imgCovid} alt="covidimg" style={imgStyle} />
-      </div></Fade>
-=======
+    <div className="row d-flex align-items-center m-4 main-content">
       <Fade left>
-        <div className="col-md-6 get-started-covid">
+        <div className="col-md-6 get-started-title">
           <h1>{data.covid.title}</h1>
           <h4 className="my-4" style={{ color: "gray" }}>
             {data.covid.punchline}
@@ -28,7 +17,7 @@ const GetStartedCovid = () => {
         </div>
       </Fade>
       <Fade right>
-        <div className="col-md-6 text-center covid-image">
+        <div className="col-md-6 text-center image-right">
           <img
             src={data.covid.imgCovid}
             alt="covidimg"
@@ -36,7 +25,6 @@ const GetStartedCovid = () => {
           />
         </div>
       </Fade>
->>>>>>> 207a3833a48b2b703cb5025a0b58533a3d496275
     </div>
   );
 };
