@@ -193,6 +193,16 @@ a{
   box-shadow: none !important;
 }
 /* Responsive Css */
+
+@media (max-width:1290px){
+  .navbar-nav{
+    flex-wrap: wrap;
+    margin:0.75rem 0;
+  }
+  .secNav>a,.secNav>.nav-item{
+    margin: 1rem;
+  }
+}
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,
@@ -213,14 +223,7 @@ a{
     justify-content: center !important;
   }
 }
-@media (max-width: 500px) {
-  .contactinfo,
-  .connectwithus,
-  .quicklinks {
-    text-align: center;
-    margin: 1rem 0;
-  }
-}
+
 @media (max-width: 768px) {
   .btn-donation,
   .btn-donation-red {
@@ -237,17 +240,26 @@ a{
   }
   
 }
-@media (max-width: 715px) {
-  .secNav > a {
-    font-size: 12px;
+@media (max-width:750px){
+  .secNav>a,.secNav>.nav-item{
+    font-size: 15px;
   }
 }
+
 @media (max-width: 630px) {
   .downloadApp {
     flex-direction: column !important;
   }
   .downloadDesc {
     margin-top: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .contactinfo,
+  .connectwithus,
+  .quicklinks {
+    text-align: center;
+    margin: 1rem 0;
   }
 }
 @media (max-width: 486px) {
