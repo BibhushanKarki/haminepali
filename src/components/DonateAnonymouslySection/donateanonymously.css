@@ -1,0 +1,55 @@
+.donation-form-heading h1 {
+  color: #9f1718;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  border-bottom: 2px solid #9f1718;
+}
+
+.pay-with h5 {
+  color: #9f1718;
+  font-size: 28px;
+  border-bottom: 2px solid #9f1718;
+}
+
+.terms-section {
+  color: #9f1718;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+  .donation-card .card-input-section input {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .donation-card .card-input-section input {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and(max-width: 576px) {
+  .pay-with {
+    text-align: center;
+  }
+}
+
+@media only screen and(max-width: 600px) {
+  .pay-with {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .donate-anonymously-card .card-input-section input {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .donate-anonymously-card .card-input-section input {
+    margin-top: 15px;
+  }
+}

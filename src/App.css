@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
 body {
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: "Nunito Sans", sans-serif !important;
   overflow-x: hidden;
 }
 a{
@@ -86,7 +85,98 @@ a{
 .dropdown:hover .dropdown-menu{
   display: block;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.hr {
+  display: inline-block;
+}
+.hr:after {
+  content: '';
+  display: block;
+  border-radius: 10px;
+  border-top: 5px solid #9f1718 ;
+  margin-top: 0.5em;
+}
+.hrblack {
+  display: inline-block;
+}
+.hrblack:after {
+  content: '';
+  display: block;
+  border-radius: 10px;
+  border-top: 1px solid #000 ;
+  margin-top: 0.5em;
+}
+.main-card{
+  background-color: #ebebeb;
+}
+.comment-card{
+  background-color: #9f1717f1;
+}
+.comment-form{
+  width:85% !important;
+  display: inline !important;
+}
 
+/* Search bar */
+
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+  height: 50px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4
+}
+.search input:focus {
+  box-shadow: none;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 110px;
+}
+
+.search-nav {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+  border:none;
+}
+
+.search-nav input {
+  height: 35px;
+  text-indent: 25px;
+  border:none;
+  text-align: right;
+}
+.search-nav input:focus {
+  box-shadow: none;
+}
+.search-nav .fa-search {
+  position: absolute;
+  top: 10px;
+  right: 30%;
+}
+
+.btn:focus{
+  box-shadow: none !important;
+}
+/* Responsive Css */
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { EventSectionData } from "../EventPageSection/EventSectionData";
 
 const SecondaryNavbar = () => {
   const navStyle = {
@@ -22,7 +23,7 @@ const SecondaryNavbar = () => {
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/donate"
+                  to="#"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >
@@ -43,13 +44,13 @@ const SecondaryNavbar = () => {
                   </Link>
                 </div>
               </div>
-              <Link style={navStyle} to="/volunteer">
+              <Link style={navStyle} to="/volunteer-signup">
                 Be Volunteer
               </Link>
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/cause"
+                  to="#"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >
@@ -59,10 +60,10 @@ const SecondaryNavbar = () => {
                   <Link to="/covid" className="dropdown-item">
                     Covid
                   </Link>
-                  <Link to="/cause" className="dropdown-item">
+                  <Link to="/health" className="dropdown-item">
                     Health
                   </Link>
-                  <Link to="/volunteer" className="dropdown-item">
+                  <Link to="/housing" className="dropdown-item">
                     Housing
                   </Link>
                   <Link to="/clothing" className="dropdown-item">
@@ -79,23 +80,29 @@ const SecondaryNavbar = () => {
               <div className="nav-item dropdown">
                 <Link
                   style={navStyle}
-                  to="/events"
+                  to="#"
                   className="dropdown-toggle"
                   data-toggle="dropdown"
                 >
                   Events
                 </Link>
                 <div className="dropdown-menu">
-                  <Link to="/events" className="dropdown-item">
-                    Ongoing Events
-                  </Link>
-                  <Link to="/upcoming-event" className="dropdown-item">
-                    Upcoming Events
-                  </Link>
+                  {EventSectionData.map((keyBundle) => (
+                    <Link
+                      to={`/events/${keyBundle.key}`}
+                      className="dropdown-item"
+                      key={keyBundle.key}
+                    >
+                      {keyBundle.displayName}
+                    </Link>
+                  ))}
                 </div>
               </div>
               <Link style={navStyle} to="/transparency">
                 Transparency
+              </Link>
+              <Link style={navStyle} to="/community">
+                Our Community
               </Link>
               <Link style={navStyle} to="/aboutus">
                 About Us

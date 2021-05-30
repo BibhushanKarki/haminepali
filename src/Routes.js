@@ -6,7 +6,6 @@ import Volunteer from "./pages/Volunteer/Volunteer";
 import Cause from "./pages/Cause/Cause";
 import Events from "./pages/Events/Events";
 import EventExtended from "./pages/EventExtended";
-import UpComingEvent from "./pages/UpComimgEvent";
 import Transparency from "./pages/Transparency/Transparency";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
@@ -26,7 +25,13 @@ import TransparencyDetail from "./pages/TransparencyDetail/TransparencyDetail";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import DonateAdministration from "./pages/DonateAdministration";
-import FundRaiserDescription from './pages/FundRaiserDescription/FundRaiserDescription'
+import FundRaiserDescription from "./pages/FundRaiserDescription/FundRaiserDescription";
+import VolunteerSignUp from "./pages/VolunteerSignUp";
+import VolunteerProfile from "./pages/VolunteerProfile";
+import OurCommunity from "./pages/OurCommunity/OurCommunity";
+import DonateAnonymouslySection from "./components/DonateAnonymouslySection";
+import EditProfile from "./pages/EditProfile";
+import StarRating from "./pages/StarRating";
 import PageNotFound from "./pages/404/PageNotFound";
 
 const Routes = () => {
@@ -36,10 +41,10 @@ const Routes = () => {
       <Route path="/donate" component={Donate} />
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/cause" component={Cause} />
-      <Route path="/events" component={Events} />
-      <Route path="/event-extended" component={EventExtended} />
-      <Route path="/upcoming-event" component={UpComingEvent} />
+      <Route path="/events/:key" component={Events} />
+      <Route path="/event/:key/:slug" component={EventExtended} />
       <Route path="/transparency" component={Transparency} />
+      <Route path="/community" component={OurCommunity} />
       <Route path="/aboutus" component={AboutUs} />
       <Route path="/contactus" component={ContactUs} />
       <Route path="/fundraisers" component={Fundraiser} />
@@ -59,6 +64,11 @@ const Routes = () => {
       <Route path="/sign-up" component={SignUp} />
       <Route path="/donate-administration" component={DonateAdministration} />
       <Route path="/fundraiserdescription" component={FundRaiserDescription} />
+      <Route path="/volunteer-signup" component={VolunteerSignUp} />
+      <Route path="/volunteer-profile" component={VolunteerProfile} />
+      <Route path="/donate-anonymously" component={DonateAnonymouslySection} />
+      <Route path="/edit-profile" component={EditProfile} />
+      <Route path="/star-rating" component={StarRating} />
       <Route component={PageNotFound} />
     </Switch>
   );

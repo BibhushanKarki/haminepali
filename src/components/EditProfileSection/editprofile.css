@@ -1,0 +1,54 @@
+.profile-pic {
+  border: 0.3rem solid rgba(#fff, 0.3);
+  margin-top: -6rem;
+  margin-bottom: 1rem;
+  /* max-width: 9rem; */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  vertical-align: middle;
+  text-align: center;
+  color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profile-pic:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.profile-pic span {
+  display: inline-block;
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+}
+
+form input[type="file"] {
+  display: none;
+  cursor: pointer;
+}
+
+.span-edit-icon {
+  /* margin-right: 6px; */
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+  color: #9f1718;
+}
+
+.spanicon {
+  float: right;
+  margin-right: 6px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+  color: #9f1718;
+}

@@ -47,7 +47,7 @@ const ContactPageContent = () => {
                 <div className="col-md-6">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control lastname"
                     placeholder="LastName*"
                     name="lastname"
                     required
@@ -57,11 +57,12 @@ const ContactPageContent = () => {
               <div className="row mt-3">
                 <div className="col-md-12">
                   <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Email-Address*"
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Email*"
                     name="email"
-                    required
                   />
                 </div>
               </div>
@@ -101,14 +102,14 @@ const ContactPageContent = () => {
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=pulchowk,lalitpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
             title="myFrame"
-            allowfullScreen
+            allowFullScreen
           />
           <div className=" col-md-12 contact-details d-flex text-center mt-4">
             <div className="col-md-6 ">
               <h3 style={heading}>Contact Us</h3>
-              <p style={subHeading}>Pulchowk,Lalitpur</p>
-              <p style={subHeading}>haminepal@gmail.com</p>
-              <p style={subHeading}>Tel: 01-5010510/512</p>
+              <p style={subHeading}>Ranibari-27, Samakhusi, Kathmandu</p>
+              <p style={subHeading}>info@haminepal.org</p>
+              <p style={subHeading}>Phone: +977-9808543667, +977-9845628191</p>
             </div>
             <div className="col-md-6  ">
               <h3 style={heading}>Follow Us</h3>

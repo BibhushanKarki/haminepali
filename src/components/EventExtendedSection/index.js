@@ -1,10 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import "./event-extended.css";
 import { EventExtendedSectionData as items } from "./EventExtendedSectionData";
+import { EventSectionData } from "../EventPageSection/EventSectionData";
+import DonationFormSection from "../../components/DonationFormSection";
 
 const EventExtendedSection = () => {
-  return (
+  const [inputValue, setInputValue] = useState("");
+  const { key, slug } = useParams();
+
+  const currentKeyBundle = EventSectionData.filter(
+    (keyBundle) => keyBundle.key === key
+  )[0];
+
+  let currentEvent;
+
+  if (currentKeyBundle) {
+    currentEvent = currentKeyBundle.data.filter(
+      (event) => event.slug === slug
+    )[0];
+  }
+
+  return currentEvent ? (
     <>
       <div className="container mt-5">
         <div className="row ">
@@ -21,56 +39,172 @@ const EventExtendedSection = () => {
                   className="card-title text-center"
                   style={{ fontWeight: "bold", fontSize: 25 }}
                 >
-                  Raising Fund For Orphans Around Biratnagar
+                  {currentEvent.title}
                 </h5>
               </div>
               <img
                 className="card-img-top image-container"
-                src="./img/orphans.png"
-                alt="orphans"
+                src={currentEvent.image}
+                alt={currentEvent.title}
                 style={{ height: 300 }}
               />
               <div className="mt-md-3 ">
-                <p className="card-text">
-                  Government provides support but that isn’t enough. They need
-                  more care and a guide who can hold their hand and show them
-                  the right path. hIn this world, there are three most important
-                  things which society needs to make the world a better place.
-                  First is food, which is important to stay alive. Second is
-                  education which would uplift the minds of each individual and
-                  thus the world as whole. Third and last would be health. Each
-                  person needs proper health and medical assistance from time to
-                  time. We are seriously excited about our organization involved
-                  in the society. Helping orphans selflessly and seeing that our
-                  organization can be value to someone is truly satisfying. The
-                  thing which our organization is seeking is the happiness, the
-                  sparkle of achievement in the eyes of those children when they
-                  would gain knowlwdge and would be able to make their life
-                  worthwhile. This task is selflessly choosen and our
-                  organization never expected anything in return other than
-                  peace which we would get through it. Helping orphans is all it
-                  takes to be at peace and to develop the feeling of pride.
-                  Thinking about volunteering and helping the needy people is
-                  one thing and helping in reality is a different world
-                  altogether.
-                </p>
+                <p className="card-text">{currentEvent.paragraph}</p>
               </div>
               <hr />
               <div className="text-center mb-5">
-                <Link to="/volunteer" className="btn btn-primary mt-4 ">
+                <Link to="/volunteer-signup" className="btn btn-primary mt-4 ">
                   Volunteer
                 </Link>
                 &nbsp; &nbsp; &nbsp;
-                <Link to="/donate" className="btn  btn-primary mt-4 ">
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#donateModal"
+                  className="btn btn-primary mt-4"
+                >
                   Donate
-                </Link>
+                </button>
+                <DonationFormSection />
                 &nbsp; &nbsp; &nbsp;
-                <Link
-                  to="#"
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#shareModal"
                   className="btn btn-secondary button-secondary mt-4 "
                 >
                   Share
-                </Link>
+                </button>
+                {/* <!-- Modal --> */}
+                <div
+                  className="modal fade"
+                  id="shareModal"
+                  tabindex="-1"
+                  aria-labelledby="shareModalLabel"
+                  aria-hidden="true"
+                >
+                  <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+                      <div className="modal-header share-modal-header">
+                        <h5 className="modal-title" id="shareModal">
+                          Help by Sharing
+                        </h5>
+                        <button
+                          type="button"
+                          className="btn-close share-button-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div className="modal-body">
+                        <div className="row mb-2  ">
+                          <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
+                            <div className="col">
+                              <Link to="#">
+                                <img src="/img/facebook.png" alt="facebook" />
+                              </Link>
+                              <h5
+                                style={{
+                                  fontSize: 15,
+                                  fontWeight: 600,
+                                  marginTop: 20,
+                                }}
+                              >
+                                Facebook
+                              </h5>
+                            </div>
+
+                            <div className="col">
+                              <Link to="#">
+                                <img src="/img/viber.png" alt="facebook" />
+                              </Link>
+                              <h5
+                                style={{
+                                  fontSize: 15,
+                                  fontWeight: 600,
+                                  marginTop: 20,
+                                }}
+                              >
+                                Viber
+                              </h5>
+                            </div>
+
+                            <div className="col">
+                              <Link to="#">
+                                <img src="/img/twitter.png" alt="twitter" />
+                              </Link>
+                              <h5
+                                style={{
+                                  fontSize: 14,
+                                  fontWeight: 600,
+                                  marginTop: 20,
+                                }}
+                              >
+                                Twitter
+                              </h5>
+                            </div>
+
+                            <div className="col">
+                              <Link to="#">
+                                <img src="/img/instagram.jpg" alt="instagram" />
+                              </Link>
+                              <h5
+                                style={{
+                                  fontSize: 14,
+                                  fontWeight: 600,
+                                  marginTop: 20,
+                                }}
+                              >
+                                Instagram
+                              </h5>
+                            </div>
+                            <div className="col">
+                              <Link to="#">
+                                <img src="/img/whatsapp.png" alt="whatsapp" />
+                              </Link>
+                              <h5
+                                style={{
+                                  fontSize: 14,
+                                  fontWeight: 600,
+                                  marginTop: 20,
+                                }}
+                              >
+                                Whataspp
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+
+                        <hr className="hrLine" />
+
+                        <h5
+                          className="modal-title share-modal-title"
+                          id="shareModal"
+                        >
+                          Copy link
+                        </h5>
+                        <div className="row">
+                          <div className="col-md-8">
+                            <input
+                              className="form-control mt-2"
+                              type="text"
+                              value={inputValue}
+                              onChange={(e) => setInputValue(e.target.value)}
+                            />
+                          </div>
+                          <div className="col-md-4">
+                            <CopyToClipboard text={inputValue}>
+                              <button className="btn btn-primary mt-2 text-center">
+                                Copy
+                              </button>
+                            </CopyToClipboard>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="modal-footer"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -98,6 +232,7 @@ const EventExtendedSection = () => {
                       className="card-img-top rounded-circle"
                       src={items.image}
                       alt="profile"
+                      style={{ objectFit: "cover" }}
                     />
                   </div>
                   <div className="card-body text-center">
@@ -113,6 +248,26 @@ const EventExtendedSection = () => {
         </div>
       </div>
     </>
+  ) : (
+    <div className="container mt-4">
+      <div class="alert alert-danger d-flex align-items-center" role="alert">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="currentColor"
+          class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+          viewBox="0 0 16 16"
+          role="img"
+          aria-label="Warning:"
+        >
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <div style={{ textTransform: "capitalize" }}>
+          Event {slug} Not Found under {key}.
+        </div>
+      </div>
+    </div>
   );
 };
 
