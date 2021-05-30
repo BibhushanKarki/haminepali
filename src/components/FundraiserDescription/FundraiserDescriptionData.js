@@ -7,7 +7,7 @@ export const FundraiserDescriptionData = {
   para: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus dolor morbi ut eget volutpat sollicitudin. Tristique convallis arcu tincidunt sed proin adipiscing. Morbi vitae eu faucibus fringilla diam dictum luctus. Quis aliquam felis at suspendisse nulla in facilisis ullamcorpe Lorem consectetur tristique pharetra quisque donec posuere. Fames sit nisi, sit semper vitae",
 };
 
-export const FundraiserDescriptionCardData = [
+export const FundraiserDescriptionCardData = 
   {
     fundRaised: "100,000",
     fundRequired: "120,000",
@@ -18,8 +18,7 @@ export const FundraiserDescriptionCardData = [
     recentDoner: "Puja Shrestha",
     recentDonerAmount: "50",
     donationStatus: "Top Donation",
-  },
-];
+  }
 
 export const FundraiserDescriptionComments = [
   {

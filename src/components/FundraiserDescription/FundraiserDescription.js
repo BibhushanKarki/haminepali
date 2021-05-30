@@ -11,7 +11,7 @@ const FundraiserDescription = () => {
       <div className="row my-2">
         <h1>{data.title}</h1>
         <div className="col-md-8">
-          <img src={data.image} alt="img" style={{ width: "200px" }} />
+          <img src={data.image} alt="img" style={{ width: "100%",height:"650px",objectFit: "cover"}} />
         </div>
         <div className="col-md-4">
           <FundraiserDescriptionCard />
