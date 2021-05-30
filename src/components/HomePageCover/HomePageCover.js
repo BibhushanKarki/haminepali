@@ -7,7 +7,6 @@ import DonationFormSection from "../../components/DonationFormSection";
 const HomePageCover = () => {
   const heroStyle = {
     backgroundImage: `url(${HeroImg})`,
-    opacity:0.9,
     height: "600px",
     color: "#fff",
     display: "flex",
