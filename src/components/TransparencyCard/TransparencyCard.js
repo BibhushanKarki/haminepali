@@ -1,6 +1,7 @@
 import React from 'react'
 import {TransparencyCardData as data} from './TransparencyCardData'
 import Zoom from "react-reveal/Zoom";
+import {Link} from 'react-router-dom';
 
 const TransparencyCard = () => {
   const cardStyle={
@@ -38,7 +39,7 @@ const TransparencyCard = () => {
           >
             <Zoom>
               <div className="card" style={cardStyle}>
-                <a href="/transparencydetail" style={{ color: "black" }}>
+                <Link href="/transparencydetail" style={{ color: "black" }}>
                   <img
                     src={data.img}
                     className="mb-3"
@@ -49,7 +50,7 @@ const TransparencyCard = () => {
                     <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                     <p className="card-text">{data.eventDetail}</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </Zoom>
           </div>
@@ -62,14 +63,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <Zoom><div className="card" style={cardStyle}>
-              <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
+              <Link href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
-                </a>
+                </Link>
               </div></Zoom>
           </div>
         )
@@ -81,14 +82,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <Zoom><div className="card" style={cardStyle}>
-              <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
+              <Link href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
-                </a>
+                </Link>
               </div></Zoom>
           </div>
         )
@@ -100,14 +101,14 @@ const TransparencyCard = () => {
         return(
           <div className="col-md-3 mb-3 d-flex justify-content-center" key={key}>
               <Zoom><div className="card" style={cardStyle}>
-              <a href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
+              <Link href="/transparencydetail" style={{color:'black'}}><img src={data.img} className="mb-3" style={ppStyle} alt="img"/>
                 <div className="card-body text-left">
                 <h5 className="card-title fw-bold">{data.eventTitle}</h5>
                   <p className="card-text">
                     {data.eventDetail}
                   </p>
                 </div>
-                </a>
+                </Link>
               </div></Zoom>
           </div>
         )

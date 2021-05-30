@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<div className='row mx-2'>
+		<div className='row fixed-navbar'>
 			<nav className='navbar navbar-expand-lg navbar-light'>
 				<Link className='navbar-brand' to='/'>
 					<img src={Logo} alt='' width='100' height='85' />
@@ -29,7 +29,7 @@ const Navbar = () => {
 								role='button'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								Find
+								Discover
 							</Link>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
@@ -52,7 +52,7 @@ const Navbar = () => {
 								role='button'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								Fund Raise
+								Fundraiser For
 							</Link>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>
@@ -95,7 +95,7 @@ const Navbar = () => {
 								role='button'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								Organization Profile
+								How it works
 							</Link>
 							<ul className='dropdown-menu' aria-labelledby='navbarDropdown'>
 								<li>

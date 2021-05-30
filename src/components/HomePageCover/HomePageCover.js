@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImg from '../../assets/images/coverimg.png';
+import HeroImg from '../../assets/images/coverimg.jpg';
 import Play from '../../assets/images/play.png';
 import { BsChevronRight } from 'react-icons/bs';
 import DonationFormSection from '../../components/DonationFormSection';

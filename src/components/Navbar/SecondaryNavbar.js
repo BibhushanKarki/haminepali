@@ -10,6 +10,7 @@ const SecondaryNavbar = () => {
   };
   const secNavContainer = {
     backgroundColor: "#9F1718",
+    marginTop:'7rem'
   };
   return (
     <div className="row justify-content-center" style={secNavContainer}>
