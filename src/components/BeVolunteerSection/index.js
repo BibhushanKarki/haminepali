@@ -1,4 +1,5 @@
 import React from "react";
+import VolunteerModal from "../VolunteerModal";
 
 const BeVolunteerSection = () => {
   return (
@@ -37,12 +38,29 @@ const BeVolunteerSection = () => {
                 seeking to help must accept the notifications, if they click on
                 accept button the accept notifications will be then sent to the
                 Executive Team of HamiNepal.org where the team will receive
-                volunteers' mobile number and Geo-Location
+                volunteers' mobile number.
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <div className="container mt-5">
+        <div className="row ">
+          <div className="col-md-12 text-center">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              className=" btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#volunteerModal"
+            >
+              Be A Volunteer
+            </button>
+          </div>
+        </div>
+      </div>
+      <VolunteerModal />
     </>
   );
 };
