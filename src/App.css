@@ -235,6 +235,7 @@ a{
   .downloadDesc h4 {
     font-size: 18px !important;
   }
+  
 }
 @media (max-width: 715px) {
   .secNav > a {

@@ -6,8 +6,6 @@ const Covid = () => {
     <div>
       <GetStartedCovid/>
       <TopFundRaisers title="Trending Covid Fundraisers"/>
-      <TopFundRaisers title="Top Fundraisers"/>
-      <TopFundRaisers />
     </div>
   )
 }
