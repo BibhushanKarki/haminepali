@@ -1,9 +1,18 @@
+<<<<<<< HEAD
+import React from "react";
+import FundraiserDescriptionCard from "./FundraiserDescriptionCard";
+import { FundraiserDescriptionData as data } from "./FundraiserDescriptionData";
+import { Link } from "react-router-dom";
+import Comments from "./Comments";
+import AppButton from "../UI/Buttons/AppButton";
+=======
 import React from 'react'
 import FundraiserDescriptionCard from './FundraiserDescriptionCard'
 import Comments from './Comments'
 import {FundraiserDescriptionData as data} from './FundraiserDescriptionData'
 import AppButton from '../UI/Buttons/AppButton'
 import {Link} from 'react-router-dom'
+>>>>>>> caa00f10b5b93668b05b2a17cb0c347d4cece076
 
 const FundraiserDescription = () => {
   return (
@@ -55,6 +64,13 @@ const FundraiserDescription = () => {
           </Link>
         </div>
       </div>
+<<<<<<< HEAD
+    </div>
+  );
+};
+
+=======
     </div>)
 }
+>>>>>>> caa00f10b5b93668b05b2a17cb0c347d4cece076
 export default FundraiserDescription;
