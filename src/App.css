@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
 body {
   font-family: "Nunito Sans", sans-serif !important;
   overflow-x: hidden;
 }
+
 a{
   text-decoration: none !important;
 }
+
 .nav-link {
   color: black !important;
 }
+
+.fixed-navbar{
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+  z-index: 50;
+}
+
 .btn{
   border:2px solid transparent !important;
 }
@@ -84,6 +96,9 @@ a{
 }
 .dropdown:hover .dropdown-menu{
   display: block;
+}
+.dropdown-item:hover{
+  color:#9F1718;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
