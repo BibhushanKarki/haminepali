@@ -7,7 +7,7 @@ import GallerySection from '../../components/GallerySection/GallerySection'
 import DownloadApp from '../../components/DownloadApp/DownloadApp'
 const Home = () => {
   return (
-    <div className="container">
+    <div>
       <HomePageCover/>
       <HomePageTexts/>
       <GallerySection/>
