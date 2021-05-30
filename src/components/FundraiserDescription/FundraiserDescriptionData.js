@@ -20,16 +20,6 @@ export const FundraiserDescriptionCardData = [
     donationStatus: "Top Donation",
   },
 ];
-export const FundraiserDescriptionCardData=
-    {fundRaised:'100,000',
-    fundRequired:'120,000',
-    totalDoners:'1K',
-    totalShares:'517',
-    totalFollowers:'1.6K',
-    recentDonation:'420',
-    recentDoner:'Puja Shrestha',
-    recentDonerAmount:'50',
-    donationStatus:'Top Donation'}
 
 export const FundraiserDescriptionComments = [
   {
