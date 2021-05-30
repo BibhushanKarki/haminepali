@@ -9,9 +9,9 @@ import { useSelector } from "react-redux";
 const VolunterProfileSection = () => {
   const { user: currentUser } = useSelector((state) => state.auth);
 
-  if (!currentUser) {
-    return <Redirect to="/sign-in" />;
-  }
+  // if (!currentUser) {
+  //   return <Redirect to="/sign-in" />;
+  // }
 
   const profileSection = {
     borderRadius: "50%",
