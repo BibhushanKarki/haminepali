@@ -18,11 +18,10 @@ const SuccessStories = () => {
     <div className="behindTheNameCardContainer my-4">
       <div className="row">
       <h2 className="fw-bold my-3 text-center" style={{color:'#9F1718',marginLeft:'2rem'}}>Success Stories</h2>
-      {data.map((data,key)=>{
-        return (
+      {/* {data.map((data,key)=>{
+        return ( */}
           <div
             className="col-md-3 mb-3 d-flex justify-content-center"
-            key={key}
           >
             <Zoom>
               <div className="card" style={cardStyle}>
@@ -40,8 +39,8 @@ const SuccessStories = () => {
               </div>
             </Zoom>
           </div>
-        );
-      })}
+        {/* );
+      })} */}
       </div>
     </div>
   )

@@ -31,11 +31,8 @@ const TransparencyCard = () => {
         
       <div className="row">
       <h2 className="fw-bold my-3 text-left" style={{color:'#9F1718',marginLeft:'2rem'}}>Ongoing Events</h2>
-      {data.map((data,key)=>{
-        return (
-          <div
+                <div
             className="col-md-3 mb-3 d-flex justify-content-center"
-            key={key}
           >
             <Zoom>
               <div className="card" style={cardStyle}>
@@ -54,10 +51,8 @@ const TransparencyCard = () => {
               </div>
             </Zoom>
           </div>
-        );
-      })}
       </div>
-      <div className="row">
+      {/* <div className="row">
       <h2 className="fw-bold my-3 text-left" style={{color:'#9F1718',marginLeft:'2rem'}}>Ongoing Cause</h2>
       {data.map((data,key)=>{
         return(
@@ -75,8 +70,9 @@ const TransparencyCard = () => {
           </div>
         )
       })}
-      </div>
-      <div className="row">
+      </div> */}
+
+      {/* <div className="row">
       <h2 className="fw-bold my-3 text-left" style={{color:'#9F1718',marginLeft:'2rem'}}>Accomplished Events</h2>
       {data.map((data,key)=>{
         return(
@@ -94,8 +90,9 @@ const TransparencyCard = () => {
           </div>
         )
       })}
-      </div>
-      <div className="row">
+      </div> */}
+
+      {/* <div className="row">
       <h2 className="fw-bold my-3 text-left" style={{color:'#9F1718',marginLeft:'2rem'}}>Accomplished Cause</h2>
       {data.map((data,key)=>{
         return(
@@ -113,7 +110,7 @@ const TransparencyCard = () => {
           </div>
         )
       })}
-      </div>
+      </div> */}
     </div>
   )
 }
