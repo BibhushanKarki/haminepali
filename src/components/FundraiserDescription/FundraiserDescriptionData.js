@@ -7,18 +7,28 @@ export const FundraiserDescriptionData = {
   para: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus dolor morbi ut eget volutpat sollicitudin. Tristique convallis arcu tincidunt sed proin adipiscing. Morbi vitae eu faucibus fringilla diam dictum luctus. Quis aliquam felis at suspendisse nulla in facilisis ullamcorpe Lorem consectetur tristique pharetra quisque donec posuere. Fames sit nisi, sit semper vitae",
 };
 
-export const FundraiserDescriptionCardData = 
+export const FundraiserDescriptionCardData = [
   {
     fundRaised: "100,000",
-    fundRequired: "120,000",
     totalDoners: "1K",
     totalShares: "517",
     totalFollowers: "1.6K",
     recentDonation: "420",
-    recentDoner: "Puja Shrestha",
-    recentDonerAmount: "50",
+    recentDoner: "Bibek Ghimire",
+    recentDonerAmount: "1000",
     donationStatus: "Top Donation",
-  }
+  },
+  {
+    fundRaised: "100,000",
+    totalDoners: "1K",
+    totalShares: "517",
+    totalFollowers: "1.6K",
+    recentDonation: "420",
+    recentDoner: "Anonymous",
+    recentDonerAmount: "500",
+    donationStatus: "Recent Donation",
+  },
+];
 
 export const FundraiserDescriptionComments = [
   {
