@@ -1,10 +1,8 @@
-import React from 'react'
-import FundraiserDescription from '../../components/FundraiserDescription/FundraiserDescription'
+import React from 'react';
+import FundraiserDescription from '../../components/FundraiserDescription/FundraiserDescription';
 
 const FundRaiserDescription = () => {
-  return (
-    <FundraiserDescription/>
-  )
-}
+	return <FundraiserDescription />;
+};
 
-export default FundRaiserDescription
+export default FundRaiserDescription;
