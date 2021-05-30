@@ -25,7 +25,7 @@ const EventSection = () => {
     <>
       <div className="container">
         <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>
-          {key} page
+          {key} Events
         </h2>
       </div>
       {currentEventData.map((data) => {

@@ -2,7 +2,7 @@ import React from "react";
 import "./donateanonymously.css";
 import { Link } from "react-router-dom";
 import haminepali from "../../assets/images/haminepalilogo1.png";
-import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
+// import ThankyouForDonationForm from "../../components/ThankyouDonationForm";
 
 const DonateAnonymouslySection = () => {
   return (
@@ -144,14 +144,13 @@ const DonateAnonymouslySection = () => {
                           <button
                             type="submit"
                             className=" btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#donationModal"
+                            // data-bs-toggle="modal"
+                            // data-bs-target="#donationModal"
                           >
                             Donate Now
                           </button>
                         </div>
                       </div>
-                      <ThankyouForDonationForm />
                     </div>
                   </div>
                 </form>

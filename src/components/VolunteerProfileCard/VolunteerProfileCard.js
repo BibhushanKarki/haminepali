@@ -33,7 +33,10 @@ const VolunteerProfileCard = () => {
             >
               <Zoom>
                 <div className="card" style={cardStyle}>
-                  <Link to="/volunteer-profile" style={{ textAlign: "center",color:'black' }}>
+                  <Link
+                    to="/volunteer-profile"
+                    style={{ textAlign: "center", color: "black" }}
+                  >
                     <img
                       src={data.profilePic}
                       className="my-3"
@@ -48,7 +51,7 @@ const VolunteerProfileCard = () => {
                     </div>
                   </Link>
                   <div
-                    class="card-footer text-center "
+                    className="card-footer text-center "
                     style={{
                       backgroundColor: "#f5f5f500",
                       borderTop: "1px solid #f9fafb",
