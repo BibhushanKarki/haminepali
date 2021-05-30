@@ -9,7 +9,7 @@ const HomePageCover = () => {
     backgroundImage: `url(${HeroImg})`,
     backgroundRepeat:'no-repeat',
     backgroundSize:'100%',
-    backgroundPosition: 'top',
+    backgroundPosition: 'top 5px',
     height: "600px",
     color: "#fff",
     display: "flex",

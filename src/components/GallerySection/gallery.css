@@ -89,6 +89,7 @@ a {
 }
 #gallery-list li a:hover::before {
   background: rgba(0, 0, 0, 0.5);
+  z-index:30;
 }
 /* h1, h2, h3, h4, h5, h6 {
   color: #5a5a5a;
