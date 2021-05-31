@@ -50,7 +50,7 @@ const ThankyouForDonationForm = () => {
                 for your records.
               </p>
             </div>
-            <div className="modal-footer d-flex flex-column justify-content-center">
+            {/* <div className="modal-footer d-flex flex-column justify-content-center">
               <h5 style={{ color: "#9F1718", cursor: "pointer" }}>
                 <b>
                   <u>Share with Friends</u>
@@ -82,7 +82,7 @@ const ThankyouForDonationForm = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

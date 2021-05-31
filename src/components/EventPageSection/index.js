@@ -152,7 +152,7 @@ const EventSection = () => {
                                     <a
                                       target="_blank"
                                       rel="noopener noreferrer"
-                                      href="https://www.facebook.com/sharer/sharer.php?u= http://haminepal.org/"
+                                      href="https://www.facebook.com/sharer/sharer.php?u=http://haminepal.org/"
                                       className="fb-xfbml-parse-ignore"
                                     >
                                       <img

@@ -15,8 +15,8 @@ export const EventSectionData = [
       {
         id: 2,
         slug: "importing-oxygen-concentrator",
-        thumbnailImage: "/img/oxygen-plant-icon.png",
-        image: "/img/oxygen-plant.jpg",
+        thumbnailImage: "/img/oxygen-concentrator.png",
+        image: "/img/o2-concentrator.jpg",
         title: "Importing An Oxygen Concentrator ",
         paragraph:
           "We are collecting quality oxygen concentrators in order to build an oxygen concentrator bank which will directly benefit COVID-19 infected people. Hami Nepal will, however, conduct a need assessment so that we can verify the person is in serious need of oxygen concentrator and the equipment is not being misused.The people receiving the concentrators will also have to provide a photocopy of government issued Identity Card for proper tracking of equipment and to ensure the return-safety of equipment",
