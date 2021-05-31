@@ -115,9 +115,9 @@ const SignUpPageSection = () => {
       <div className="container-sm  mt-5 mb-5">
         <div className="row ">
         <div className="d-flex justify-content-center">
-        <div className="col-md-6">
+        <div className="col-lg-6 col-md-10">
               <Form
-                className="card px-5 py-3 text-center"
+                className="card px-4 py-3 text-center"
                 style={{
                   boxShadow: "0px 0px 5px 0px rgba(212, 182, 212, 1)",
                 }}
