@@ -336,6 +336,11 @@ a{
 .donationDetail>div{
   margin-bottom: 0.6rem !important;
 }
+.intro>p.mx-5{
+  margin-right:1rem !important;
+  margin-left: 1rem !important;
+  text-align: justify;
+}
 }
 
 @media (max-width: 420px) {
