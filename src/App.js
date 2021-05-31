@@ -1,3 +1,4 @@
+import './index.css';
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import SecondaryNavbar from './components/Navbar/SecondaryNavbar'
