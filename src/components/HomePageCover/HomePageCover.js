@@ -24,7 +24,7 @@ const HomePageCover = () => {
 
 	return (
 		<div className='row herorow' style={heroStyle}>
-			<div style={donateBtn} className='col-md-12'>
+			<div style={donateBtn} className='col-md-12 donate-video'>
 				<button
 					type='button'
 					data-bs-toggle='modal'

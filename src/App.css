@@ -293,12 +293,21 @@ a{
   width:275px;
 }
 }
-
-@media (max-width:422px){
-  .herorow .col-md-12{
-    margin-left: 1rem !important;
-    margin-bottom: 1rem !important; 
-  }
+@media (max-width:446px){
+  .herorow {
+    height: 325px !important;
+    justify-content: space-evenly !important;
+}
+.herorow .donate-video{
+  text-align:center;
+  margin: 0 !important;
+}
+.herorow .donationDetail{
+  margin:0 !important;
+}
+.donationDetail>div{
+  margin-bottom: 0.6rem !important;
+}
 }
 
 @media (max-width: 420px) {
