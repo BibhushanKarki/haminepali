@@ -8,7 +8,7 @@ import CopyRight from "./CopyRight";
 const Footer = () => {
   return (
     <div
-      className="row mt-4  pt-4 px-4 d-flex justify-content-center footer-wrapper"
+      className="row mt-4  pt-4 px-5 d-flex justify-content-center footer-wrapper"
       style={{ backgroundColor: "#821C1D", color: "#FFFFFF" }}
     >
       <div className="col-md-2 d-flex justify-content-center align-items-center">

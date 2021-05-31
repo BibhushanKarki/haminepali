@@ -3,7 +3,7 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <div className="contactinfo mt-5">
-      <h4 className="fw-bold" style={{ fontSize: 18 }}>
+      <h4 className="fw-bold" style={{ fontSize: 15 }}>
         CONTACT INFO
       </h4>
       <ul className="nav-links list-unstyled" style={{ color: "white" }}>
