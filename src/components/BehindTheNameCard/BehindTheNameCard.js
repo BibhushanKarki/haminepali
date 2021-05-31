@@ -15,7 +15,7 @@ const BehindTheNameCard = () => {
     <div className="behindTheNameCardContainer my-4">
       <div className="row d-flex justify-content-center">
         <h2
-          className="fw-bold my-5 text-center"
+          className="fw-bold my-3 text-center"
           style={{ color: "#9F1718", marginLeft: "2rem" }}
         >
           Behind The Name

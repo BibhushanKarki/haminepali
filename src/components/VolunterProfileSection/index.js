@@ -4,11 +4,11 @@ import { FaStar } from "react-icons/fa";
 // import { VolunteerProfileData } from "./VolunteerProfileData";
 import "./volunteerprofile.css";
 import StarRating from "../../pages/StarRating";
-import { Redirect } from 'react-router-dom';
-import { useSelector } from "react-redux";
+// import { Redirect } from 'react-router-dom';
+// import { useSelector } from "react-redux";
 
 const VolunterProfileSection = () => {
-  const { user: currentUser } = useSelector((state) => state.auth);
+  // const { user: currentUser } = useSelector((state) => state.auth);
 
   // if (!currentUser) {
   //   return <Redirect to="/sign-in" />;

@@ -1,7 +1,6 @@
 export const TransparencyDetailData = [
   {
     title: "Raising fund for covid patients",
-    img: "/img/covid-test.png",
     fundReceived: {
       fundTitle: "Oxygen",
       fundAmount: "Rs 5000",

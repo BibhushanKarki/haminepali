@@ -4,13 +4,6 @@ import { SuccessStoriesData as data } from "./SuccessStoriesData";
 import Zoom from "react-reveal/Zoom";
 
 const SuccessStories = () => {
-  const ppStyle = {
-    borderRadius: "50%",
-    height: "100px",
-    width: "100px",
-    objectFit: "cover",
-    alignSelf: "center",
-  };
   return (
     <div className="behindTheNameCardContainer my-4">
       <div className="row justify-content-center ">
@@ -24,7 +17,7 @@ const SuccessStories = () => {
         return (
         <div className="col-md-10 mb-3 d-flex justify-content-center text-center" key={key}>
           <Zoom>
-            <div className="card " >
+            <div className="card ">
               <div className="card-body text-center">
                 <h4
                   className="card-title fw-bold text-left"
@@ -32,7 +25,7 @@ const SuccessStories = () => {
                 >
                   {data.storyTitle}
                 </h4>
-                <img src={data.img} alt="storyimg" />
+                <img src={require("../../../public/img" + data.img)} alt="storyimg" />
                 <p className="card-text text-left my-4">{data.storyDetail}</p>
                 {/* <AppButton buttontext="Read More" /> */}
               </div>

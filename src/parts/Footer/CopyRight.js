@@ -21,7 +21,7 @@ const CopyRight = () => {
 			<footer style={footerStyle}>
 				<small>Copyright © 2021 HamiNepal ! All Rights Reserved</small>
 				<div style={developedBy}>
-					<small>Developed By Hashtechnologies.net</small>
+					<small>Developed By <a href="https://hashtechnologies.net/" style={{color:'white'}}><b>Hash Technologies</b></a></small>
 				</div>
 			</footer>
 		</div>
