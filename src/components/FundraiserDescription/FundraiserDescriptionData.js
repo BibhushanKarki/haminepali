@@ -31,28 +31,28 @@ export const DonationData = [
 ]
 
 export const FundraiserDescriptionComments = [
-  {
-    commenter: "Savyata Bhattarai",
-    donatedAmount: "100",
-    msg: "I wanted to help people as much as i can",
-    commentTime: "5hr",
-  },
-  {
-    commenter: "Savyata Bhattarai",
-    donatedAmount: "100",
-    msg: "I wanted to help people as much as i can",
-    commentTime: "5hr",
-  },
-  {
-    commenter: "Savyata Bhattarai",
-    donatedAmount: "100",
-    msg: "I wanted to help people as much as i can",
-    commentTime: "5hr",
-  },
-  {
-    commenter: "Savyata Bhattarai",
-    donatedAmount: "100",
-    msg: "I wanted to help people as much as i can",
-    commentTime: "5hr",
-  },
+	{
+		commenter: 'Savyata Bhattarai',
+		donatedAmount: '100',
+		msg: 'I wanted to help people as much as i can',
+		commentTime: '5hr',
+	},
+	{
+		commenter: 'Savyata Bhattarai',
+		donatedAmount: '100',
+		msg: 'I wanted to help people as much as i can',
+		commentTime: '5hr',
+	},
+	{
+		commenter: 'Savyata Bhattarai',
+		donatedAmount: '100',
+		msg: 'I wanted to help people as much as i can',
+		commentTime: '5hr',
+	},
+	{
+		commenter: 'Savyata Bhattarai',
+		donatedAmount: '100',
+		msg: 'I wanted to help people as much as i can',
+		commentTime: '5hr',
+	},
 ];
