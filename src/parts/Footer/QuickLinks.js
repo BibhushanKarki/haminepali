@@ -6,8 +6,10 @@ const QuickLinks = () => {
     color: "white",
   };
   return (
-    <div className="quicklinks">
-      <h4 className="fw-bold">QUICK LINKS</h4>
+    <div className="quicklinks mt-5">
+      <h4 className="fw-bold" style={{ fontSize: 18 }}>
+        QUICK LINKS
+      </h4>
       <ul className="nav-links list-unstyled">
         <Link to="/fundraisers" style={navStyle}>
           <li className="my-3">Fundraisers</li>

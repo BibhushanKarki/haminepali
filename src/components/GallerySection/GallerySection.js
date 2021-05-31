@@ -7,14 +7,14 @@ import ThirdImg from "../../assets/images/group7.jpg";
 import FourthImg from "../../assets/images/group1.jpg";
 const GallerySection = () => {
   return (
-    <div className="gallery-container">
+    <div className="gallery-container mb-2">
       <div className="container">
         <div className="row text-center">
           <h1 className="fw-bold" style={{ color: "#9f1718" }}>
             Gallery
           </h1>
         </div>
-        <div className="row row-bottom-padded-md">
+        <div className="row row-bottom-padded-md mt-5">
           <div className="col-md-12">
             <ul id="gallery-list">
               <li
@@ -28,7 +28,7 @@ const GallerySection = () => {
                 <Link to="#" className="color-3">
                   <div className="case-studies-summary">
                     <span>Give Love</span>
-                    <h2>Helping is caring</h2>
+                    <h2 style={{ fontSize: 20 }}>Helping is caring</h2>
                   </div>
                 </Link>
               </li>
@@ -44,7 +44,7 @@ const GallerySection = () => {
                 <Link to="#" className="color-4">
                   <div className="case-studies-summary">
                     <span>Give Love</span>
-                    <h2>Donation is caring</h2>
+                    <h2 style={{ fontSize: 20 }}>Donation is caring</h2>
                   </div>
                 </Link>
               </li>
@@ -60,7 +60,7 @@ const GallerySection = () => {
                 <Link to="#" className="color-5">
                   <div className="case-studies-summary">
                     <span>Give Love</span>
-                    <h2>Donation is caring</h2>
+                    <h2 style={{ fontSize: 20 }}>Donation is caring</h2>
                   </div>
                 </Link>
               </li>
@@ -75,7 +75,7 @@ const GallerySection = () => {
                 <Link to="#" className="color-6">
                   <div className="case-studies-summary">
                     <span>Give Love</span>
-                    <h2>Donation is caring</h2>
+                    <h2 style={{ fontSize: 20 }}>Donation is caring</h2>
                   </div>
                 </Link>
               </li>

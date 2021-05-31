@@ -7,12 +7,9 @@ import "./top-fundraiser.css";
 const TopFundraiserCard = ({ title }) => {
   return (
     <div className="cardContainer my-4 px-5">
-      <div className="row">
+      <div className="row px-5">
         <div className="top-fundraiser-heading">
-          <h2
-            className="fw-bold my-3 "
-            style={{ color: "#9F1718", marginLeft: "2rem" }}
-          >
+          <h2 className="fw-bold my-3 " style={{ color: "#9F1718" }}>
             {title}
           </h2>
         </div>

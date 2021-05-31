@@ -1,14 +1,14 @@
-import React from 'react';
-import Logo from '../../assets/images/haminepalilogo.png';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Logo from "../../assets/images/haminepallogo11.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-	return (
+  return (
     <div className="conatiner">
       <div className="row fixed-navbar">
         <nav className="navbar navbar-expand-lg navbar-light">
           <Link className="navbar-brand" to="/">
-            <img src={Logo} alt="" width="100" height="85" />
+            <img src={Logo} alt="" height="85" />
           </Link>
           <button
             className="navbar-toggler"
@@ -47,6 +47,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
+              &nbsp; &nbsp;
               <li className="nav-item dropdown fw-bold">
                 <Link
                   className="nav-link dropdown-toggle"
@@ -91,6 +92,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
+              &nbsp; &nbsp;
               <li className="nav-item dropdown fw-bold">
                 <Link
                   className="nav-link dropdown-toggle"

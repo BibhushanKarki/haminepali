@@ -7,6 +7,7 @@ const SecondaryNavbar = () => {
     textDecoration: "none",
     color: "white",
     fontWeight: "bold",
+    fontSize: "15px",
   };
   const secNavContainer = {
     backgroundColor: "#9F1718",

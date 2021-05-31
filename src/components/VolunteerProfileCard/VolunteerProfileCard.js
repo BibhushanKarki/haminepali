@@ -19,12 +19,9 @@ const VolunteerProfileCard = () => {
   };
   return (
     <div className="profileCardContainer my-4 px-5 ">
-      <div className="row">
+      <div className="row px-5">
         <div className="volunteer-profile-heading">
-          <h2
-            className="fw-bold my-3 "
-            style={{ color: "#9F1718", marginLeft: "2rem" }}
-          >
+          <h2 className="fw-bold my-3 " style={{ color: "#9F1718" }}>
             Our Volunteer's Profile
           </h2>
         </div>

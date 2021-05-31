@@ -10,8 +10,10 @@ const ConnectWithUs = () => {
     color: "white",
   };
   return (
-    <div className="connectwithus">
-      <h4 className="fw-bold">CONNECT WITH US</h4>
+    <div className="connectwithus mt-5">
+      <h4 className="fw-bold" style={{ fontSize: 18 }}>
+        CONNECT WITH US
+      </h4>
       <ul className="nav-links list-unstyled">
         <li className="my-3">
           <img
