@@ -18,7 +18,7 @@ const VolunteerProfileCard = () => {
     alignItems: "center",
   };
   return (
-    <div className="profileCardContainer my-4  ">
+    <div className="profileCardContainer my-4 px-5 ">
       <div className="row">
         <div className="volunteer-profile-heading">
           <h2
