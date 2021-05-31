@@ -244,6 +244,7 @@ a{
   .herorow{
     height: 420px !important; 
   }
+  
 }
 @media (max-width:750px){
   .secNav>a,.secNav>.nav-item{
@@ -284,6 +285,12 @@ a{
   .btn-donation-red {
     font-size: 12px;
   }
+  .image-right {
+    height: 200px !important;
+}
+.image-right img{
+  width:275px;
+}
 }
 
 @media (max-width:422px){

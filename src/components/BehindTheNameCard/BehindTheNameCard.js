@@ -23,7 +23,7 @@ const BehindTheNameCard = () => {
         {data.map((data, key) => {
           return (
             <div
-              className="col-md-10 mt-5  mb-3 d-flex justify-content-center"
+              className="col-md-5 mt-5  mb-3 d-flex justify-content-center"
               key={key}
             >
               <Zoom>

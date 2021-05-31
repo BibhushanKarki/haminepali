@@ -4,9 +4,6 @@ import {Link} from 'react-router-dom'
 import Zoom from "react-reveal/Zoom";
 
 const TopFundraiserCard = ({title}) => {
-  const cardStyle={
-    width: '18rem'
-  }
   
   const cardLineStyle={
     height:'5px',
@@ -21,12 +18,12 @@ const TopFundraiserCard = ({title}) => {
         {data.map((data,key)=>{
           return (
             <div
-              className="col-md-3 mb-3  d-flex justify-content-center"
+              className="col-lg-3 col-md-6 col-sm-6 mb-3 d-flex justify-content-center"
               key={key}
             >
               <Link to="/fundraiserdescription" style={{ color: "black" }}>
                 <Zoom>
-                  <div className="card" style={cardStyle}>
+                  <div className="card">
                     <img
                       src={data.cardimg}
                       className="card-img-top"
