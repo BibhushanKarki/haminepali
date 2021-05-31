@@ -128,13 +128,8 @@ const EventExtendedSection = () => {
                                 <a
                                   target="_blank"
                                   rel="noopener noreferrer"
-<<<<<<< HEAD
                                   href="https://www.facebook.com/sharer/sharer.php?u= http://haminepal.org/"
                                   className="fb-xfbml-parse-ignore"
-=======
-                                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-                                  class="fb-xfbml-parse-ignore"
->>>>>>> 81116fbe5eb828c338cb17e0102987714108c6a7
                                 >
                                   <img src="/img/facebook.png" alt="facebook" />
                                 </a>
