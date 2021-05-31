@@ -58,7 +58,7 @@ const ContactPageContent = () => {
                 <div className="col-md-12">
                   <input
                     type="email"
-                    class="form-control"
+                    className="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
                     placeholder="Email*"

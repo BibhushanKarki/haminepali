@@ -5,6 +5,7 @@ import "./event-extended.css";
 import { EventExtendedSectionData as items } from "./EventExtendedSectionData";
 import { EventSectionData } from "../EventPageSection/EventSectionData";
 import DonationFormSection from "../../components/DonationFormSection";
+import { Helmet } from "react-helmet";
 
 const EventExtendedSection = () => {
   const [inputValue, setInputValue] = useState("");
@@ -24,6 +25,24 @@ const EventExtendedSection = () => {
 
   return currentEvent ? (
     <>
+      <Helmet>
+        <title>{currentEvent.title} - HamiNepal</title>
+        <meta
+          property="og:url"
+          content={`http://haminepal.org/event/${key}/${currentEvent.slug}`}
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={currentEvent.title} />
+        <meta
+          property="og:description"
+          content={`${currentEvent.paragraph.substr(0, 100)}...`}
+        />
+        <meta
+          property="og:image"
+          content={`http://haminepal.org/${currentEvent.image}
+        `}
+        />
+      </Helmet>
       <div className="container mt-5">
         <div className="row ">
           <div className="col-md-12">
@@ -100,9 +119,21 @@ const EventExtendedSection = () => {
                         <div className="row mb-2  ">
                           <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
                             <div className="col">
-                              <Link to="#">
-                                <img src="/img/facebook.png" alt="facebook" />
-                              </Link>
+                              <div
+                                className="fb-share-button"
+                                data-href="https://developers.facebook.com/docs/plugins/"
+                                data-layout="box_count"
+                                data-size="small"
+                              >
+                                <a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  href="https://www.facebook.com/sharer/sharer.php?u= http://haminepal.org/"
+                                  className="fb-xfbml-parse-ignore"
+                                >
+                                  <img src="/img/facebook.png" alt="facebook" />
+                                </a>
+                              </div>
                               <h5
                                 style={{
                                   fontSize: 15,
@@ -250,13 +281,16 @@ const EventExtendedSection = () => {
     </>
   ) : (
     <div className="container mt-4">
-      <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <div
+        className="alert alert-danger d-flex align-items-center"
+        role="alert"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           fill="currentColor"
-          class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+          className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
           viewBox="0 0 16 16"
           role="img"
           aria-label="Warning:"

@@ -28,6 +28,12 @@ a{
   background-color:#9F1718 !important;
   color:white !important;
   border:2px solid transparent !important;
+} 
+.btn-navbar{
+  background-color:#9F1718 !important;
+  color:white !important;
+  border:2px solid transparent !important;
+  border-radius: 20px;
 }
 .btn-plain{
   background-color:#fff !important;
@@ -99,6 +105,15 @@ a{
 }
 .dropdown-item:hover{
   color:#9F1718;
+}
+.dropdown-item:active{
+  background-color:rgb(221, 221, 221);
+}
+#navbarSupportedContent .navbar-nav>li{
+  margin:0 1rem;
+}
+#navbarSupportedContent .navbar-nav>li a{
+  padding: 0.5rem 1.5rem;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -186,13 +201,23 @@ a{
 .search-nav .fa-search {
   position: absolute;
   top: 10px;
-  right: 30%;
+  left: 10px;
 }
 
 .btn:focus{
   box-shadow: none !important;
 }
 /* Responsive Css */
+
+@media (max-width:1290px){
+  .navbar-nav{
+    flex-wrap: wrap;
+    margin:0.75rem 0;
+  }
+  .secNav>a,.secNav>.nav-item{
+    margin: 1rem;
+  }
+}
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,
@@ -213,14 +238,7 @@ a{
     justify-content: center !important;
   }
 }
-@media (max-width: 500px) {
-  .contactinfo,
-  .connectwithus,
-  .quicklinks {
-    text-align: center;
-    margin: 1rem 0;
-  }
-}
+
 @media (max-width: 768px) {
   .btn-donation,
   .btn-donation-red {
@@ -235,12 +253,18 @@ a{
   .downloadDesc h4 {
     font-size: 18px !important;
   }
+  .herorow{
+    height: 420px !important; 
+  }
+  
 }
-@media (max-width: 715px) {
-  .secNav > a {
-    font-size: 12px;
+
+@media (max-width:750px){
+  .secNav>a,.secNav>.nav-item{
+    font-size: 15px;
   }
 }
+
 @media (max-width: 630px) {
   .downloadApp {
     flex-direction: column !important;
@@ -249,12 +273,55 @@ a{
     margin-top: 1rem;
   }
 }
+@media (max-width:550px){
+  .herorow{
+    height: 325px !important; 
+  }
+}
+@media (max-width: 500px) {
+  .contactinfo,
+  .connectwithus,
+  .quicklinks {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .navbar-nav{
+    flex-wrap: wrap;
+    margin:0.5rem 0;
+  }
+  .secNav>a,.secNav>.nav-item{
+    margin: 0.5rem;
+  }
+}
 @media (max-width: 486px) {
   .btn-donation,
   .btn-donation-red {
     font-size: 12px;
   }
+  .image-right {
+    height: 200px !important;
 }
+.image-right img{
+  width:275px;
+}
+}
+@media (max-width:446px){
+  .herorow {
+    height: 325px !important;
+    justify-content: space-evenly !important;
+}
+.herorow .donate-video{
+  text-align:center;
+  margin: 0 !important;
+}
+.herorow .donationDetail{
+  margin:0 !important;
+}
+.donationDetail>div{
+  margin-bottom: 0.6rem !important;
+}
+}
+
 @media (max-width: 420px) {
   .donationDetail {
     flex-direction: column !important;

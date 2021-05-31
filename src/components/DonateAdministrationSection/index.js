@@ -44,13 +44,9 @@ const DonateAdministrationSection = () => {
         <div className="row">
           <div className="col">
             <div className="section-content-paragraph" style={sectionContent}>
-              {data.map((data) => {
-                return (
                   <p style={contentParaghaph} key={data.id}>
                     {data.paragraph}
                   </p>
-                );
-              })}
             </div>
           </div>
         </div>

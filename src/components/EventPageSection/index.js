@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./event.css";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { EventSectionData } from "./EventSectionData";
 import DonationFormSection from "../../components/DonationFormSection";
-// import Fade from "react-reveal/Fade";
+import { Helmet } from "react-helmet";
 
 const EventSection = () => {
   const [inputValue, setInputValue] = useState("");
+  const [url, setUrl] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
 
   const { key } = useParams();
+  const [title, setTitle] = useState(key + " Events");
 
   let currentEventData;
 
@@ -21,17 +25,40 @@ const EventSection = () => {
     currentEventData = currentEventBundle.data;
   }
 
+  const changeHead = (title, url, description, image) => {
+    setUrl(url);
+    setTitle(title);
+    setDescription(description);
+    setImage(image);
+  };
+
+  useEffect(() => {
+    setTitle(key);
+  }, [key]);
+
   return currentEventData ? (
     <>
+      <Helmet>
+        <title>{title} - HamiNepal</title>
+        <meta property="og:url" content={url} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
+      </Helmet>
       <div className="container">
         <h2 style={{ textTransform: "capitalize", marginTop: 20 }}>
           {key} Events
         </h2>
       </div>
+      {currentEventData.length === 0 ? (
+        <div className="alert alert-info">No {key} Events</div>
+      ) : (
+        ""
+      )}
       {currentEventData.map((data) => {
         return (
           <div className="row mt-5 px-5" key={data.id}>
-            {/* <Fade bottom> */}
             <div className="card card-event-section mb-3">
               <div className="row no-gutters">
                 <div className="col-md-2 mt-4 ">
@@ -80,6 +107,14 @@ const EventSection = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#shareModal"
                       className="btn btn-secondary button-secondary mt-4 "
+                      onClick={() =>
+                        changeHead(
+                          data.title,
+                          `http://haminepal.org/event/${key}/${data.slug}`,
+                          `${data.paragraph.substr(0, 100)}...`,
+                          `http://haminepal.org/${data.image}`
+                        )
+                      }
                     >
                       Share
                     </button>
@@ -108,12 +143,24 @@ const EventSection = () => {
                             <div className="row mb-2  ">
                               <div className="col-md-12 d-flex flex-row px-2 ms-1 ">
                                 <div className="col">
-                                  <Link to="#">
-                                    <img
-                                      src="/img/facebook.png"
-                                      alt="facebook"
-                                    />
-                                  </Link>
+                                  <div
+                                    className="fb-share-button"
+                                    data-href="https://developers.facebook.com/docs/plugins/"
+                                    data-layout="box_count"
+                                    data-size="small"
+                                  >
+                                    <a
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      href="https://www.facebook.com/sharer/sharer.php?u=http://haminepal.org/"
+                                      className="fb-xfbml-parse-ignore"
+                                    >
+                                      <img
+                                        src="/img/facebook.png"
+                                        alt="facebook"
+                                      />
+                                    </a>
+                                  </div>
                                   <h5
                                     style={{
                                       fontSize: 15,
@@ -127,7 +174,7 @@ const EventSection = () => {
 
                                 <div className="col">
                                   <Link to="#">
-                                    <img src="/img/viber.png" alt="facebook" />
+                                    <img src="/img/viber.png" alt="viber" />
                                   </Link>
                                   <h5
                                     style={{
@@ -179,6 +226,7 @@ const EventSection = () => {
                                       alt="whatsapp"
                                     />
                                   </Link>
+
                                   <h5
                                     style={{
                                       fontSize: 14,
@@ -228,20 +276,22 @@ const EventSection = () => {
                 </div>
               </div>
             </div>
-            {/* </Fade> */}
           </div>
         );
       })}
     </>
   ) : (
     <div className="container mt-4">
-      <div class="alert alert-danger d-flex align-items-center" role="alert">
+      <div
+        className="alert alert-danger d-flex align-items-center"
+        role="alert"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           fill="currentColor"
-          class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+          className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
           viewBox="0 0 16 16"
           role="img"
           aria-label="Warning:"

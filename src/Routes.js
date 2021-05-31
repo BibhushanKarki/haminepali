@@ -3,6 +3,7 @@ import Home from "./pages/Home/Home";
 import { Route, Switch } from "react-router-dom";
 import Donate from "./pages/Donate/Donate";
 import Volunteer from "./pages/Volunteer/Volunteer";
+import BeVolunteer from "./pages/BeVolunteer";
 import Cause from "./pages/Cause/Cause";
 import Events from "./pages/Events/Events";
 import EventExtended from "./pages/EventExtended";
@@ -40,6 +41,7 @@ const Routes = () => {
       <Route path="/" component={Home} exact />
       <Route path="/donate" component={Donate} />
       <Route path="/volunteer" component={Volunteer} />
+      <Route path="/be-volunteer" component={BeVolunteer} />
       <Route path="/cause" component={Cause} />
       <Route path="/events/:key" component={Events} />
       <Route path="/event/:key/:slug" component={EventExtended} />

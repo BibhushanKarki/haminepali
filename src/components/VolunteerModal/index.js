@@ -1,14 +1,14 @@
 import React from "react";
 import Verify from "../../assets/images/Verify1.png";
 
-const ThankyouForDonationForm = () => {
+const VolunteerModal = () => {
   return (
     <>
       <div
         className="modal fade"
-        id="donationModal"
+        id="volunteerModal"
         tabIndex="-1"
-        aria-labelledby="donationModalLabel"
+        aria-labelledby="volunteerModalLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered">
@@ -25,10 +25,10 @@ const ThankyouForDonationForm = () => {
                 />
                 <h4
                   className="modal-title fw-bold"
-                  id="donationModalLabel"
+                  id="volunteerModalLabel"
                   style={{ color: "#9F1718" }}
                 >
-                  Donation Completed!
+                  Cogratulations You are Registered !!
                 </h4>
               </div>
               <button
@@ -43,14 +43,14 @@ const ThankyouForDonationForm = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">
+            {/* <div className="modal-body">
               <p style={{ color: "rgba(0, 0, 0, 0.67)" }}>
-                Your donation of Rs.1000 has been successfully processed. An
+                Your volunteer of Rs.1000 has been successfully processed. An
                 e-mail receipt has been sent to name@gmail.com .Please save this
                 for your records.
               </p>
-            </div>
-            {/* <div className="modal-footer d-flex flex-column justify-content-center">
+            </div> */}
+            <div className="modal-footer d-flex flex-column justify-content-center">
               <h5 style={{ color: "#9F1718", cursor: "pointer" }}>
                 <b>
                   <u>Share with Friends</u>
@@ -59,30 +59,22 @@ const ThankyouForDonationForm = () => {
               <div className="social d-flex justify-content-evenly w-100 mt-4">
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/facebook.png" alt="fb" />
-                  <p className="fw-bold mt-2" style={{ color: "black" }}>
-                    Facebook
-                  </p>
+                  <p className="fw-bold mt-2">Facebook</p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/twitter.png" alt="tw" />
-                  <p className="fw-bold mt-2" style={{ color: "black" }}>
-                    Twitter
-                  </p>
+                  <p className="fw-bold mt-2">Twitter</p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/instagram.jpg" alt="insta" />
-                  <p className="fw-bold mt-2" style={{ color: "black" }}>
-                    Instagram
-                  </p>
+                  <p className="fw-bold mt-2">Instagram</p>
                 </div>
                 <div className="d-flex flex-column align-items-center">
                   <img src="/img/whatsapp.png" alt="whatsapp" />
-                  <p className="fw-bold mt-2" style={{ color: "black" }}>
-                    Whatsapp
-                  </p>
+                  <p className="fw-bold mt-2">Whatsapp</p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
@@ -90,4 +82,4 @@ const ThankyouForDonationForm = () => {
   );
 };
 
-export default ThankyouForDonationForm;
+export default VolunteerModal;
