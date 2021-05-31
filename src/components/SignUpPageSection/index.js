@@ -256,47 +256,6 @@ const SignUpPageSection = () => {
                     Please save this for your records.
                   </p>
                 </div>
-                <div className="modal-footer d-flex flex-column justify-content-center">
-                  <h5 style={{ color: "#9F1718", cursor: "pointer" }}>
-                    <b>
-                      <u>Share with Friends</u>
-                    </b>
-                  </h5>
-                  <div className="social d-flex justify-content-evenly w-100 mt-4">
-                    <div className="d-flex flex-column align-items-center">
-                      <img
-                        style={{ height: "40px", width: "40px" }}
-                        src="https://image.flaticon.com/icons/png/512/1384/1384053.png"
-                        alt="fb"
-                      />
-                      <p className="fw-bold mt-2">Facebook</p>
-                    </div>
-                    <div className="d-flex flex-column align-items-center">
-                      <img
-                        style={{ height: "40px", width: "40px" }}
-                        src="https://image.flaticon.com/icons/png/512/733/733579.png"
-                        alt="tw"
-                      />
-                      <p className="fw-bold mt-2">Twitter</p>
-                    </div>
-                    <div className="d-flex flex-column align-items-center">
-                      <img
-                        style={{ height: "40px", width: "40px" }}
-                        src="https://image.flaticon.com/icons/png/512/1384/1384063.png"
-                        alt="insta"
-                      />
-                      <p className="fw-bold mt-2">Instagram</p>
-                    </div>
-                    <div className="d-flex flex-column align-items-center">
-                      <img
-                        style={{ height: "40px", width: "40px" }}
-                        src="https://image.flaticon.com/icons/png/512/220/220236.png"
-                        alt="whatsapp"
-                      />
-                      <p className="fw-bold mt-2">Whatsapp</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
