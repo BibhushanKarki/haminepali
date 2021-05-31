@@ -25,7 +25,7 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown fw-bold">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle btn-navbar"
                   to="/discover"
                   id="navbarDropdown"
                   role="button"
@@ -49,7 +49,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown fw-bold">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle btn-navbar"
                   to="/fundraiserfor"
                   id="navbarDropdown"
                   role="button"
@@ -93,7 +93,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown fw-bold">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle btn-navbar"
                   to="/howitwork"
                   id="navbarDropdown"
                   role="button"

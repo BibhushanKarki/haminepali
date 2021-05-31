@@ -28,6 +28,12 @@ a{
   background-color:#9F1718 !important;
   color:white !important;
   border:2px solid transparent !important;
+} 
+.btn-navbar{
+  background-color:#9F1718 !important;
+  color:white !important;
+  border:2px solid transparent !important;
+  border-radius: 20px;
 }
 .btn-plain{
   background-color:#fff !important;
@@ -102,6 +108,12 @@ a{
 }
 .dropdown-item:active{
   background-color:rgb(221, 221, 221);
+}
+#navbarSupportedContent .navbar-nav>li{
+  margin:0 1rem;
+}
+#navbarSupportedContent .navbar-nav>li a{
+  padding: 0.5rem 1.5rem;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
