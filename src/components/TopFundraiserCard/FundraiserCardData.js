@@ -1,6 +1,6 @@
 export const FundraiserCardData = [
   {
-    cardimg: "https://image.flaticon.com/icons/png/512/892/892781.png",
+    cardimg: "https://freedesignfile.com/upload/2018/08/Flat-character-avatar-vector.jpg",
     location: "Nepal",
     title: "Bibek Ghimire",
     desc: "Hats off to all the volunteers doing such great work in this pandemic situation. ",
@@ -9,7 +9,7 @@ export const FundraiserCardData = [
     donationLevel: "Top Donation",
   },
   {
-    cardimg: "https://image.flaticon.com/icons/png/512/892/892781.png",
+    cardimg: "https://www.premadegraphics.com/img_1/23/Female-Avatar-2.png",
     location: "Nepal",
     title: "Pasang Sherpa",
     desc: "Thank you so much to the HamiNepal team for all that you are doing. ",
