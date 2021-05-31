@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 body {
   font-family: "NeueMontreal", sans-serif !important;
   overflow-x: hidden;
@@ -24,15 +24,17 @@ a {
 .btn {
   border: 2px solid transparent !important;
 }
-.btn-primary,.btn-custom,#pills-tab li button.active{
-  background-color:#9F1718 !important;
-  color:white !important;
-  border:2px solid transparent !important;
-} 
-.btn-navbar{
-  background-color:#9F1718 !important;
-  color:white !important;
-  border:2px solid transparent !important;
+.btn-primary,
+.btn-custom,
+#pills-tab li button.active {
+  background-color: #9f1718 !important;
+  color: white !important;
+  border: 2px solid transparent !important;
+}
+.btn-navbar {
+  background-color: #9f1718 !important;
+  color: white !important;
+  border: 2px solid transparent !important;
   border-radius: 20px;
 }
 .btn-plain {
@@ -109,10 +111,10 @@ a {
 .dropdown-item:active {
   background-color: rgb(221, 221, 221);
 }
-#navbarSupportedContent .navbar-nav>li{
-  margin:0 1rem;
+#navbarSupportedContent .navbar-nav > li {
+  margin: 0 1rem;
 }
-#navbarSupportedContent .navbar-nav>li a{
+#navbarSupportedContent .navbar-nav > li a {
   padding: 0.5rem 1.5rem;
 }
 .card {
@@ -152,12 +154,9 @@ a {
   width: 85% !important;
   display: inline !important;
 }
-<<<<<<< HEAD
-=======
-.intro{
+.intro {
   font-weight: 500;
 }
->>>>>>> 6ca1983fc43f0487c6b7026027e6201530e3532a
 
 /* Search bar */
 
@@ -263,15 +262,10 @@ a {
     height: 420px !important;
   }
 }
-<<<<<<< HEAD
+
 @media (max-width: 750px) {
   .secNav > a,
   .secNav > .nav-item {
-=======
-
-@media (max-width:750px){
-  .secNav>a,.secNav>.nav-item{
->>>>>>> 6ca1983fc43f0487c6b7026027e6201530e3532a
     font-size: 15px;
   }
 }
@@ -284,26 +278,20 @@ a {
     margin-top: 1rem;
   }
 }
-<<<<<<< HEAD
-@media (max-width: 550px) {
-  .herorow {
-    height: 325px !important;
-=======
-@media (max-width:585px){
+@media (max-width: 585px) {
   #navbarSupportedContent .navbar-nav > li {
-      margin: 0 0.5rem;
+    margin: 0 0.5rem;
   }
   #navbarSupportedContent .navbar-nav > li a {
     padding: 0.5rem 0.8rem;
-}
-  #navbarSupportedContent form{
+  }
+  #navbarSupportedContent form {
     margin: 1.5rem 0 !important;
   }
 }
-@media (max-width:550px){
-  .herorow{
-    height: 325px !important; 
->>>>>>> 6ca1983fc43f0487c6b7026027e6201530e3532a
+@media (max-width: 550px) {
+  .herorow {
+    height: 325px !important;
   }
 }
 @media (max-width: 500px) {
@@ -334,39 +322,32 @@ a {
     width: 275px;
   }
 }
-<<<<<<< HEAD
-
-@media (max-width: 422px) {
-  .herorow .col-md-12 {
-    margin-left: 1rem !important;
-    margin-bottom: 1rem !important;
-=======
-@media (max-width:457px){
-  .search-nav,#navbarSupportedContent form .hide{
-    display:none;
->>>>>>> 6ca1983fc43f0487c6b7026027e6201530e3532a
+@media (max-width: 457px) {
+  .search-nav,
+  #navbarSupportedContent form .hide {
+    display: none;
   }
 }
-@media (max-width:446px){
+@media (max-width: 446px) {
   .herorow {
     height: 325px !important;
     justify-content: space-evenly !important;
-}
-.herorow .donate-video{
-  text-align:center;
-  margin: 0 !important;
-}
-.herorow .donationDetail{
-  margin:0 !important;
-}
-.donationDetail>div{
-  margin-bottom: 0.6rem !important;
-}
-.intro>p.mx-5{
-  margin-right:1rem !important;
-  margin-left: 1rem !important;
-  text-align: justify;
-}
+  }
+  .herorow .donate-video {
+    text-align: center;
+    margin: 0 !important;
+  }
+  .herorow .donationDetail {
+    margin: 0 !important;
+  }
+  .donationDetail > div {
+    margin-bottom: 0.6rem !important;
+  }
+  .intro > p.mx-5 {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 420px) {
@@ -383,21 +364,22 @@ a {
 }
 
 @media (max-width: 418px) {
-  .donate-video button{
+  .donate-video button {
     margin-top: 0 !important;
   }
-  .donate-video h5{
-    margin:0.5rem 0 !important;
+  .donate-video h5 {
+    margin: 0.5rem 0 !important;
   }
   .herorow {
     height: 300px !important;
-}
-.donationDetail > div > button {
+  }
+  .donationDetail > div > button {
     width: 35%;
-}
-.btn-donation, .btn-donation-red {
+  }
+  .btn-donation,
+  .btn-donation-red {
     font-size: 10px;
-}
+  }
 }
 @media (max-width: 375px) {
   .storeBtn {
@@ -408,7 +390,7 @@ a {
     height: 100% !important;
     margin-bottom: 5px;
   }
-  .herorow{
+  .herorow {
     background-size: 110% !important;
   }
 }

@@ -7,15 +7,9 @@ import DonationFormSection from "../../components/DonationFormSection";
 const HomePageCover = () => {
   const heroStyle = {
     backgroundImage: `url(${HeroImg})`,
-<<<<<<< HEAD
     backgroundRepeat: "no-repeat",
     backgroundSize: "100%",
-    backgroundPosition: "top 5px",
-=======
-    backgroundRepeat:'no-repeat',
-    backgroundSize:'100%',
-    backgroundPosition: 'center',
->>>>>>> 6ca1983fc43f0487c6b7026027e6201530e3532a
+    backgroundPosition: "center",
     height: "600px",
     color: "#fff",
     display: "flex",
@@ -28,10 +22,9 @@ const HomePageCover = () => {
     marginBottom: "5rem",
   };
 
-<<<<<<< HEAD
   return (
-    <div className="row herorow " style={heroStyle}>
-      <div style={donateBtn} className="col-md-12 ">
+    <div className="row herorow" style={heroStyle}>
+      <div style={donateBtn} className="col-md-12 donate-video">
         <button
           type="button"
           data-bs-toggle="modal"
@@ -42,20 +35,6 @@ const HomePageCover = () => {
           <BsChevronRight />
         </button>
         <DonationFormSection />
-=======
-	return (
-		<div className='row herorow' style={heroStyle}>
-			<div style={donateBtn} className='col-md-12 donate-video'>
-				<button
-					type='button'
-					data-bs-toggle='modal'
-					data-bs-target='#donateModal'
-					className='btn btn-primary mt-4 fw-bold'>
-					Donate
-					<BsChevronRight />
-				</button>
-				<DonationFormSection />
->>>>>>> 6ca1983fc43f0487c6b7026027e6201530e3532a
 
         <h5 className="my-3">
           <img
