@@ -96,3 +96,13 @@ a {
   font-weight: 400;
   margin: 0 0 30px 0;
 } */
+
+
+@media (max-width:768px){
+  #gallery-list li a .case-studies-summary h2{
+    font-size:20px ;
+  }
+  #gallery-list li.one-third,#gallery-list li.two-third{
+    width:50%;
+  }
+}
