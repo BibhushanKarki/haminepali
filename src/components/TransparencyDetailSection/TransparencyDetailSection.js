@@ -9,11 +9,12 @@ const TransparencyDetailSection = () => {
   return (
     <div className="row mx-2">
       <div className="col-md-12">
-        <h2>{data.title}</h2>
+        <h2 className="my-3">Importing An Oxygen Plant</h2>
         <img
-          src="/img/covid-test.png"
+          src="https://www.mumbailive.com/images/media/images/oxygen_plants_1619086394870.jpg?bg=dbdbd8&crop=1200%2C673.6842105263157%2C0%2Cnull&fit=crop&fitToScale=w%2C1368%2C768&h=606.3157894736842&height=675&w=1080&width=1200',
+          eventTitle:'Importing An Oxygen Plant"
           alt="covid-test"
-          style={{ height: 500, width: 1000, marginBottom: 20 }}
+          style={{ height: '410px', width: '800px', marginBottom: 20 }}
         />
       </div>
       <div className="col-md-10">

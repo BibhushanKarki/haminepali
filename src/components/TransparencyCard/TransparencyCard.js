@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const TransparencyCard = () => {
   const cardStyle={
-    width: '18rem'
+    width: '100%'
   }
   const ppStyle={
     width:'100%',
@@ -23,7 +23,7 @@ const TransparencyCard = () => {
         <div className="col-md-6">
             <div class="input-group">
               <div class="form-outline" style={{width:'100%'}}>
-                <input type="search" id="form1" class="form-control fw-bold" placeholder="Search Token" style={inputStyle}/>
+                <input type="search" id="form1" class="form-control fw-bold" placeholder="Search Events" style={inputStyle}/>
               </div>
             </div>
         </div>
@@ -31,26 +31,29 @@ const TransparencyCard = () => {
         
       <div className="row">
       <h2 className="fw-bold my-3 text-left" style={{color:'#9F1718',marginLeft:'2rem'}}>Ongoing Events</h2>
-                <div
-            className="col-md-3 mb-3 d-flex justify-content-center"
-          >
+                
+      {(data.map((data,key)=>{
+          return(     
+          <div className="col-md-4 mb-3 d-flex justify-content-center">
             <Zoom>
-              <div className="card" style={cardStyle}>
-                <Link href="/transparencydetail" style={{ color: "black" }}>
-                  <img
-                    src={data.img}
-                    className="mb-3"
-                    style={ppStyle}
-                    alt="img"
-                  />
-                  <div className="card-body text-left">
-                    <h5 className="card-title fw-bold">{data.eventTitle}</h5>
-                    <p className="card-text">{data.eventDetail}</p>
+                  <div className="card" style={cardStyle}>
+                    <Link to="/transparencydetail" style={{ color: "black" }}>
+                      <img
+                        src={data.img}
+                        className="mb-3"
+                        style={ppStyle}
+                        alt="img"
+                      />
+                      <div className="card-body text-left">
+                        <h5 className="card-title fw-bold">{data.eventTitle}</h5>
+                        <p className="card-text">{data.eventDetail}</p>
+                      </div>
+                    </Link>
                   </div>
-                </Link>
-              </div>
             </Zoom>
           </div>
+          )
+        }))}
       </div>
       {/* <div className="row">
       <h2 className="fw-bold my-3 text-left" style={{color:'#9F1718',marginLeft:'2rem'}}>Ongoing Cause</h2>

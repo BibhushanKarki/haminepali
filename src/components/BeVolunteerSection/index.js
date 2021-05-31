@@ -51,7 +51,6 @@ const BeVolunteerSection = () => {
             <button
               type="submit"
               className="btn btn-primary"
-              className=" btn btn-primary"
               data-bs-toggle="modal"
               data-bs-target="#volunteerModal"
             >
