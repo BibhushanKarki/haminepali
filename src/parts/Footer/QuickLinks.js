@@ -6,25 +6,23 @@ const QuickLinks = () => {
     color: "white",
   };
   return (
-    <div className="quicklinks mt-5">
-      <h4 className="fw-bold" style={{ fontSize: 18 }}>
-        QUICK LINKS
-      </h4>
+    <div className="quicklinks">
+      <h5 className="fw-bold">QUICK LINKS</h5>
       <ul className="nav-links list-unstyled">
         <Link to="/fundraisers" style={navStyle}>
-          <li className="my-3">Fundraisers</li>
+          <li className="my-4">Fundraisers</li>
         </Link>
         <Link to="/volunteer" style={navStyle}>
-          <li className="my-3">Volunteers</li>
+          <li className="my-4">Volunteers</li>
         </Link>
         <Link to="/aboutus" style={navStyle}>
-          <li className="my-3">About HamiNepali</li>
+          <li className="my-4">About HamiNepali</li>
         </Link>
         <Link to="/contactus" style={navStyle}>
-          <li className="my-3">Contact Us</li>
+          <li className="my-4">Contact Us</li>
         </Link>
         <Link to="/privacy-policy" style={navStyle}>
-          <li className="my-3">Privacy Policy</li>
+          <li className="my-4">Privacy Policy</li>
         </Link>
       </ul>
     </div>

@@ -87,7 +87,7 @@ const SignInSection = (props) => {
             onSubmit={handleLogin}
             ref={form}
           >
-            <div className="col-md-6">
+            <div className="col-lg-6 col-md-8">
               <div
                 className="card px-5 py-3 text-center"
                 style={{
@@ -150,13 +150,13 @@ const SignInSection = (props) => {
                 <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 <hr />
                 <div className="row mt-3 mb-3">
-                  <div className="col-md-6">
+                  <div className="col-md-6 col-sm-12">
                     <Link to="/sign-up" style={{ textDecoration: "none" }}>
                       Don't have an account?
                       <span style={{ color: "#9F1718" }}>Sign Up</span>
                     </Link>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 col-sm-12">
                     <Link
                       to="#"
                       style={{ textDecoration: "none", color: "#9F1718" }}

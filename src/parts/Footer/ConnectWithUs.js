@@ -10,12 +10,10 @@ const ConnectWithUs = () => {
     color: "white",
   };
   return (
-    <div className="connectwithus mt-5">
-      <h4 className="fw-bold" style={{ fontSize: 18 }}>
-        CONNECT WITH US
-      </h4>
+    <div className="connectwithus">
+      <h5 className="fw-bold">CONNECT WITH US</h5>
       <ul className="nav-links list-unstyled">
-        <li className="my-3">
+        <li className="my-4">
           <img
             width="30px"
             height="30px"
@@ -33,7 +31,7 @@ const ConnectWithUs = () => {
             Facebook
           </a>
         </li>
-        <li className="my-3">
+        <li className="my-4">
           <img width="30px" height="30px" alt="socialicons" src={TwitterIcon} />
           &nbsp;{" "}
           <a
@@ -45,7 +43,7 @@ const ConnectWithUs = () => {
             Twitter
           </a>
         </li>
-        <li className="my-3">
+        <li className="my-4">
           <img
             width="30px"
             height="30px"
@@ -63,7 +61,7 @@ const ConnectWithUs = () => {
             LinkedIn
           </a>
         </li>
-        <li className="my-3">
+        <li className="my-4">
           <img
             width="30px"
             height="30px"

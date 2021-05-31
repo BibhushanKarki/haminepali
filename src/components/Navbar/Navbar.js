@@ -25,7 +25,7 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown fw-bold">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle btn-navbar"
                   to="/discover"
                   id="navbarDropdown"
                   role="button"
@@ -50,7 +50,7 @@ const Navbar = () => {
               &nbsp; &nbsp;
               <li className="nav-item dropdown fw-bold">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle btn-navbar"
                   to="/fundraiserfor"
                   id="navbarDropdown"
                   role="button"
@@ -95,7 +95,7 @@ const Navbar = () => {
               &nbsp; &nbsp;
               <li className="nav-item dropdown fw-bold">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle btn-navbar"
                   to="/howitwork"
                   id="navbarDropdown"
                   role="button"
@@ -138,7 +138,7 @@ const Navbar = () => {
                   placeholder="Search"
                 />
               </div>
-              <span className="mx-2">|</span>
+              <span className="mx-2 hide">|</span>
               <Link to="/sign-in">
                 <button type="button" className="btn ">
                   Sign In
