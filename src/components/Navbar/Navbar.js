@@ -136,7 +136,7 @@ const Navbar = () => {
                   placeholder="Search"
                 />
               </div>
-              <span className="mx-2">|</span>
+              <span className="mx-2 hide">|</span>
               <Link to="/sign-in">
                 <button type="button" className="btn ">
                   Sign In

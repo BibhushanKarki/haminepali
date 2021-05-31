@@ -11,9 +11,9 @@ const ConnectWithUs = () => {
   };
   return (
     <div className="connectwithus">
-      <h4 className="fw-bold">CONNECT WITH US</h4>
+      <h5 className="fw-bold">CONNECT WITH US</h5>
       <ul className="nav-links list-unstyled">
-        <li className="my-3">
+        <li className="my-4">
           <img
             width="30px"
             height="30px"
@@ -31,7 +31,7 @@ const ConnectWithUs = () => {
             Facebook
           </a>
         </li>
-        <li className="my-3">
+        <li className="my-4">
           <img width="30px" height="30px" alt="socialicons" src={TwitterIcon} />
           &nbsp;{" "}
           <a
@@ -43,7 +43,7 @@ const ConnectWithUs = () => {
             Twitter
           </a>
         </li>
-        <li className="my-3">
+        <li className="my-4">
           <img
             width="30px"
             height="30px"
@@ -61,7 +61,7 @@ const ConnectWithUs = () => {
             LinkedIn
           </a>
         </li>
-        <li className="my-3">
+        <li className="my-4">
           <img
             width="30px"
             height="30px"

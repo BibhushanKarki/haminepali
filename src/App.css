@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 body {
-  font-family: "Nunito Sans", sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -273,6 +273,17 @@ a{
     margin-top: 1rem;
   }
 }
+@media (max-width:585px){
+  #navbarSupportedContent .navbar-nav > li {
+      margin: 0 0.5rem;
+  }
+  #navbarSupportedContent .navbar-nav > li a {
+    padding: 0.5rem 0.8rem;
+}
+  #navbarSupportedContent form{
+    margin: 1.5rem 0 !important;
+  }
+}
 @media (max-width:550px){
   .herorow{
     height: 325px !important; 
@@ -305,6 +316,11 @@ a{
   width:275px;
 }
 }
+@media (max-width:457px){
+  .search-nav,#navbarSupportedContent form .hide{
+    display:none;
+  }
+}
 @media (max-width:446px){
   .herorow {
     height: 325px !important;
@@ -334,6 +350,24 @@ a{
     width: 50%;
   }
 }
+
+@media (max-width: 418px) {
+  .donate-video button{
+    margin-top: 0 !important;
+  }
+  .donate-video h5{
+    margin:0.5rem 0 !important;
+  }
+  .herorow {
+    height: 300px !important;
+}
+.donationDetail > div > button {
+    width: 35%;
+}
+.btn-donation, .btn-donation-red {
+    font-size: 10px;
+}
+}
 @media (max-width: 375px) {
   .storeBtn {
     flex-direction: column !important;
@@ -342,5 +376,8 @@ a{
     width: 100% !important;
     height: 100% !important;
     margin-bottom: 5px;
+  }
+  .herorow{
+    background-size: 110% !important;
   }
 }

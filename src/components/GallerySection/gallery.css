@@ -103,6 +103,6 @@ a {
     font-size:20px ;
   }
   #gallery-list li.one-third,#gallery-list li.two-third{
-    width:50%;
+    width:100%;
   }
 }
