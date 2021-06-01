@@ -163,35 +163,35 @@ const SecondaryNavbar = () => {
                   <Link
                     to="/howitworks"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                    style={{ color: "#9F1718" }}
                   >
                     How it works?
                   </Link>
                   <Link
                     to="/whyhaminepal"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                    style={{ color: "#9F1718" }}
                   >
                     Why HamiNepali
                   </Link>
                   <Link
                     to="/behindthename"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                    style={{ color: "#9F1718" }}
                   >
                     Behind the name
                   </Link>
                   <Link
                     to="/successstories"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                    style={{ color: "#9F1718" }}
                   >
                     Success Stories
                   </Link>
                   <Link
                     to="/aboutus"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                    style={{ color: "#9F1718" }}
                   >
                     About
                   </Link>
