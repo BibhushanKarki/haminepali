@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="conatiner">
       <div className="row fixed-navbar">
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light ">
           <Link className="navbar-brand" to="/">
             <img src={Logo} alt="" height="85" />
           </Link>
@@ -21,7 +21,10 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button> */}
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
             {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown fw-bold">
                 <Link

@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImg from "../../assets/images/coverimg.jpg";
 import Play from "../../assets/images/play.png";
-import { BsChevronRight } from "react-icons/bs";
+// import { BsChevronRight } from "react-icons/bs";
 import DonationFormSection from "../../components/DonationFormSection";
 
 const HomePageCover = () => {
@@ -31,8 +31,8 @@ const HomePageCover = () => {
           data-bs-target="#donateModal"
           className="btn btn-primary mt-4 fw-bold"
         >
-          Donate
-          <BsChevronRight />
+          Start Fundraising
+          {/* <BsChevronRight /> */}
         </button>
         <DonationFormSection />
 
