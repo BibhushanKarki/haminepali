@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="conatiner">
       <div className="row fixed-navbar">
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light ">
           <Link className="navbar-brand" to="/">
             <img src={Logo} alt="" height="85" />
           </Link>

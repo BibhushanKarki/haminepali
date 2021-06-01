@@ -149,9 +149,54 @@ const SecondaryNavbar = () => {
               <Link style={navStyle} to="/community">
                 Our Community
               </Link>
-              <Link style={navStyle} to="/aboutus">
-                About Us
-              </Link>
+
+              <div className="nav-item dropdown">
+                <Link
+                  style={navStyle}
+                  to="#"
+                  className="dropdown-toggle"
+                  data-toggle="dropdown"
+                >
+                  About Us
+                </Link>
+                <div className="dropdown-menu">
+                  <Link
+                    to="/howitworks"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                  >
+                    How it works?
+                  </Link>
+                  <Link
+                    to="/whyhaminepal"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                  >
+                    Why HamiNepali
+                  </Link>
+                  <Link
+                    to="/behindthename"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                  >
+                    Behind the name
+                  </Link>
+                  <Link
+                    to="/successstories"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                  >
+                    Success Stories
+                  </Link>
+                  <Link
+                    to="/aboutus"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
+                  >
+                    About
+                  </Link>
+                </div>
+              </div>
               <Link style={navStyle} to="/contactus">
                 Contact Us
               </Link>
