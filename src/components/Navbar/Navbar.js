@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link className="navbar-brand" to="/">
             <img src={Logo} alt="" height="85" />
           </Link>
-          {/* <button
+          <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -20,9 +20,9 @@ const Navbar = () => {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
-          </button> */}
+          </button> 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown fw-bold">
                 <Link
                   className="nav-link dropdown-toggle btn-navbar"
@@ -39,8 +39,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/fundraisers"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                     >
                       FundRaisers
                     </Link>
                   </li>
@@ -48,8 +47,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/volunteer"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                     >
                       Volunteer
                     </Link>
                   </li>
@@ -72,8 +70,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/covid"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Covid
                     </Link>
                   </li>
@@ -81,8 +78,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/food"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Food
                     </Link>
                   </li>
@@ -90,8 +86,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/health"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Health
                     </Link>
                   </li>
@@ -99,8 +94,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/education"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Education
                     </Link>
                   </li>
@@ -108,8 +102,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/housing"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Housing
                     </Link>
                   </li>
@@ -117,8 +110,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/clothing"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Clothing
                     </Link>
                   </li>
@@ -141,8 +133,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/howitworks"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       How it works?
                     </Link>
                   </li>
@@ -150,8 +141,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/whyhaminepal"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Why HamiNepali
                     </Link>
                   </li>
@@ -159,8 +149,7 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/behindthename"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Behind the name
                     </Link>
                   </li>
@@ -168,16 +157,15 @@ const Navbar = () => {
                     <Link
                       className="dropdown-item"
                       to="/successstories"
-                      style={{ fontSize: 15, fontWeight: 500 }}
-                    >
+                       >
                       Success Stories
                     </Link>
                   </li>
                 </ul>
               </li>
-            </ul> */}
+            </ul> 
             <form className="d-flex align-items-center">
-              <div className="search-nav" style={{ fontSize: 15 }}>
+              <div className="search-nav">
                 {" "}
                 <i className="fa fa-search"></i>{" "}
                 <input
@@ -191,7 +179,6 @@ const Navbar = () => {
                 <button
                   type="button"
                   className="btn "
-                  style={{ fontSize: 18, fontWeight: 500 }}
                 >
                   Sign In
                 </button>
@@ -201,7 +188,6 @@ const Navbar = () => {
                 <button
                   className="btn btn-primary px-3"
                   type="button"
-                  style={{ fontWeight: 500 }}
                 >
                   Join Now
                 </button>

@@ -4,7 +4,6 @@ const QuickLinks = () => {
   const navStyle = {
     textDecoration: "none",
     color: "white",
-    fontWeight: "bold",
     fontSize: "15px",
   };
   return (

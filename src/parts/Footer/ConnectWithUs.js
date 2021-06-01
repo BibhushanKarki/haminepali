@@ -9,7 +9,6 @@ const ConnectWithUs = () => {
     textDecoration: "none",
     color: "white",
     fontSize: "15px",
-    fontWeight: "bold",
   };
   return (
     <div className="connectwithus mt-5">
