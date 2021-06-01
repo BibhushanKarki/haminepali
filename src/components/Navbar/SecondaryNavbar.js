@@ -35,28 +35,28 @@ const SecondaryNavbar = () => {
                   <Link
                     to="/covid"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Covid
                   </Link>
                   <Link
                     to="/cause"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Cause
                   </Link>
                   <Link
                     to="/volunteer"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Volunteer
                   </Link>
                   <Link
                     to="/donate-administration"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Administration
                   </Link>
@@ -78,42 +78,42 @@ const SecondaryNavbar = () => {
                   <Link
                     to="/covid"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Covid
                   </Link>
                   <Link
                     to="/health"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Health
                   </Link>
                   <Link
                     to="/housing"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Housing
                   </Link>
                   <Link
                     to="/clothing"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Clothing
                   </Link>
                   <Link
                     to="/food"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Food
                   </Link>
                   <Link
                     to="/education"
                     className="dropdown-item"
-                    style={{ fontSize: 15, fontWeight: 500 }}
+                    style={{ fontSize: 15, fontWeight: 500, color: "#9F1718" }}
                   >
                     Education
                   </Link>
@@ -133,7 +133,11 @@ const SecondaryNavbar = () => {
                     <Link
                       to={`/events/${keyBundle.key}`}
                       className="dropdown-item"
-                      style={{ fontSize: 15, fontWeight: 500 }}
+                      style={{
+                        fontSize: 15,
+                        fontWeight: 500,
+                        color: "#9F1718",
+                      }}
                       key={keyBundle.key}
                     >
                       {keyBundle.displayName}

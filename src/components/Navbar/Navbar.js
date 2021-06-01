@@ -10,7 +10,7 @@ const Navbar = () => {
           <Link className="navbar-brand" to="/">
             <img src={Logo} alt="" height="85" />
           </Link>
-          <button
+          {/* <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -20,9 +20,9 @@ const Navbar = () => {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item dropdown fw-bold">
                 <Link
                   className="nav-link dropdown-toggle btn-navbar"
@@ -175,7 +175,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </li>
-            </ul>
+            </ul> */}
             <form className="d-flex align-items-center">
               <div className="search-nav" style={{ fontSize: 15 }}>
                 {" "}
