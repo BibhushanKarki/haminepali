@@ -8,10 +8,12 @@ const ConnectWithUs = () => {
   const navStyle = {
     textDecoration: "none",
     color: "white",
+    fontSize: "15px",
+    fontWeight: "bold",
   };
   return (
     <div className="connectwithus mt-5">
-      <h5 className="fw-bold" style={{ fontSize: 15 }}>
+      <h5 className="fw-bold" style={{ fontSize: 16 }}>
         CONNECT WITH US
       </h5>
       <ul className="nav-links list-unstyled">
