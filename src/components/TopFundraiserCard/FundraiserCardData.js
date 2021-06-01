@@ -1,6 +1,6 @@
 export const FundraiserCardData = [
   {
-    cardimg: "/img/avatar-vector.png",
+    cardimg: "/img/fundraiser1.png",
     location: "Nepal",
     title: "Bibek Ghimire",
     desc: "Hats off to all the volunteers doing such great work in this pandemic situation. ",
@@ -9,7 +9,7 @@ export const FundraiserCardData = [
     donationLevel: "Top Donation",
   },
   {
-    cardimg: "https://www.premadegraphics.com/img_1/23/Female-Avatar-2.png",
+    cardimg: "/img/fundraiser2.png",
     location: "Nepal",
     title: "Pasang Sherpa",
     desc: "Thank you so much to the HamiNepal team for all that you are doing. ",
