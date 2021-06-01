@@ -32,7 +32,11 @@ const VolunterProfileSection = () => {
             />
           </div>
           <div className="col-md-4 mt-2 text-center ">
-            <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="profile" style={profileSection} />
+            <img
+              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+              alt="profile"
+              style={profileSection}
+            />
             <h5 className="mt-3">Ram Kumar</h5>
             <p>“Lets help the needy one”</p>
             <FaStar size={30} color={"#E4E5E9"} />
@@ -60,9 +64,9 @@ const VolunterProfileSection = () => {
             </h3>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="container mt-5">
+      <div className="container mt-5">
         <div className="row">
           {VolunteerProfileData.map((data) => {
             return (

@@ -1,6 +1,6 @@
 export const FundraiserCardData = [
   {
-    cardimg: "https://freedesignfile.com/upload/2018/08/Flat-character-avatar-vector.jpg",
+    cardimg: "/img/avatar-vector.png",
     location: "Nepal",
     title: "Bibek Ghimire",
     desc: "Hats off to all the volunteers doing such great work in this pandemic situation. ",
@@ -17,4 +17,4 @@ export const FundraiserCardData = [
     gainedDonation: "$400 ",
     donationLevel: "Recent Donation",
   },
-]; 
+];

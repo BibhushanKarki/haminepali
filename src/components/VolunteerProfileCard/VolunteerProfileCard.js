@@ -7,15 +7,16 @@ import "./volunteer-profile.css";
 
 const VolunteerProfileCard = () => {
   const cardStyle = {
-    width: "18rem",
+    width: "300px",
   };
   const ppStyle = {
     borderRadius: "50%",
-    height: "100px",
-    width: "100px",
+    height: "150px",
+    width: "150px",
     objectFit: "cover",
     alignSelf: "center",
     alignItems: "center",
+    marginTop: "30px",
   };
   return (
     <div className="profileCardContainer my-4 px-5 ">
@@ -49,6 +50,7 @@ const VolunteerProfileCard = () => {
                 style={{
                   backgroundColor: "#f5f5f500",
                   borderTop: "1px solid #f9fafb",
+                  marginBottom: "20px",
                 }}
               >
                 <AppButton buttontext="Donate to motivate" />

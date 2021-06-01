@@ -6,52 +6,61 @@ import "./top-fundraiser.css";
 
 const TopFundraiserCard = ({ title }) => {
   return (
-    <div className="cardContainer my-4 px-5">
-      <div className="row px-5">
-        <div className="top-fundraiser-heading">
-          <h2 className="fw-bold my-3 " style={{ color: "#9F1718" }}>
-            {title}
-          </h2>
+    <>
+      <div className="container mt-5">
+        <div className="row ">
+          <div className="top-fundraiser-heading">
+            <h2>{title}</h2>
+          </div>
         </div>
-        {data.map((data, key) => {
-          return (
-            <div
-              className="col-lg-3 col-md-6 col-sm-6 mb-3 d-flex justify-content-center"
-              key={key}
-            >
-              <Link to="/fundraiserdescription" style={{ color: "black" }}>
-                <Zoom>
-                  <div className="card " style={{ width: 300 }}>
-                    <img
-                      src={data.cardimg}
-                      className="card-img-top"
-                      alt="cardimg"
-                      style={{ height: 250, width: 300 }}
-                    />
+      </div>
+
+      {/* <!-- Topic Cards --> */}
+      <div id="cards_landscape_wrap-2">
+        <div className="container">
+          <div className="row">
+            {data.map((data, key) => {
+              return (
+                <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <div className="card-flyer">
+                    <div className="text-box">
+                      <div className="image-box">
+                        <img src={data.cardimg} alt="" />
+                      </div>
+                      <div className="text-container">
+                        <h5>{data.location}</h5>
+                        <h6> {data.title}</h6>
+                        <p>{data.desc}</p>
+                      </div>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">4 days ago</li>
+                    </ul>
                     <div className="card-body">
-                      <h6
-                        className="card-title fw-bold"
-                        style={{ color: "#9F1718" }}
+                      <a
+                        href="#"
+                        className="card-link"
+                        style={{ color: "#212529", fontWeight: "bold" }}
                       >
-                        {data.location}
-                      </h6>
-                      <h6 className="fw-bold">{data.title}</h6>
-                      <p className="card-text">{data.desc}</p>
-                      <p>{data.lastDonated}</p>
-                      <hr className="cardLineStyle" />
-                      <p className="d-flex justify-content-between mb-0">
-                        <span className="fw-bold">{data.gainedDonation}</span>
-                        <span>{data.donationLevel}</span>
-                      </p>
+                        {data.gainedDonation}
+                      </a>
+                      &nbsp; &nbsp; &nbsp;
+                      <a
+                        href="#"
+                        className="card-link"
+                        style={{ color: "#212529" }}
+                      >
+                        {data.donationLevel}
+                      </a>
                     </div>
                   </div>
-                </Zoom>
-              </Link>
-            </div>
-          );
-        })}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
