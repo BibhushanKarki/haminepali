@@ -12,7 +12,7 @@ const DownloadApp = () => {
     marginRight: "1rem",
   };
   return (
-    <div className="row d-flex justify-content-center py-4 px-5">
+    <div className="row d-flex justify-content-center py-4 mt-5 px-5">
       <div className="col-md-12 d-flex align-items-center downloadApp">
         <div className="col-md-7 text-center ">
           <img

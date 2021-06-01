@@ -1,13 +1,33 @@
+.profile-style {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  align-self: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.volunteer-profile-heading h2 {
+  color: #9f1718;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1064px) {
 }
 @media only screen and (max-width: 600px) {
+  .volunteer-card {
+    text-align: center;
+  }
   .volunteer-profile-heading h2 {
     text-align: center;
-    align-items: center;
   }
 }
 
 @media only screen and (max-width: 360px) {
+  .volunteer-card {
+    text-align: center;
+  }
   .volunteer-profile-heading h2 {
     text-align: center;
   }
