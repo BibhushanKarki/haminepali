@@ -32,16 +32,32 @@ const SecondaryNavbar = () => {
                   Donate
                 </Link>
                 <div className="dropdown-menu">
-                  <Link to="/covid" className="dropdown-item">
+                  <Link
+                    to="/covid"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Covid
                   </Link>
-                  <Link to="/cause" className="dropdown-item">
+                  <Link
+                    to="/cause"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Cause
                   </Link>
-                  <Link to="/volunteer" className="dropdown-item">
+                  <Link
+                    to="/volunteer"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Volunteer
                   </Link>
-                  <Link to="/donate-administration" className="dropdown-item">
+                  <Link
+                    to="/donate-administration"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Administration
                   </Link>
                 </div>
@@ -59,22 +75,46 @@ const SecondaryNavbar = () => {
                   Cause
                 </Link>
                 <div className="dropdown-menu">
-                  <Link to="/covid" className="dropdown-item">
+                  <Link
+                    to="/covid"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Covid
                   </Link>
-                  <Link to="/health" className="dropdown-item">
+                  <Link
+                    to="/health"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Health
                   </Link>
-                  <Link to="/housing" className="dropdown-item">
+                  <Link
+                    to="/housing"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Housing
                   </Link>
-                  <Link to="/clothing" className="dropdown-item">
+                  <Link
+                    to="/clothing"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Clothing
                   </Link>
-                  <Link to="/food" className="dropdown-item">
+                  <Link
+                    to="/food"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Food
                   </Link>
-                  <Link to="/education" className="dropdown-item">
+                  <Link
+                    to="/education"
+                    className="dropdown-item"
+                    style={{ fontSize: 15, fontWeight: 500 }}
+                  >
                     Education
                   </Link>
                 </div>
@@ -93,6 +133,7 @@ const SecondaryNavbar = () => {
                     <Link
                       to={`/events/${keyBundle.key}`}
                       className="dropdown-item"
+                      style={{ fontSize: 15, fontWeight: 500 }}
                       key={keyBundle.key}
                     >
                       {keyBundle.displayName}

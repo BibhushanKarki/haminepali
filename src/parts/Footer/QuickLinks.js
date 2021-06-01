@@ -4,10 +4,12 @@ const QuickLinks = () => {
   const navStyle = {
     textDecoration: "none",
     color: "white",
+    fontWeight: "bold",
+    fontSize: "15px",
   };
   return (
     <div className="quicklinks mt-5">
-      <h5 className="fw-bold" style={{ fontSize: 15 }}>
+      <h5 className="fw-bold" style={{ fontSize: 16 }}>
         QUICK LINKS
       </h5>
       <ul className="nav-links list-unstyled">
