@@ -3,6 +3,7 @@
 body {
   font-family: "NeueMontreal", sans-serif !important;
   overflow-x: hidden;
+  letter-spacing: 1px;
 }
 
 a {
@@ -157,7 +158,12 @@ a {
 .intro {
   font-weight: 500;
 }
-
+.dropdown-item,.quicklinks ul>a,.connectwithus ul>li,.contact-info ul>li,.btn{
+  letter-spacing: 3px;
+}
+.dropdown-menu{
+  min-width:min-content !important;
+}
 /* Search bar */
 
 .search {
@@ -223,6 +229,15 @@ a {
     margin: 1rem;
   }
 }
+@media (max-width: 1278px) {
+  #navbarSupportedContent .navbar-nav > li a {
+    padding: 0.5rem 1rem !important;
+    font-size:15px !important;
+}
+#navbarSupportedContent .navbar-nav > li {
+  margin: 0 0.5rem;
+}
+}
 @media (max-width: 1000px) {
   .contactinfo h4,
   .connectwithus h4,
@@ -261,6 +276,12 @@ a {
   .herorow {
     height: 420px !important;
   }
+  .hidecol{
+    display: none;
+  }
+  .ask .question button{
+    font-size:14px !important;
+  }
 }
 
 @media (max-width: 750px) {
@@ -287,6 +308,19 @@ a {
   }
   #navbarSupportedContent form {
     margin: 1.5rem 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  .ask{
+    flex-direction: column !important;
+  }
+  .ask .question{
+    justify-content:center !important;
+    margin-top:1rem;
+  }
+  .search button{
+    width: 80px !important;
+  font-size: 14px !important;
   }
 }
 @media (max-width: 550px) {

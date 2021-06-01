@@ -31,7 +31,7 @@ const HomePageCover = () => {
           data-bs-target="#donateModal"
           className="btn btn-primary mt-4 fw-bold"
         >
-          Donate
+          Start Fundraising
           <BsChevronRight />
         </button>
         <DonationFormSection />

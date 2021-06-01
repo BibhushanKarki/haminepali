@@ -11,13 +11,13 @@ const OurCommunityCard = () => {
     return (
       <div className="row">
 
-      <div className="col-md-12 d-flex flex-row align-items-center justify-content-between my-3" style={{backgroundColor:'white'}}>
-        <div className="col-md-3"></div>
-        <div className="col-md-4">
+      <div className="row d-flex flex-row align-items-center justify-content-between my-3 ask" style={{backgroundColor:'white'}}>
+        <div className="col-lg-3 hidecol"></div>
+        <div className="col-lg-5 col-md-8 col-sm-8 col-xs-12">
               <div className="search"> <i className="fa fa-search"></i> <input type="text" className="form-control" placeholder="Have a question? Ask Now"/> <button className="btn btn-primary">Search</button> 
               </div>
           </div>
-          <div className="col-md-3 d-flex justify-content-end mx-3">
+          <div className="col-md-3 col-sm-3  d-flex justify-content-end mx-3 question">
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#askQuestion">Ask Question</button>
           </div>
            {/* Modal  */}
@@ -45,7 +45,7 @@ const OurCommunityCard = () => {
         className="col-md-12 d-flex flex-column  mb-4 align-items-center"
         style={{ backgroundColor: "#ffeaea73" }}
       >
-            <div className="col-md-5">
+            <div className="col-lg-5 col-md-8">
               <div className="card main-card my-4">
                 <div className="card m-3 p-3">
                   <div className="d-flex align-items-center">
